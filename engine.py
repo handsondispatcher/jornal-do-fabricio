@@ -6,8 +6,8 @@ from zoneinfo import ZoneInfo
 
 BASE=Path(__file__).resolve().parent
 TZ=ZoneInfo('America/Sao_Paulo')
-SECTORS={'politica':'política congresso governo Brasil','economia':'economia inflação PIB emprego Brasil','financas':'dólar bolsa juros Banco Central Brasil','geopolitica':'Brasil relações internacionais diplomacia','defesa':'defesa forças armadas Brasil','logistica':'logística portos transporte rodovias Brasil','tecnologia':'tecnologia inteligência artificial Brasil','ciencia':'ciência pesquisa descoberta Brasil','empresas':'empresas indústria negócios Brasil','energia':'energia petróleo eletricidade Brasil','agronegocio':'agronegócio safra agricultura Brasil','saude':'saúde medicina vacina Brasil','sociedade':'educação justiça sociedade Brasil','clima':'clima meio ambiente Brasil','esportes':'esportes futebol Brasil','cultura':'cultura cinema música Brasil'}
-DIRECT=[('Agência Brasil — Últimas','https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml'),('G1 — Geral','https://g1.globo.com/rss/g1/'),('BBC News Brasil','https://feeds.bbci.co.uk/portuguese/rss.xml')]
+SECTORS={'politica':'política congresso governo Brasil','economia':'economia inflação PIB emprego Brasil','financas':'dólar bolsa juros Banco Central Brasil','geopolitica':'Brasil relações internacionais diplomacia','logistica':'logística portos transporte rodovias Brasil','tecnologia':'tecnologia inteligência artificial Brasil','ciencia':'ciência pesquisa descoberta Brasil','empresas':'empresas indústria negócios Brasil','energia':'energia petróleo eletricidade Brasil','agronegocio':'agronegócio safra agricultura Brasil','saude':'saúde medicina vacina Brasil','sociedade':'educação justiça sociedade Brasil','clima':'clima meio ambiente Brasil','esportes':'esportes futebol campeonato brasileiro jogos resultados Brasil','cultura':'cultura cinema música Brasil','internacional':'world breaking news global politics international affairs','americas':'Américas Estados Unidos Canadá México América Latina política economia','europa':'Europa União Europeia Reino Unido França Alemanha política economia','asia':'Ásia China Japão Índia Coreia Taiwan política economia','oceania':'Oceania Austrália Nova Zelândia Pacífico política economia','africa':'África Nigéria África do Sul Quênia Egito União Africana','antartida':'Antártida pesquisa científica clima estações polares','guerra':'guerra conflitos armados ataques cessar-fogo Ucrânia Rússia Gaza Sudão','espaco':'espaço NASA ESA foguetes satélites astronomia exploração espacial'}
+DIRECT=[('BBC World','https://feeds.bbci.co.uk/news/world/rss.xml'),('BBC Europe','https://feeds.bbci.co.uk/news/world/europe/rss.xml'),('BBC Asia','https://feeds.bbci.co.uk/news/world/asia/rss.xml'),('BBC US','https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml'),('BBC Africa','https://feeds.bbci.co.uk/news/world/africa/rss.xml'),('BBC Latin America','https://feeds.bbci.co.uk/news/world/latin_america/rss.xml'),('BBC Middle East','https://feeds.bbci.co.uk/news/world/middle_east/rss.xml'),('BBC Science','https://feeds.bbci.co.uk/news/science_and_environment/rss.xml'),('Agência Brasil — Últimas','https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml'),('G1 — Geral','https://g1.globo.com/rss/g1/'),('BBC News Brasil','https://feeds.bbci.co.uk/portuguese/rss.xml')]
 # Canais de descoberta, NAO contratos com os veículos nem feeds diretos.
 OUTLETS={
 'Folha de S.Paulo':'folha.uol.com.br','Estadão':'estadao.com.br','O Globo':'oglobo.globo.com',
@@ -35,6 +35,18 @@ REGIONS={
  'Sudeste':'São Paulo Rio de Janeiro Minas Gerais Espírito Santo',
  'Sul':'Paraná Santa Catarina Rio Grande do Sul',
 }
+INTERNATIONAL_QUERIES=[
+ 'Donald Trump Casa Branca Estados Unidos política externa',
+ 'China Xi Jinping Taiwan economia comércio',
+ 'União Europeia Comissão Europeia Parlamento Europeu',
+ 'guerra Ucrânia Rússia ataques negociações',
+ 'Israel Gaza Oriente Médio conflito cessar fogo',
+ 'OTAN NATO segurança internacional',
+ 'tarifas comerciais Estados Unidos China Europa',
+ 'eleições governos Europa Reino Unido França Alemanha',
+ 'geopolítica internacional diplomacia ONU sanções',
+ 'Ásia Pacífico Coreia Japão China relações internacionais',
+]
 SPORT_QUERIES=[
  'futebol brasileiro campeonato brasileiro serie A serie B resultados',
  'Corinthians Palmeiras Santos São Paulo futebol',
@@ -97,20 +109,54 @@ EDITORIAL_PATTERNS={
  'saude':r'\b(sus|vacina|hospital|medicamento|doenca|epidemia|saude publica|anvisa)\b',
  'energia':r'\b(petroleo|energia eletrica|energia solar|eolica|hidreletrica|combustivel|aneel)\b',
  'agronegocio':r'\b(safra|agronegocio|agricultura|pecuaria|soja|milho|gado|fertilizante)\b',
- 'defesa':r'\b(forcas armadas|exercito brasileiro|marinha do brasil|forca aerea|militar|defesa nacional)\b',
+
  'clima':r'\b(previsao do tempo|chuva|enchente|seca|temperatura|mudanca climatica|meio ambiente|desmatamento)\b',
+ 'internacional':r'\b(trump|casa branca|washington|estados unidos|xi jinping|pequim|china|taiwan|uniao europeia|parlamento europeu|comissao europeia|ucrania|russia|putin|zelensky|gaza|israel|otan|nato|oriente medio|onu|geopolitic|europa|franca|alemanha|reino unido|iran|teera|coreia do norte)\b',
  'cultura':r'\b(cinema|filme|musica|show|festival cultural|teatro|exposicao|literatura|livro)\b',
 }
+GEOGRAPHY_PATTERNS={
+ 'americas':r'\b(trump|washington|estados unidos|eua|canada|mexico|argentina|chile|colombia|venezuela|peru|bolivia|equador|cuba|panama|brasil|brazil|united states|canadian|latin america)\b',
+ 'europa':r'\b(europa|europe|uniao europeia|european union|franca|france|alemanha|germany|italia|italy|espanha|spain|reino unido|united kingdom|londres|london|ucrania|ukraine|russia|russia|moscou|moscow|otan|nato|polonia|poland)\b',
+ 'asia':r'\b(china|chinese|pequim|beijing|japao|japan|india|indian|coreia|korea|taiwan|asia|iran|ira|israel|gaza|palestina|palestine|oriente medio|middle east|arabia saudita|saudi|singapura|singapore)\b',
+ 'oceania':r'\b(oceania|australia|australian|nova zelandia|new zealand|fiji|papua nova guine|pacific islands)\b',
+ 'africa':r'\b(africa|african|sudao|sudan|nigeria|kenya|quenia|egito|egypt|congo|ethiopia|etiopia|africa do sul|south africa|sahel|somalia|libia)\b',
+ 'antartida':r'\b(antartida|antartica|antarctic|antartico|polo sul|south pole)\b',
+}
+WAR_PATTERN=r'\b(guerra|warfare|war|conflito armado|armed conflict|bombardeio|bombing|airstrike|ataque aereo|invasao militar|invasion|cessar.fogo|ceasefire|combate|batalha|battle|militares mortos|missil|missile|drone attack|ataque de drones|ofensiva militar)\b'
+SPACE_PATTERN=r'\b(nasa|esa|spacex|astronauta|astronaut|foguete|rocket|orbita|orbital|satellite|satelite|telescopio espacial|space telescope|estacao espacial|space station|missao lunar|moon mission|marte|mars rover|exploracao espacial|space exploration)\b'
+GLOBAL_QUERIES={
+ 'internacional':['world breaking news international politics','global diplomacy United Nations latest','international trade sanctions summit'],
+ 'americas':['United States Trump White House Congress','Canada Mexico Latin America breaking news','South America Argentina Chile Colombia Venezuela news'],
+ 'europa':['Europe EU European Commission Parliament news','United Kingdom France Germany Italy politics','Eastern Europe Ukraine diplomacy economy'],
+ 'asia':['China Xi Jinping Taiwan latest','India Japan South Korea news','Middle East Iran Israel Saudi Arabia developments'],
+ 'oceania':['Australia New Zealand politics economy','Pacific islands Fiji Papua New Guinea climate'],
+ 'africa':['Africa African Union latest news','Sudan Congo Nigeria Kenya South Africa news','Sahel Somalia Ethiopia developments'],
+ 'antartida':['Antarctica research scientific discoveries','Antarctic ice shelf climate research stations'],
+ 'guerra':['Ukraine Russia war latest ceasefire','Gaza Israel war humanitarian ceasefire','Sudan civil war conflict latest','world armed conflicts fighting peace talks'],
+ 'espaco':['NASA ESA space exploration discoveries','SpaceX rocket launch space science','astronomy exoplanets space telescopes research'],
+}
+GLOBAL_DIRECT=[
+ ('NASA Breaking News','https://www.nasa.gov/news-release/feed/','espaco'),
+ ('ESA News','https://www.esa.int/rssfeed/Our_Activities','espaco'),
+]
+
 def editorial_sectors(title, summary='', source='', hinted=None):
-    # Titulo tem precedencia: descricoes RSS podem conter outras manchetes.
     headline=normalized(title)
     matched={sector for sector,pattern in EDITORIAL_PATTERNS.items() if re.search(pattern,headline)}
-    if matched:return matched
-    if hinted and hinted!='geral':return {hinted}
-    domain=normalized(source)
-    for outlet,sector in SPECIALIST_OUTLETS.items():
-        if normalized(outlet) in domain:return {sector}
-    return {'geral'}
+    if re.search(WAR_PATTERN,headline):matched.add('guerra')
+    if re.search(SPACE_PATTERN,headline):matched.add('espaco')
+    # A classificação geográfica não é mutuamente exclusiva: conflitos podem atravessar continentes.
+    geo={sector for sector,pattern in GEOGRAPHY_PATTERNS.items() if re.search(pattern,headline)}
+    matched.update(geo)
+    if geo and not (matched-geo):matched.add('internacional')
+    if 'guerra' in matched:matched.add('internacional')
+    if hinted and hinted!='geral' and (not matched or hinted in GEOGRAPHY_PATTERNS or hinted in ('guerra','espaco','internacional')):
+        matched.add(hinted)
+    if not matched:
+        domain=normalized(source)
+        for outlet,sector in SPECIALIST_OUTLETS.items():
+            if normalized(outlet) in domain:return {sector}
+    return matched or {'geral'}
 
 def diversify(items):
     # Primeiro passe distribui editorias; os demais preservam a ordem editorial.
@@ -127,10 +173,17 @@ def diversify(items):
 
 def sources():
     result=[{'name':name,'url':url,'kind':'direto','sector':None} for name,url in DIRECT]
+    result.extend({'name':name,'url':url,'kind':'direto','sector':sector} for name,url,sector in GLOBAL_DIRECT)
     for sector,query in SECTORS.items():
         result.append({'name':'Tema: '+sector,'url':'https://news.google.com/rss/search?q='+quote(query+' when:2d')+'&hl=pt-BR&gl=BR&ceid=BR:pt-419','kind':'agregador','sector':sector})
     for name,domain in OUTLETS.items():
         result.append({'name':'Descoberta: '+name,'url':'https://news.google.com/rss/search?q='+quote('site:'+domain+' when:2d')+'&hl=pt-BR&gl=BR&ceid=BR:pt-419','kind':'agregador','sector':None})
+    for i,q in enumerate(INTERNATIONAL_QUERIES):
+        result.append({'name':f'Mundo / tema {i+1}','url':'https://news.google.com/rss/search?q='+quote(q+' when:2d')+'&hl=pt-BR&gl=BR&ceid=BR:pt-419','kind':'agregador','sector':'internacional'})
+    # Cobertura internacional multilíngue; buscas regionais não dependem do filtro brasileiro.
+    for sector,queries in GLOBAL_QUERIES.items():
+        for i,q in enumerate(queries):
+            result.append({'name':f'Global / {sector} / {i+1}', 'url':'https://news.google.com/rss/search?q='+quote(q+' when:2d')+'&hl=en-US&gl=US&ceid=US:en','kind':'agregador','sector':sector})
     for i,q in enumerate(SPORT_QUERIES):
         result.append({'name':f'Esportes especializado {i+1}','url':'https://news.google.com/rss/search?q='+quote(q+' when:2d')+'&hl=pt-BR&gl=BR&ceid=BR:pt-419','kind':'agregador','sector':'esportes'})
     for region,states in REGIONS.items():
@@ -223,7 +276,7 @@ def enrich_images(db, limit=90):
     import ipaddress, socket
     from concurrent.futures import ThreadPoolExecutor, as_completed
     folder=BASE/'thumbnails';folder.mkdir(exist_ok=True)
-    candidates=db.execute("SELECT id,url,image_url FROM articles WHERE COALESCE(image_url,'')='' ORDER BY published DESC LIMIT ?",(limit,)).fetchall()
+    candidates=db.execute("SELECT id,url,image_url FROM articles WHERE COALESCE(image_url,'')='' AND url NOT LIKE '%news.google.com/%' ORDER BY published DESC LIMIT ?",(limit,)).fetchall()
     def safe_url(url):
         p=urlparse(url)
         if p.scheme!='https' or not p.hostname or p.username or p.password:return False
@@ -295,7 +348,7 @@ def collect():
                 successes.append({'source':source['name'],'items':len(entries),'new':added})
             except Exception as exc:
                 failures.append({'source':source['name'],'error':str(exc)[:180]})
-    enrich_images(db)
+    enrich_images(db, limit=90)
     finished=dt.datetime.now(dt.timezone.utc).isoformat()
     db.execute('INSERT INTO runs(started,finished,success,fail,received,inserted,errors) VALUES(?,?,?,?,?,?,?)',(now.isoformat(),finished,len(successes),len(failures),received,inserted,json.dumps(failures,ensure_ascii=False)))
     db.commit();db.close()
