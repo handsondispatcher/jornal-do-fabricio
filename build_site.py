@@ -157,12 +157,24 @@ def translate_titles(articles):
         output.append(a)
     return output
 
+def reading_link(article):
+    """Link de leitura em português para fontes internacionais; mantém original separado."""
+    url=article.get('url','')
+    host=(urllib.parse.urlsplit(url).hostname or '').lower()
+    sectors=set(article.get('sectors') or [])
+    foreign_section=bool(sectors.intersection({'internacional','americas','europa','asia','oriente_medio','oceania','africa','antartida','guerra'}))
+    brazilian=host.endswith('.br') or host in {'g1.globo.com','oglobo.globo.com','www.uol.com.br','www.terra.com.br'}
+    if not foreign_section or brazilian or not url.startswith('https://'):
+        return url,False
+    return 'https://translate.google.com/translate?'+urllib.parse.urlencode({'sl':'auto','tl':'pt','u':url}),True
+
 def main():
     create_illustrations()
     data=engine.report(); arts=translate_titles(enrich_summaries(balanced(data['articles']))); src=(BASE/'app_original.txt').read_text(encoding='utf-8')
     css=src.split('<style>',1)[1].split('</style>',1)[0].replace('{{','{').replace('}}','}')
     # Keep only original source typography and layout; no backend actions exposed.
     css+='''\n.story{min-height:145px}.story-thumb{display:block}.filters{grid-template-columns:1.4fr 1fr 1fr}.filters button{display:none}.live-note{font-size:11px;color:#65758a;margin-top:9px}.story[hidden]{display:none!important}.pagination button{background:#eef3f8;color:#214767;margin:0 3px}.pagination button:disabled{opacity:.35}.story-foot{clear:none}.story-top{margin-bottom:3px}.abstract{line-height:1.5}.story{padding-top:19px!important;padding-bottom:16px!important}.hero{padding-top:9px!important;padding-bottom:14px!important}.topline{padding-bottom:9px!important}.live-note{display:none}@media(max-width:560px){.filters{grid-template-columns:1fr}.story-thumb{float:none;width:100%;height:175px;margin:0 0 12px}}'''
+    css+='\n.translate-action{color:#a8742b!important;font-weight:700;text-decoration:underline;text-underline-offset:3px}.story-foot a{display:inline-block;margin:3px 0}.story h3 a:hover{text-decoration:underline}'
     thumbs=BASE/'thumbnails'; count=0
     cards=[]
     for i,a in enumerate(arts,1):
@@ -183,11 +195,9 @@ def main():
         tags=''.join('<span class="tag">'+e(x.title())+'</span>' for x in a['sectors'])
         summary=e(summary_text(a))
         original_url=a['url']
-        foreign=any(k in a.get('sectors',[]) for k in ('internacional','americas','europa','asia','oriente_medio','oceania','africa','antartida'))
-        translated_url='https://translate.google.com/translate?'+urllib.parse.urlencode({'sl':'auto','tl':'pt','u':original_url}) if foreign else original_url
-        # Tradução externa é oferecida sem substituir o link original.
-        source_links=(f'<a href="{e(translated_url)}" target="_blank" rel="noopener noreferrer">Ler em português ↗</a> · ' if foreign else '')+f'<a href="{e(original_url)}" target="_blank" rel="noopener noreferrer">Abrir fonte original ↗</a>'
-        cards.append(f'<article class="story" data-sector="{e("|".join(a["sectors"]))}" data-day="{e(a["published"][:10])}" data-text="{e((a["title"]+" "+a["summary"]+" "+a["source"]).casefold())}">{img}<div class="story-top"><span class="story-index">{i:02d}</span><div class="tags">{tags}</div></div><h3><a href="{e(a["url"])}" target="_blank" rel="noopener noreferrer">{e(a["title"])}</a></h3>{f'<p class="abstract">{summary}</p>' if summary else ''}<div class="story-foot"><span><b>{e(a["source"])}</b> · {e(dt.datetime.fromisoformat(a['published']).astimezone(engine.TZ).strftime('%d/%m/%Y · %H:%M'))} (Brasília)</span>{source_links}</div></article>')
+        translated_url,foreign=reading_link(a)
+        source_links=(f'<a class="translate-action" href="{e(translated_url)}" target="_blank" rel="noopener noreferrer">Ler matéria em português ↗</a> · ' if foreign else '')+f'<a href="{e(original_url)}" target="_blank" rel="noopener noreferrer">Fonte original ↗</a>'
+        cards.append(f'<article class="story" data-sector="{e("|".join(a["sectors"]))}" data-day="{e(a["published"][:10])}" data-text="{e((a["title"]+" "+a["summary"]+" "+a["source"]).casefold())}">{img}<div class="story-top"><span class="story-index">{i:02d}</span><div class="tags">{tags}</div></div><h3><a href="{e(translated_url)}" target="_blank" rel="noopener noreferrer">{e(a["title"])}</a></h3>{f'<p class="abstract">{summary}</p>' if summary else ''}<div class="story-foot"><span><b>{e(a["source"])}</b> · {e(dt.datetime.fromisoformat(a['published']).astimezone(engine.TZ).strftime('%d/%m/%Y · %H:%M'))} (Brasília)</span>{source_links}</div></article>')
     labels={'internacional':'Internacional','americas':'Américas','europa':'Europa','asia':'Ásia','oriente_medio':'Oriente Médio','oceania':'Oceania','africa':'África','antartida':'Antártida','guerra':'Guerra e conflitos','espaco':'Espaço e exploração espacial','financas':'Finanças','ciencia':'Ciência','agronegocio':'Agronegócio','saude':'Saúde','politica':'Política','logistica':'Logística','tecnologia':'Tecnologia','esportes':'Esportes','economia':'Economia','empresas':'Empresas','sociedade':'Sociedade','energia':'Energia','clima':'Clima','cultura':'Cultura','geopolitica':'Geopolítica'}
     world_sections=['internacional','americas','europa','asia','oriente_medio','oceania','africa','antartida','guerra','espaco']
     option=lambda key:f'<option value="{e(key)}">{e(labels.get(key,key.title()))}</option>'
@@ -222,7 +232,7 @@ def main():
             image='thumbnails/'+filename if (thumbs/filename).is_file() else ''
         if not image.startswith(('https://','thumbnails/')):image='thumbnails/ilustracao_'+illustration_topic(a)+'.svg'
         return f'<img src="{e(image)}" alt="Imagem ilustrativa ou da fonte original" loading="lazy" onerror="this.onerror=null;this.src=\'thumbnails/ilustracao_mundo.svg\'">'
-    world_strip='<div class="world-heading">PANORAMA GLOBAL <span class="world-controls"><button type="button" id="world-prev" aria-label="Notícias anteriores">← Anterior</button><button type="button" id="world-next" aria-label="Próximas notícias">Próximas →</button></span></div><div class="world-strip" id="world-strip">'+''.join(f'<a class="world-item" href="{e(a["url"])}" target="_blank" rel="noopener noreferrer">{panorama_image(a)}<small>{e(a["source"])}</small>{e(a["title"])}</a>' for a in world)+'</div><div class="world-dots" id="world-dots" aria-label="Páginas do panorama"></div>' if world else '' 
+    world_strip='<div class="world-heading">PANORAMA GLOBAL <span class="world-controls"><button type="button" id="world-prev" aria-label="Notícias anteriores">← Anterior</button><button type="button" id="world-next" aria-label="Próximas notícias">Próximas →</button></span></div><div class="world-strip" id="world-strip">'+''.join(f'<a class="world-item" href="{e(reading_link(a)[0])}" target="_blank" rel="noopener noreferrer">{panorama_image(a)}<small>{e(a["source"])}</small>{e(a["title"])}</a>' for a in world)+'</div><div class="world-dots" id="world-dots" aria-label="Páginas do panorama"></div>' if world else '' 
     css+='''
 .world-controls{display:flex;gap:7px}.world-controls button{border:1px solid #c9a66a;background:#0d2135;color:#d8b36d;font:12px Arial,sans-serif;padding:7px 10px;cursor:pointer}.world-controls button:hover{background:#193b57}.world-strip{scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior-inline:contain}.world-item{flex:0 0 calc((100% - 30px)/4);box-sizing:border-box;scroll-snap-align:start;min-width:0}.story-thumb{object-fit:cover}.story-illustration{border:1px solid #d9d2c8}.world-item img{width:100%;height:78px;object-fit:cover;margin-bottom:8px}@media(max-width:750px){.world-item{flex-basis:calc((100% - 10px)/2)}.world-heading{flex-wrap:wrap}}@media(max-width:450px){.world-item{flex-basis:85%}.world-controls button{font-size:11px}}
 '''
