@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-10-08T04:11:17+00:00",
+  "items": [
+    {
+      "symbol": "BTC/USD",
+      "label": "Bitcoin",
+      "value": "US$ 82.744,85",
+      "change": null,
+      "source": "Coinbase Spot",
+      "asof": "2026-10-08T04:11:17+00:00",
+      "status": "cotação spot 24/7"
+    },
+    {
+      "symbol": "IBOV",
+      "label": "Ibovespa · B3",
+      "value": null,
+      "change": null,
+      "source": null,
+      "asof": null,
+      "status": "aguardando fonte de mercado"
+    },
+    {
+      "symbol": "IFIX",
+      "label": "Fundos imobiliários",
+      "value": null,
+      "change": null,
+      "source": null,
+      "asof": null,
+      "status": "aguardando fonte de mercado"
+    },
+    {
+      "symbol": "S&P 500",
+      "label": "S&P 500",
+      "value": null,
+      "change": null,
+      "source": null,
+      "asof": null,
+      "status": "aguardando fonte de mercado"
+    },
+    {
+      "symbol": "NASDAQ",
+      "label": "Nasdaq",
+      "value": null,
+      "change": null,
+      "source": null,
+      "asof": null,
+      "status": "aguardando fonte de mercado"
+    }
+  ]
+}
