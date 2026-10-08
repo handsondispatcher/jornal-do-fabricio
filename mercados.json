@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-10-08T04:11:17+00:00",
+  "checked_at": "2026-10-08T04:14:42+00:00",
   "items": [
     {
       "symbol": "BTC/USD",
       "label": "Bitcoin",
-      "value": "US$ 82.744,85",
+      "value": "US$ 82.594,60",
       "change": null,
       "source": "Coinbase Spot",
-      "asof": "2026-10-08T04:11:17+00:00",
+      "asof": "2026-10-08T04:14:42+00:00",
       "status": "cotação spot 24/7"
     },
     {
