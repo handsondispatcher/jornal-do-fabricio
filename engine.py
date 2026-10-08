@@ -152,7 +152,7 @@ def editorial_sectors(title, summary='', source='', hinted=None):
     matched.update(geo)
     if geo and not (matched-geo):matched.add('internacional')
     if 'guerra' in matched:matched.add('internacional')
-    if hinted and hinted!='geral' and (not matched or hinted in GEOGRAPHY_PATTERNS or hinted in ('guerra','espaco','internacional')):
+    if hinted and hinted!='geral' and (not matched or hinted in ('guerra','espaco')):
         matched.add(hinted)
     if not matched:
         domain=normalized(source)
