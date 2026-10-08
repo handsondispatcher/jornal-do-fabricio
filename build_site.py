@@ -21,13 +21,23 @@ def enrich_summaries(articles, limit=140):
     import ipaddress, socket
     from html.parser import HTMLParser
     class Metadata(HTMLParser):
-        def __init__(self):super().__init__();self.values=[]
+        def __init__(self):super().__init__();self.values=[];self.in_p=False;self.paragraphs=[];self.pieces=[];self.in_block=False
         def handle_starttag(self,tag,attrs):
+            if tag=='p':self.in_p=True;self.pieces=[]
+            if tag in ('script','style','nav','footer'):self.in_block=True
             if tag!='meta':return
             d=dict(attrs);name=(d.get('property') or d.get('name') or '').lower()
             if name in ('og:description','twitter:description','description'):
                 value=html.unescape(d.get('content','')).strip()
                 if value:self.values.append(value)
+        def handle_data(self,data):
+            if self.in_p and not self.in_block:self.pieces.append(data)
+        def handle_endtag(self,tag):
+            if tag=='p':
+                para=re.sub(r'\s+',' ',' '.join(self.pieces)).strip()
+                if 90<=len(para)<=1300 and not re.search(r'cookie|newsletter|subscribe|advertisement|all rights reserved',para,re.I):self.paragraphs.append(para)
+                self.in_p=False;self.pieces=[]
+            if tag in ('script','style','nav','footer'):self.in_block=False
     path=BASE/'resumos_fontes.json'
     try:cache=json.loads(path.read_text(encoding='utf-8'))
     except (OSError,ValueError):cache={}
@@ -48,18 +58,18 @@ def enrich_summaries(articles, limit=140):
                 if 'html' not in response.headers.get('Content-Type',''):return ''
                 payload=response.read(180000).decode('utf-8','replace')
             parser=Metadata();parser.feed(payload)
-            for value in parser.values:
+            for value in parser.values + parser.paragraphs[:2]:
                 value=re.sub(r'\s+',' ',re.sub(r'<[^>]+>',' ',value)).strip()
-                if len(value)>=65 and not re.search(r'cookie|subscribe|newsletter|cadastre-se|assine agora',value,re.I):
+                if len(value)>=45 and not re.search(r'cookie|subscribe|newsletter|cadastre-se|assine agora',value,re.I):
                     # Trecho de metadados limitado; a notícia completa permanece na fonte.
-                    return ' '.join(value.split()[:25])
+                    return ' '.join(value.split()[:65])
         except Exception:pass
         return ''
     targets=[]
     for a in articles[:limit]:
         if summary_text(a):continue
         url=a.get('url','')
-        if url and url not in cache:targets.append(url)
+        if url and not cache.get(url):targets.append(url)
     targets=list(dict.fromkeys(targets))[:limit]
     if targets:
         with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
@@ -172,7 +182,12 @@ def main():
         img=f'<img class="{cls}" src="{e(image)}" loading="lazy" alt="{alt}" onerror="this.remove()">'
         tags=''.join('<span class="tag">'+e(x.title())+'</span>' for x in a['sectors'])
         summary=e(summary_text(a))
-        cards.append(f'<article class="story" data-sector="{e("|".join(a["sectors"]))}" data-day="{e(a["published"][:10])}" data-text="{e((a["title"]+" "+a["summary"]+" "+a["source"]).casefold())}">{img}<div class="story-top"><span class="story-index">{i:02d}</span><div class="tags">{tags}</div></div><h3><a href="{e(a["url"])}" target="_blank" rel="noopener noreferrer">{e(a["title"])}</a></h3>{f'<p class="abstract">{summary}</p>' if summary else ''}<div class="story-foot"><span><b>{e(a["source"])}</b> · {e(dt.datetime.fromisoformat(a['published']).astimezone(engine.TZ).strftime('%d/%m/%Y · %H:%M'))} (Brasília)</span><a href="{e(a["url"])}" target="_blank" rel="noopener noreferrer">Abrir fonte ↗</a></div></article>')
+        original_url=a['url']
+        foreign=any(k in a.get('sectors',[]) for k in ('internacional','americas','europa','asia','oriente_medio','oceania','africa','antartida'))
+        translated_url='https://translate.google.com/translate?'+urllib.parse.urlencode({'sl':'auto','tl':'pt','u':original_url}) if foreign else original_url
+        # Tradução externa é oferecida sem substituir o link original.
+        source_links=(f'<a href="{e(translated_url)}" target="_blank" rel="noopener noreferrer">Ler em português ↗</a> · ' if foreign else '')+f'<a href="{e(original_url)}" target="_blank" rel="noopener noreferrer">Abrir fonte original ↗</a>'
+        cards.append(f'<article class="story" data-sector="{e("|".join(a["sectors"]))}" data-day="{e(a["published"][:10])}" data-text="{e((a["title"]+" "+a["summary"]+" "+a["source"]).casefold())}">{img}<div class="story-top"><span class="story-index">{i:02d}</span><div class="tags">{tags}</div></div><h3><a href="{e(a["url"])}" target="_blank" rel="noopener noreferrer">{e(a["title"])}</a></h3>{f'<p class="abstract">{summary}</p>' if summary else ''}<div class="story-foot"><span><b>{e(a["source"])}</b> · {e(dt.datetime.fromisoformat(a['published']).astimezone(engine.TZ).strftime('%d/%m/%Y · %H:%M'))} (Brasília)</span>{source_links}</div></article>')
     labels={'internacional':'Internacional','americas':'Américas','europa':'Europa','asia':'Ásia','oriente_medio':'Oriente Médio','oceania':'Oceania','africa':'África','antartida':'Antártida','guerra':'Guerra e conflitos','espaco':'Espaço e exploração espacial','financas':'Finanças','ciencia':'Ciência','agronegocio':'Agronegócio','saude':'Saúde','politica':'Política','logistica':'Logística','tecnologia':'Tecnologia','esportes':'Esportes','economia':'Economia','empresas':'Empresas','sociedade':'Sociedade','energia':'Energia','clima':'Clima','cultura':'Cultura','geopolitica':'Geopolítica'}
     world_sections=['internacional','americas','europa','asia','oriente_medio','oceania','africa','antartida','guerra','espaco']
     option=lambda key:f'<option value="{e(key)}">{e(labels.get(key,key.title()))}</option>'
@@ -212,7 +227,7 @@ def main():
 .world-controls{display:flex;gap:7px}.world-controls button{border:1px solid #c9a66a;background:#0d2135;color:#d8b36d;font:12px Arial,sans-serif;padding:7px 10px;cursor:pointer}.world-controls button:hover{background:#193b57}.world-strip{scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior-inline:contain}.world-item{flex:0 0 calc((100% - 30px)/4);box-sizing:border-box;scroll-snap-align:start;min-width:0}.story-thumb{object-fit:cover}.story-illustration{border:1px solid #d9d2c8}.world-item img{width:100%;height:78px;object-fit:cover;margin-bottom:8px}@media(max-width:750px){.world-item{flex-basis:calc((100% - 10px)/2)}.world-heading{flex-wrap:wrap}}@media(max-width:450px){.world-item{flex-basis:85%}.world-controls button{font-size:11px}}
 '''
     css+='''
-.world-strip::-webkit-scrollbar{display:none}.world-dots{display:flex;justify-content:center;align-items:center;gap:8px;margin:0 0 18px}.world-dot{width:9px;height:9px;border-radius:50%;border:0;background:#c9c9c9;cursor:pointer;padding:0}.world-dot.active{background:#c9a66a;transform:scale(1.2)}.market-change.up{color:#66d69a!important}.market-change.down{color:#ff8888!important}.market-head h2{color:#c9a66a!important}.market-value{font-family:Arial,sans-serif!important;font-variant-numeric:tabular-nums!important;letter-spacing:0!important}.market-right{min-width:110px}.world-controls button{background:#0d2135!important;color:#d8b36d!important;border-color:#c9a66a!important}.abstract{max-width:80ch;line-height:1.65!important}.story:has(.abstract){min-height:185px}'''
+.world-strip::-webkit-scrollbar{display:none}.world-dots{display:flex;justify-content:center;align-items:center;gap:8px;margin:0 0 18px}.world-dot{width:9px;height:9px;border-radius:50%;border:0;background:#c9c9c9;cursor:pointer;padding:0}.world-dot.active{background:#c9a66a;transform:scale(1.2)}.market-change.up{color:#66d69a!important}.market-change.down{color:#ff8888!important}.market-head h2{color:#c9a66a!important}.market-value{font-family:Arial,sans-serif!important;font-variant-numeric:tabular-nums!important;letter-spacing:0!important}.market-right{min-width:110px}.world-controls button{background:#0d2135!important;color:#d8b36d!important;border-color:#c9a66a!important}.abstract{max-width:80ch;line-height:1.65!important}.story-foot a{white-space:nowrap;margin-left:8px}.story:has(.abstract){min-height:185px}'''
     css+"""
 @media(max-width:980px){
  .workspace{display:flex!important;flex-direction:column!important;gap:22px!important}
