@@ -158,15 +158,19 @@ def translate_titles(articles):
     return output
 
 def reading_link(article):
-    """Link de leitura em português para fontes internacionais; mantém original separado."""
+    """Não envia links intermediários do Google News ao tradutor de páginas."""
     url=article.get('url','')
     host=(urllib.parse.urlsplit(url).hostname or '').lower()
-    sectors=set(article.get('sectors') or [])
-    foreign_section=bool(sectors.intersection({'internacional','americas','europa','asia','oriente_medio','oceania','africa','antartida','guerra'}))
-    brazilian=host.endswith('.br') or host in {'g1.globo.com','oglobo.globo.com','www.uol.com.br','www.terra.com.br'}
-    if not foreign_section or brazilian or not url.startswith('https://'):
+    if not url.startswith('https://'):
         return url,False
+    # O Google News usa links RSS codificados. Traduzir o intermediário produz
+    # news-google-com.translate.goog em branco, como no erro reportado.
+    if host in ('news.google.com','www.news.google.com'):
+        return url,False
+    brazilian=host.endswith('.br') or host in {'g1.globo.com','oglobo.globo.com','www.uol.com.br','www.terra.com.br'}
+    if brazilian:return url,False
     return 'https://translate.google.com/translate?'+urllib.parse.urlencode({'sl':'auto','tl':'pt','u':url}),True
+
 
 def main():
     create_illustrations()
@@ -174,7 +178,7 @@ def main():
     css=src.split('<style>',1)[1].split('</style>',1)[0].replace('{{','{').replace('}}','}')
     # Keep only original source typography and layout; no backend actions exposed.
     css+='''\n.story{min-height:145px}.story-thumb{display:block}.filters{grid-template-columns:1.4fr 1fr 1fr}.filters button{display:none}.live-note{font-size:11px;color:#65758a;margin-top:9px}.story[hidden]{display:none!important}.pagination button{background:#eef3f8;color:#214767;margin:0 3px}.pagination button:disabled{opacity:.35}.story-foot{clear:none}.story-top{margin-bottom:3px}.abstract{line-height:1.5}.story{padding-top:19px!important;padding-bottom:16px!important}.hero{padding-top:9px!important;padding-bottom:14px!important}.topline{padding-bottom:9px!important}.live-note{display:none}@media(max-width:560px){.filters{grid-template-columns:1fr}.story-thumb{float:none;width:100%;height:175px;margin:0 0 12px}}'''
-    css+='\n.translate-action{color:#a8742b!important;font-weight:700;text-decoration:underline;text-underline-offset:3px}.story-foot a{display:inline-block;margin:3px 0}.story h3 a:hover{text-decoration:underline}'
+    css+='\n.translate-action{color:#a8742b!important;font-weight:700;text-decoration:underline;text-underline-offset:3px}.story-foot a{display:inline-block;margin:3px 0}.story h3 a:hover{text-decoration:underline}.translate-action{background:#f5efe3;padding:5px 8px;border-radius:3px;white-space:nowrap}'
     thumbs=BASE/'thumbnails'; count=0
     cards=[]
     for i,a in enumerate(arts,1):
@@ -196,7 +200,7 @@ def main():
         summary=e(summary_text(a))
         original_url=a['url']
         translated_url,foreign=reading_link(a)
-        source_links=(f'<a class="translate-action" href="{e(translated_url)}" target="_blank" rel="noopener noreferrer">Ler matéria em português ↗</a> · ' if foreign else '')+f'<a href="{e(original_url)}" target="_blank" rel="noopener noreferrer">Fonte original ↗</a>'
+        source_links=(f'<a class="translate-action" href="{e(translated_url)}" target="_blank" rel="noopener noreferrer">🇧🇷 Ler matéria em português ↗</a> · ' if foreign else '')+f'<a href="{e(original_url)}" target="_blank" rel="noopener noreferrer">Fonte original ↗</a>'
         cards.append(f'<article class="story" data-sector="{e("|".join(a["sectors"]))}" data-day="{e(a["published"][:10])}" data-text="{e((a["title"]+" "+a["summary"]+" "+a["source"]).casefold())}">{img}<div class="story-top"><span class="story-index">{i:02d}</span><div class="tags">{tags}</div></div><h3><a href="{e(translated_url)}" target="_blank" rel="noopener noreferrer">{e(a["title"])}</a></h3>{f'<p class="abstract">{summary}</p>' if summary else ''}<div class="story-foot"><span><b>{e(a["source"])}</b> · {e(dt.datetime.fromisoformat(a['published']).astimezone(engine.TZ).strftime('%d/%m/%Y · %H:%M'))} (Brasília)</span>{source_links}</div></article>')
     labels={'internacional':'Internacional','americas':'Américas','europa':'Europa','asia':'Ásia','oriente_medio':'Oriente Médio','oceania':'Oceania','africa':'África','antartida':'Antártida','guerra':'Guerra e conflitos','espaco':'Espaço e exploração espacial','financas':'Finanças','ciencia':'Ciência','agronegocio':'Agronegócio','saude':'Saúde','politica':'Política','logistica':'Logística','tecnologia':'Tecnologia','esportes':'Esportes','economia':'Economia','empresas':'Empresas','sociedade':'Sociedade','energia':'Energia','clima':'Clima','cultura':'Cultura','geopolitica':'Geopolítica'}
     world_sections=['internacional','americas','europa','asia','oriente_medio','oceania','africa','antartida','guerra','espaco']
