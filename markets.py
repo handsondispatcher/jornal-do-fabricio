@@ -28,7 +28,7 @@ def main():
     except Exception as exc:
         print('Câmbio indisponível:',type(exc).__name__)
     # Fechamentos históricos de índices dos EUA, quando disponíveis via Stooq.
-    for symbol, ticker in [('S&P 500','^spx'),('NASDAQ','^ndq')]:
+    for symbol, ticker in [('S&P 500','^spx'),('NASDAQ','^ndq'),('BRENT','brn.f')]:
         try:
             url='https://stooq.com/q/d/l/?s='+ticker+'&i=d&d1='+(dt.datetime.now(dt.timezone.utc)-dt.timedelta(days=12)).strftime('%Y%m%d')+'&d2='+dt.datetime.now(dt.timezone.utc).strftime('%Y%m%d')
             req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
@@ -54,7 +54,7 @@ def main():
         if symbol not in symbols:
             out['items'].append(dict(item,status='último valor disponível',stale=True))
     # Índices sem fonte confirmada não são preenchidos artificialmente.
-    for symbol,label in [('IBOV','Ibovespa · B3'),('IFIX','Fundos imobiliários'),('S&P 500','S&P 500'),('NASDAQ','Nasdaq'),('BTC/USD','Bitcoin')]:
+    for symbol,label in [('IBOV','Ibovespa · B3'),('BRENT','Petróleo Brent'),('S&P 500','S&P 500'),('NASDAQ','Nasdaq'),('BTC/USD','Bitcoin')]:
         if any(x['symbol']==symbol for x in out['items']):continue
         out['items'].append({'symbol':symbol,'label':label,'value':None,'change':None,'source':None,'asof':None,'status':'aguardando fonte de mercado'})
     path.write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding='utf-8')
