@@ -157,9 +157,53 @@ def translate_titles(articles):
         output.append(a)
     return output
 
+def resolve_publisher_links(articles, limit=110):
+    """Best-effort publisher URL extraction; never sends Google News intermediary to translation."""
+    from html.parser import HTMLParser
+    import ipaddress, socket
+    cache_path=BASE/'links_fontes.json'
+    try: cache=json.loads(cache_path.read_text(encoding='utf-8'))
+    except (OSError, ValueError): cache={}
+    class Links(HTMLParser):
+        def __init__(self): super().__init__();self.urls=[]
+        def handle_starttag(self,tag,attrs):
+            d=dict(attrs)
+            if tag=='link' and 'canonical' in d.get('rel','').lower():self.urls.append(d.get('href',''))
+            if tag=='meta' and d.get('property','').lower()=='og:url':self.urls.append(d.get('content',''))
+    def safe(url):
+        u=urllib.parse.urlsplit(url)
+        if u.scheme!='https' or not u.hostname or u.username or u.password:return False
+        if u.hostname in ('news.google.com','www.news.google.com','localhost') or u.hostname.endswith(('.local','.internal','.google.com','.googleusercontent.com')):return False
+        try:
+            return all(ipaddress.ip_address(i[4][0]).is_global for i in socket.getaddrinfo(u.hostname,443,type=socket.SOCK_STREAM))
+        except (OSError,ValueError):return False
+    def get(url):
+        try:
+            req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0','Accept':'text/html'})
+            with urllib.request.urlopen(req,timeout=4) as r:
+                target=r.geturl()
+                if safe(target):return target
+                raw=r.read(90000).decode('utf-8','replace')
+            parser=Links();parser.feed(raw)
+            return next((u for u in parser.urls if safe(u)), '')
+        except Exception:return ''
+    pending=[]
+    for a in articles[:limit]:
+        url=a.get('url','');host=(urllib.parse.urlsplit(url).hostname or '').lower()
+        if host in ('news.google.com','www.news.google.com') and url not in cache:pending.append(url)
+    pending=list(dict.fromkeys(pending))[:limit]
+    if pending:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=14) as pool:
+            for url,found in zip(pending,pool.map(get,pending)):cache[url]=found
+        cache_path.write_text(json.dumps(cache,ensure_ascii=False),encoding='utf-8')
+    for a in articles:
+        direct=cache.get(a.get('url',''))
+        if direct and safe(direct):a['publisher_url']=direct
+    return articles
+
 def reading_link(article):
     """Não envia links intermediários do Google News ao tradutor de páginas."""
-    url=article.get('url','')
+    url=article.get('publisher_url') or article.get('url','')
     host=(urllib.parse.urlsplit(url).hostname or '').lower()
     if not url.startswith('https://'):
         return url,False
@@ -169,12 +213,12 @@ def reading_link(article):
         return url,False
     brazilian=host.endswith('.br') or host in {'g1.globo.com','oglobo.globo.com','www.uol.com.br','www.terra.com.br'}
     if brazilian:return url,False
-    return 'https://translate.google.com/translate?'+urllib.parse.urlencode({'sl':'auto','tl':'pt','u':url}),True
+    return 'https://translate.google.com/translate?'+urllib.parse.urlencode({'sl':'auto','tl':'pt-BR','u':url}),True
 
 
 def main():
     create_illustrations()
-    data=engine.report(); arts=translate_titles(enrich_summaries(balanced(data['articles']))); src=(BASE/'app_original.txt').read_text(encoding='utf-8')
+    data=engine.report(); arts=translate_titles(enrich_summaries(resolve_publisher_links(balanced(data['articles'])))); src=(BASE/'app_original.txt').read_text(encoding='utf-8')
     css=src.split('<style>',1)[1].split('</style>',1)[0].replace('{{','{').replace('}}','}')
     # Keep only original source typography and layout; no backend actions exposed.
     css+='''\n.story{min-height:145px}.story-thumb{display:block}.filters{grid-template-columns:1.4fr 1fr 1fr}.filters button{display:none}.live-note{font-size:11px;color:#65758a;margin-top:9px}.story[hidden]{display:none!important}.pagination button{background:#eef3f8;color:#214767;margin:0 3px}.pagination button:disabled{opacity:.35}.story-foot{clear:none}.story-top{margin-bottom:3px}.abstract{line-height:1.5}.story{padding-top:19px!important;padding-bottom:16px!important}.hero{padding-top:9px!important;padding-bottom:14px!important}.topline{padding-bottom:9px!important}.live-note{display:none}@media(max-width:560px){.filters{grid-template-columns:1fr}.story-thumb{float:none;width:100%;height:175px;margin:0 0 12px}}'''
@@ -198,9 +242,9 @@ def main():
         img=f'<img class="{cls}" src="{e(image)}" loading="lazy" alt="{alt}" onerror="this.remove()">'
         tags=''.join('<span class="tag">'+e(x.title())+'</span>' for x in a['sectors'])
         summary=e(summary_text(a))
-        original_url=a['url']
+        original_url=a.get('publisher_url') or a['url']
         translated_url,foreign=reading_link(a)
-        source_links=(f'<a class="translate-action" href="{e(translated_url)}" target="_blank" rel="noopener noreferrer">🇧🇷 Ler matéria em português ↗</a> · ' if foreign else '')+f'<a href="{e(original_url)}" target="_blank" rel="noopener noreferrer">Fonte original ↗</a>'
+        source_links=(f'<a class="translate-action" href="{e(translated_url)}" target="_blank" rel="noopener noreferrer"><span class="br-flag" aria-hidden="true"></span> Ler matéria em português ↗</a> · ' if foreign else '')+f'<a href="{e(original_url)}" target="_blank" rel="noopener noreferrer">Fonte original ↗</a>'
         cards.append(f'<article class="story" data-sector="{e("|".join(a["sectors"]))}" data-day="{e(a["published"][:10])}" data-text="{e((a["title"]+" "+a["summary"]+" "+a["source"]).casefold())}">{img}<div class="story-top"><span class="story-index">{i:02d}</span><div class="tags">{tags}</div></div><h3><a href="{e(translated_url)}" target="_blank" rel="noopener noreferrer">{e(a["title"])}</a></h3>{f'<p class="abstract">{summary}</p>' if summary else ''}<div class="story-foot"><span><b>{e(a["source"])}</b> · {e(dt.datetime.fromisoformat(a['published']).astimezone(engine.TZ).strftime('%d/%m/%Y · %H:%M'))} (Brasília)</span>{source_links}</div></article>')
     labels={'internacional':'Internacional','americas':'Américas','europa':'Europa','asia':'Ásia','oriente_medio':'Oriente Médio','oceania':'Oceania','africa':'África','antartida':'Antártida','guerra':'Guerra e conflitos','espaco':'Espaço e exploração espacial','financas':'Finanças','ciencia':'Ciência','agronegocio':'Agronegócio','saude':'Saúde','politica':'Política','logistica':'Logística','tecnologia':'Tecnologia','esportes':'Esportes','economia':'Economia','empresas':'Empresas','sociedade':'Sociedade','energia':'Energia','clima':'Clima','cultura':'Cultura','geopolitica':'Geopolítica'}
     world_sections=['internacional','americas','europa','asia','oriente_medio','oceania','africa','antartida','guerra','espaco']
@@ -280,7 +324,14 @@ def main():
 .pagination #counter{display:block!important;width:100%!important;text-align:center!important;font-family:Arial,Helvetica,sans-serif!important;font-size:12px!important;color:#64748b!important}
 @media(max-width:560px){.pagination{gap:12px!important}.pagination>div{gap:8px!important}.pagination button,.pagination button#prev,.pagination button#next{min-width:125px!important;padding:12px 14px!important}}
 '''
-    page=f'''<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Jornal do Fabricio — cobertura global e brasileira"><title>Jornal do Fabricio | Edição Exclusiva</title><style>{css}</style></head><body><header class="top"><div class="topline"><div class="brand">JORNAL DO FABRICIO</div><div class="micro">Edição Exclusiva · {dt.date.fromisoformat(today):%d/%m/%Y}</div></div><div class="hero"><div class="gold"></div></div></header><main class="shell"><div class="workspace"><div class="feed-column"><section class="panel"><div class="filters"><input id="search" placeholder="Pesquisar manchetes ou fontes" aria-label="Pesquisar"><select id="sector" aria-label="Editoria"><option value="">Todas as editorias</option>{sectors}</select><select id="day" aria-label="Período"><option value="">Hoje e ontem</option><option value="{today}">Hoje</option><option value="{yesterday}">Ontem</option></select></div></section>{world_strip}<div class="world-heading news-heading">NOTÍCIAS</div><div id="stories">{''.join(cards) or '<div class="empty">Nenhuma notícia coletada ainda. Aguarde a primeira atualização automática.</div>'}</div><div class="pagination"><span id="counter"></span><div><button id="prev" type="button">← Anterior</button><button id="next" type="button">Próxima →</button></div></div></div><aside class="market-panel" aria-label="Painel de mercados"><div class="market-head"><h2>MERCADOS EM FOCO</h2></div><div class="market-grid">{market_rows}</div><p class="market-disclaimer" id="market-status">Carregando cotações disponíveis…</p><p class="market-disclaimer">Dados indicativos, sujeitos a atraso. Índices sem fonte validada ficam indisponíveis; nenhuma cotação é simulada.</p></aside></div><footer class="technical-footer"><div class="footer-inner"><div class="footer-brand"><span>JORNAL DO FABRICIO</span><small>EDIÇÃO EXCLUSIVA · {dt.date.fromisoformat(today):%d/%m/%Y}</small></div><div class="footer-links"><details><summary>Exportação e impressão</summary><p><a class="footer-tool" href="noticias.csv">Exportar CSV ↗</a> &nbsp; <button class="footer-print" onclick="window.print()">Imprimir / Salvar PDF</button></p></details><details><summary>Estado da atualização e avisos técnicos</summary><p>{e(status)} · Rascunho automatizado não certificado</p><p>Última geração: {e(dt.datetime.now(dt.timezone.utc).isoformat(timespec='minutes'))} UTC</p></details><details><summary>Critérios e limitações</summary><p>Atualização conforme a agenda configurada no GitHub Actions; o navegador consulta novas versões a cada minuto. Feeds RSS e agregadores; títulos e datas dependem das fontes. Seleção exploratória, sem certificação editorial. Fotografias apenas quando fornecidas ou acessíveis legitimamente nas fontes; nenhuma imagem é inventada. A execução agendada pode atrasar ou falhar. Links levam à publicação original.</p></details></div><div class="footer-bottom">© Jornal do Fabricio · Publicação pública · Informações sujeitas à verificação nas fontes originais.</div></div></footer></main><script>
+    css += """
+.br-flag{display:inline-block;width:22px;height:15px;vertical-align:-3px;margin-right:5px;background:#009739;position:relative;border-radius:1px;overflow:hidden}
+.br-flag:before{content:'';position:absolute;left:4px;top:2px;width:14px;height:11px;background:#ffdf00;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+.br-flag:after{content:'';position:absolute;left:9px;top:5px;width:5px;height:5px;background:#002776;border-radius:50%}
+.translate-action{display:inline-flex!important;align-items:center;gap:3px;background:#f5efe3!important;color:#916321!important;font:700 13px Arial,sans-serif!important;padding:7px 10px!important}
+.pagination button:disabled{opacity:1!important;color:#d7aa60!important;filter:brightness(.8);cursor:not-allowed!important}
+"""
+    page=f'''<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Jornal do Fabricio — cobertura global e brasileira"><title>Jornal do Fabricio | Edição Exclusiva</title><style>{css}</style></head><body><header class="top"><div class="topline"><div class="brand">JORNAL DO FABRICIO</div><div class="micro">Edição Exclusiva · {dt.date.fromisoformat(today):%d/%m/%Y}</div></div><div class="hero"><div class="gold"></div></div></header><main class="shell"><div class="workspace"><div class="feed-column"><section class="panel"><div class="filters"><input id="search" placeholder="Pesquisar manchetes ou fontes" aria-label="Pesquisar"><select id="sector" aria-label="Editoria"><option value="">Todas as editorias</option>{sectors}</select><select id="day" aria-label="Período"><option value="">Hoje e ontem</option><option value="{today}">Hoje</option><option value="{yesterday}">Ontem</option></select></div></section>{world_strip}<div class="world-heading news-heading">NOTÍCIAS</div><div id="stories">{''.join(cards) or '<div class="empty">Nenhuma notícia coletada ainda. Aguarde a primeira atualização automática.</div>'}</div><div class="pagination" style="display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;margin:30px auto;gap:14px"><span id="counter" style="text-align:center;width:100%"></span><div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;width:100%"><button id="prev" type="button" style="background:#0b2032!important;color:#d7aa60!important;border:1px solid #b98a42!important;font:700 15px Arial,sans-serif!important;padding:13px 24px!important;min-width:145px!important;opacity:1!important">← Anterior</button><button id="next" type="button" style="background:#0b2032!important;color:#d7aa60!important;border:1px solid #b98a42!important;font:700 15px Arial,sans-serif!important;padding:13px 24px!important;min-width:145px!important;opacity:1!important">Próxima →</button></div></div></div><aside class="market-panel" aria-label="Painel de mercados"><div class="market-head"><h2>MERCADOS EM FOCO</h2></div><div class="market-grid">{market_rows}</div><p class="market-disclaimer" id="market-status">Carregando cotações disponíveis…</p><p class="market-disclaimer">Dados indicativos, sujeitos a atraso. Índices sem fonte validada ficam indisponíveis; nenhuma cotação é simulada.</p></aside></div><footer class="technical-footer"><div class="footer-inner"><div class="footer-brand"><span>JORNAL DO FABRICIO</span><small>EDIÇÃO EXCLUSIVA · {dt.date.fromisoformat(today):%d/%m/%Y}</small></div><div class="footer-links"><details><summary>Exportação e impressão</summary><p><a class="footer-tool" href="noticias.csv">Exportar CSV ↗</a> &nbsp; <button class="footer-print" onclick="window.print()">Imprimir / Salvar PDF</button></p></details><details><summary>Estado da atualização e avisos técnicos</summary><p>{e(status)} · Rascunho automatizado não certificado</p><p>Última geração: {e(dt.datetime.now(dt.timezone.utc).isoformat(timespec='minutes'))} UTC</p></details><details><summary>Critérios e limitações</summary><p>Atualização conforme a agenda configurada no GitHub Actions; o navegador consulta novas versões a cada minuto. Feeds RSS e agregadores; títulos e datas dependem das fontes. Seleção exploratória, sem certificação editorial. Fotografias apenas quando fornecidas ou acessíveis legitimamente nas fontes; nenhuma imagem é inventada. A execução agendada pode atrasar ou falhar. Links levam à publicação original.</p></details></div><div class="footer-bottom">© Jornal do Fabricio · Publicação pública · Informações sujeitas à verificação nas fontes originais.</div></div></footer></main><script>
 const strip=document.querySelector('#world-strip');if(strip){{const jump=()=>Math.max(210,(strip.querySelector('.world-item')?.getBoundingClientRect().width||210)+10);document.querySelector('#world-prev').onclick=()=>strip.scrollBy({{left:-jump(),behavior:'smooth'}});document.querySelector('#world-next').onclick=()=>strip.scrollBy({{left:jump(),behavior:'smooth'}});let sx=0,sl=0;strip.addEventListener('pointerdown',ev=>{{if(ev.pointerType==='mouse'){{sx=ev.clientX;sl=strip.scrollLeft;}}}});strip.addEventListener('pointerup',ev=>{{if(ev.pointerType==='mouse'&&Math.abs(ev.clientX-sx)>35){{strip.scrollLeft=sl+sx-ev.clientX;}}}});}}
 const dots=document.querySelector('#world-dots');if(strip&&dots){{const items=[...strip.querySelectorAll('.world-item')];const visible=()=>window.matchMedia('(max-width:600px)').matches?1:window.matchMedia('(max-width:750px)').matches?2:4;const updateDots=()=>{{const n=Math.ceil(items.length/visible());dots.innerHTML='';for(let i=0;i<n;i++){{let b=document.createElement('button');b.type='button';b.className='world-dot'+(i===Math.min(n-1,Math.round(strip.scrollLeft/Math.max(1,strip.clientWidth)))?' active':'');b.setAttribute('aria-label','Ir ao grupo '+(i+1));b.onclick=()=>items[i*visible()]?.scrollIntoView({{behavior:'smooth',block:'nearest',inline:'start'}});dots.appendChild(b);}}}};strip.addEventListener('scroll',()=>requestAnimationFrame(updateDots));window.addEventListener('resize',updateDots);updateDots();}}
 const cards=[...document.querySelectorAll('.story')],search=document.querySelector('#search'),sector=document.querySelector('#sector'),day=document.querySelector('#day');let page=0,matching=[];
