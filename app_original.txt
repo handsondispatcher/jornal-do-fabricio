@@ -1,0 +1,133 @@
+import csv,datetime as dt,html,io,json,threading,webbrowser,mimetypes,re
+from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
+from urllib.parse import parse_qs,urlparse,urlencode
+from engine import collect,report,sources,SECTORS,OUTLETS,BASE
+
+HOST='127.0.0.1';PORT=8772
+state={'running':False,'message':'Pronto para atualizar.','last_error':None}
+lock=threading.Lock()
+def esc(s):return html.escape(str(s if s is not None else ''),quote=True)
+def selected(q,key,default=''):return q.get(key,[default])[0]
+def filtered(data,q):
+    sector=selected(q,'setor','todos'); term=selected(q,'q').casefold().strip(); origin=selected(q,'origem','todos'); day=selected(q,'dia','todos')
+    items=[]
+    for a in data['articles']:
+        if sector!='todos' and sector not in a['sectors']:continue
+        if origin=='direto' and a['kind']!='direto':continue
+        if origin=='agregador' and a['kind']!='agregador':continue
+        if day!='todos' and a['published'][:10]!=day:continue
+        if term and term not in (' '.join([a['title'],a['summary'],a['source']])).casefold():continue
+        items.append(a)
+    return items
+
+def opt(value,label,current):return f'<option value="{esc(value)}" {"selected" if value==current else ""}>{esc(label)}</option>'
+def page(path):
+    q=parse_qs(urlparse(path).query);data=report();items=filtered(data,q)
+    page_n=max(1,min(10000,int(selected(q,'pagina','1')) if selected(q,'pagina','1').isdigit() else 1));per_page=30
+    page_count=max(1,(len(items)+per_page-1)//per_page);page_n=min(page_n,page_count)
+    visible=items[(page_n-1)*per_page:page_n*per_page]
+    all_sources=sources();last=data['last_run'];days=[data['date'],(dt.date.fromisoformat(data['date'])-dt.timedelta(days=1)).isoformat()]
+    sector_opts=opt('todos','Todas as editorias',selected(q,'setor','todos'))+''.join(opt(s,s.title(),selected(q,'setor','todos')) for s in sorted(SECTORS))
+    origin_opts=''.join(opt(k,v,selected(q,'origem','todos')) for k,v in [('todos','Todas as origens'),('direto','Feed direto'),('agregador','Via agregador')])
+    day_opts=''.join(opt(k,v,selected(q,'dia','todos')) for k,v in [('todos','Hoje e ontem'),(days[0],'Hoje'),(days[1],'Ontem')])
+    cards=[]
+    for i,a in enumerate(visible,(page_n-1)*per_page+1):
+        sector_tags=''.join(f'<span class="tag">{esc(s.title())}</span>' for s in a['sectors'] if s!='geral') or '<span class="tag">Geral</span>'
+        summary=esc(a['summary'][:330])+('…' if len(a['summary'])>330 else '')
+        thumb=a.get('image_url','')
+        thumb_html=(f'<img class="story-thumb" src="{esc(thumb)}" alt="Imagem da fonte da notícia" loading="lazy" referrerpolicy="no-referrer">' if isinstance(thumb,str) and (thumb.startswith('https://') or thumb.startswith('/thumb/')) else '')
+        cards.append(f'''<article class="story">{thumb_html}<div class="story-top"><span class="story-index">{i:02d}</span><div class="tags">{sector_tags}</div></div><h3><a href="{esc(a['url'])}" target="_blank" rel="noopener noreferrer">{esc(a['title'])}</a></h3><p class="abstract">{summary or 'Resumo indisponível no feed. Consulte a fonte original.'}</p><div class="story-foot"><span><b>{esc(a['source'])}</b> · {esc(a['published'][:16].replace('T',' '))} UTC</span><a href="{esc(a['url'])}" target="_blank" rel="noopener noreferrer">Abrir fonte ↗</a></div></article>''')
+    if not cards:cards=['<div class="empty">Nenhuma notícia corresponde aos filtros atuais. Experimente outra editoria ou atualize a coleta.</div>']
+    errors=last['errors'] if last else []
+    error_html=''.join(f'<tr><td>{esc(e["source"])}</td><td>{esc(e["error"])}</td></tr>' for e in errors)
+    source_status=f'{last["success"]} canais responderam · {last["fail"]} falharam · {last["received"]} itens recebidos · {last["inserted"]} novos registros' if last else 'Ainda não houve coleta nesta instalação.'
+    running=state['running'];status='COLETA EM ANDAMENTO' if running else ('COLETA CONCLUÍDA' if last else 'AGUARDANDO COLETA')
+    querybase={k:v[0] for k,v in q.items() if k!='pagina'}
+    def nav(n):return '/?'+urlencode({**querybase,'pagina':n})
+    nav_html=f'<div class="pagination"><span>Página {page_n} de {page_count} · {len(items)} resultados</span><div><a class="nav {"off" if page_n==1 else ""}" href="{nav(max(1,page_n-1))}">← Anterior</a><a class="nav {"off" if page_n==page_count else ""}" href="{nav(min(page_count,page_n+1))}">Próxima →</a></div></div>'
+    return f'''<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-store"><title>Jornal do Fabricio | Informações do Brasil</title><style>
+    :root{{--navy:#0c2138;--ink:#152a40;--muted:#65758a;--line:#e3e8ee;--blue:#1766a3;--paper:#f4f6f8;--white:#fff;--gold:#d5ac65}}*{{box-sizing:border-box}}body{{margin:0;font:15px/1.6 'Segoe UI',Arial,sans-serif;background:var(--paper);color:var(--ink)}}a{{color:inherit;text-decoration:none}}a:hover{{color:var(--blue)}}.top{{background:var(--navy);color:#fff;padding:0 max(24px,calc((100vw - 1260px)/2))}}.topline{{display:flex;justify-content:space-between;align-items:center;padding:17px 0;border-bottom:1px solid #ffffff28;gap:20px}}.brand{{font:700 20px Georgia,serif;letter-spacing:.13em}}.micro{{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#a9bdcf}}.hero{{padding:38px 0 45px}}.hero h1{{font:normal 48px/1.08 Georgia,serif;letter-spacing:-.03em;margin:12px 0}}.hero p{{max-width:680px;color:#c6d4e1;margin:0}}.gold{{height:3px;width:55px;background:var(--gold)}}.shell{{max-width:1260px;margin:0 auto;padding:28px 24px 80px}}.kpis{{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}}.kpi{{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px 22px}}.kpi .value{{font-size:31px;font-weight:650;letter-spacing:-.05em;line-height:1.2}}.kpi .label{{color:var(--muted);font-size:12px;margin-top:6px}}.workspace{{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:20px}}.panel{{background:#fff;border:1px solid var(--line);border-radius:11px;padding:21px;margin-bottom:16px}}.panel h2{{font:normal 23px Georgia,serif;margin:0 0 12px}}.actions{{display:flex;flex-wrap:wrap;align-items:center;gap:10px}}button,.btn{{border:0;border-radius:6px;background:var(--blue);color:white;font-weight:600;padding:11px 15px;cursor:pointer;font-size:13px}}button:disabled{{opacity:.5;cursor:wait}}.ghost{{background:#eef3f8;color:#214767}}.filters{{display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr auto;gap:9px;margin-top:15px}}input,select{{min-width:0;width:100%;border:1px solid #cfd9e4;border-radius:6px;padding:11px;background:#fff;color:var(--ink);font:inherit;font-size:13px}}.filters button{{padding:10px 14px}}.note{{font-size:12px;color:var(--muted)}}.status{{font-size:12px;letter-spacing:.06em;color:#a36a1c;font-weight:700}}.section-heading{{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:28px 0 13px}}.section-heading h2{{font:normal 29px Georgia,serif;margin:0}}.section-heading small{{color:var(--muted)}}.story{{padding:23px 25px;background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:11px;break-inside:avoid}}.story-top{{display:flex;align-items:center;gap:12px}}.story-index{{font:20px Georgia,serif;color:#a0adba}}.tags{{display:flex;gap:6px;flex-wrap:wrap}}.tag{{font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:#47637d;background:#eef3f8;border-radius:4px;padding:3px 8px}}.story h3{{font:normal 24px/1.28 Georgia,serif;margin:11px 0}}.abstract{{color:#46586b;margin:0 0 16px}}.story-foot{{display:flex;flex-wrap:wrap;gap:9px 17px;align-items:center;border-top:1px solid var(--line);padding-top:13px;font-size:11px;color:var(--muted)}}.story-foot a{{color:var(--blue);font-weight:700;margin-left:auto}}.side h3{{font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}}.side p,.side li{{font-size:13px;color:#516579}}.side ul{{padding-left:18px}}.side .line{{padding:9px 0;border-bottom:1px solid var(--line);font-size:13px}}.side .line:last-child{{border:0}}.pagination{{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:15px 0;color:var(--muted);font-size:12px}}.nav{{display:inline-block;padding:8px 11px;border:1px solid #cad7e2;border-radius:5px;margin-left:6px}}.off{{opacity:.3;pointer-events:none}}.empty{{padding:35px;background:white;border:1px solid var(--line);border-radius:10px}}details summary{{cursor:pointer;font-weight:600}}table{{width:100%;border-collapse:collapse;font-size:12px}}td{{border-bottom:1px solid var(--line);padding:9px 4px;word-break:break-word}}.footer{{font-size:12px;color:#687b8d;padding-top:20px}}@media(max-width:980px){{.workspace{{grid-template-columns:1fr}}.filters{{grid-template-columns:repeat(2,1fr)}}.kpis{{grid-template-columns:repeat(2,1fr)}}}}@media(max-width:560px){{.hero h1{{font-size:35px}}.filters{{grid-template-columns:1fr}}.kpis{{grid-template-columns:1fr 1fr}}.topline{{flex-direction:column;align-items:flex-start}}}}@media print{{body{{background:white}}.top{{color:black;background:white}}.topline{{border-bottom:1px solid #ddd}}.hero{{padding:12px 0}}.hero p{{color:#333}}.actions,.filters,.pagination,.side,.footer{{display:none!important}}.workspace{{display:block}}.story{{border-radius:0}}.shell{{padding:5px}}}}
+    
+/* Edição Exclusiva v5 — identidade editorial */
+:root{{--navy:#0b1c2d;--ink:#182535;--muted:#66717e;--line:#e6e3df;--blue:#254d70;--paper:#f8f7f4;--gold:#c5a26a}}
+body{{background:var(--paper);font-family:'Segoe UI',Arial,sans-serif}}
+.top{{background:#0b1c2d;padding:0 max(26px,calc((100vw - 1180px)/2))}}
+.topline{{padding:18px 0 14px;border-color:#ffffff25}}
+.brand{{font:700 23px Georgia,serif;letter-spacing:.11em}}
+.brand-sub{{font:10px 'Segoe UI',Arial,sans-serif;letter-spacing:.15em;color:#cdbb9e;font-weight:500;margin-left:8px}}
+.micro{{color:#e0cfb3;font-size:11px;letter-spacing:.12em}}
+.hero{{padding:5px 0 14px}}
+.hero h1{{font-size:46px;letter-spacing:-.025em;margin:4px 0 0}}
+.hero p{{font-size:15px;max-width:620px;color:#cbd2d8}}
+.gold{{width:70px;height:2px}}
+.shell{{max-width:1180px;padding:40px 24px 45px}}
+.workspace{{display:block;max-width:1050px;margin:auto}}
+.panel{{background:#fff;border:1px solid #e9e6e0;border-radius:3px;padding:25px 28px;box-shadow:0 3px 18px #15253808}}
+.actions button,.actions .btn,.filters button{{border-radius:3px}}
+.filters input,.filters select{{border-radius:3px}}
+.status{{color:#9a7743;font-size:10px;letter-spacing:.12em}}
+.section-heading{{margin:48px 0 22px;border-bottom:1px solid #d9d4cc;padding-bottom:16px}}
+.section-heading h2{{font-size:35px;letter-spacing:-.015em}}
+.story{{border-radius:2px;border-color:#e8e5df;padding:16px 24px;margin-bottom:10px;box-shadow:0 3px 20px #172c3a06;display:flow-root}}
+.story h3{{font-size:27px;line-height:1.25;margin:6px 0 8px}}
+.story-index{{color:#ae8b54}}
+.abstract{{font-size:14px;line-height:1.55;margin-bottom:9px}}
+.tag{{background:#f4f0e9;color:#84683d}}
+.technical-footer{{background:#0b1c2d;color:#e4e9ee;margin-top:50px;padding:45px 24px 25px}}
+.footer-inner{{max-width:1132px;margin:auto}}
+.footer-brand{{display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:1px solid #ffffff2b;padding-bottom:23px;margin-bottom:15px}}
+.story-thumb{{width:215px;height:140px;object-fit:cover;float:right;margin:0 0 8px 20px;border-radius:3px}}@media(max-width:560px){{.story-thumb{{float:none;width:100%;height:180px;margin:0 0 15px}}}}.story-foot{{padding-top:8px;gap:8px}}.refresh-hint{{display:inline-block;font-size:11px;color:#687b8d;letter-spacing:.04em;margin:10px 0 0}}.footer-brand span{{font:700 21px Georgia,serif;letter-spacing:.12em}}
+.footer-brand small{{font-size:10px;letter-spacing:.12em;color:#c7b18c}}
+.footer-tool{{color:#e6d2ab;text-decoration:underline}}.footer-print{{background:transparent;border:1px solid #7f91a2;padding:7px 12px}}.footer-links details{{border-bottom:1px solid #ffffff21;padding:13px 0}}
+.footer-links summary{{color:#d9e1e7;font-size:13px;letter-spacing:.025em;list-style-position:inside}}
+.footer-links p,.footer-links li,.footer-links td{{color:#bfcbd5;font-size:12px}}
+.footer-links ul{{padding-left:26px}}
+.footer-grid{{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}}
+.footer-grid>div{{padding:12px;border:1px solid #ffffff22}}
+.footer-grid strong{{display:block;font-size:24px;color:#f1e5cf}}
+.footer-grid small{{font-size:11px;color:#bfcbd5}}
+.footer-bottom{{font-size:11px;color:#9eaebb;padding-top:25px}}
+@media(max-width:700px){{.brand-sub{{display:block;margin:7px 0 0}}.footer-brand{{display:block}}.footer-brand small{{display:block;margin-top:10px}}.footer-grid{{grid-template-columns:repeat(2,1fr)}}.hero h1{{font-size:38px}}.story{{padding:23px}}.story h3{{font-size:24px}}}}
+@media print{{.technical-footer{{display:none}}.top{{background:white;color:black}}.hero p{{color:#333}}.panel .actions,.filters{{display:none}}}}
+</style>{'<meta http-equiv="refresh" content="6">' if running else ''}</head><body><header class="top"><div class="topline"><div class="brand">JORNAL DO FABRICIO <span class="brand-sub">/ INFORMAÇÕES DO BRASIL</span></div><div class="micro">Edição Exclusiva · Brasil · {esc(dt.date.fromisoformat(data["date"]).strftime("%d/%m/%Y"))}</div></div><div class="hero"><div class="gold"></div><h1>O essencial. Com profundidade.</h1></div></header><main class="shell"><div class="workspace"><div><section class="panel"><div class="actions"><form action="/atualizar" method="post"><button {'disabled' if running else ''}>{'Coletando…' if running else '↻ Atualizar notícias'}</button></form><a class="btn ghost" href="/">Recarregar</a></div><span class="refresh-hint">{'Atualizando notícias…' if running else 'Edição atualizada' if last else 'Pronto para atualizar'}</span><form class="filters" action="/" method="get"><input name="q" value="{esc(selected(q,'q'))}" placeholder="Pesquisar manchetes ou fontes"><select name="setor">{sector_opts}</select><select name="origem">{origin_opts}</select><select name="dia">{day_opts}</select><button>Filtrar</button></form></section>{''.join(cards)}{nav_html}</div></div><footer class="technical-footer"><div class="footer-inner"><div class="footer-brand"><span>JORNAL DO FABRICIO</span><small>INFORMAÇÕES DO BRASIL · EDIÇÃO EXCLUSIVA · {esc(dt.date.fromisoformat(data['date']).strftime('%d/%m/%Y'))}</small></div><div class="footer-links"><details><summary>Exportação e impressão</summary><p><a class="footer-tool" href="/exportar.csv">Exportar CSV ↗</a> &nbsp; <button class="footer-print" onclick="window.print()">Imprimir / Salvar PDF</button></p></details><details><summary>Estado da atualização e avisos técnicos</summary><p>{esc(status)} · Rascunho automatizado não certificado</p><p>{esc(state['message'])}</p><p>{esc(source_status)}</p></details><details><summary>Indicadores de coleta</summary><div class="footer-grid"><div><strong>{data['total']:,}</strong><small>Grupos de manchetes na janela</small></div><div><strong>{len(all_sources)}</strong><small>Canais configurados</small></div><div><strong>{last['success'] if last else '—'}</strong><small>Canais que responderam</small></div><div><strong>{last['fail'] if last else '—'}</strong><small>Falhas registradas</small></div></div></details><details><summary>Auditoria de fontes</summary><p>Última coleta: {esc(last['finished'][:19].replace('T',' '))+' UTC' if last else 'Não realizada'}</p><p>Canais diretos configurados: {sum(s['kind']=='direto' for s in all_sources)} · Consultas por agregador: {sum(s['kind']=='agregador' for s in all_sources)} · Veículos candidatos: {len(OUTLETS)}</p><p>{esc(source_status)}</p><details><summary>Falhas ({len(errors)})</summary><table>{error_html or '<tr><td>Nenhuma falha registrada na última execução.</td></tr>'}</table></details></details><details><summary>Critérios e limitações</summary><ul><li>Janela de seleção: hoje e ontem, horário de Brasília.</li><li>Fontes: feeds RSS e buscas no Google Notícias.</li><li>Deduplicação por semelhança de manchetes; não garante unicidade dos acontecimentos.</li><li>Ordenação exploratória por recência e menções, sem análise de materialidade.</li><li>Conteúdo de acesso pago: apenas metadados e trechos disponíveis legalmente.</li><li>Rascunho automatizado, sem certificação editorial ou recomendações de investimento.</li></ul></details></div><div class="footer-bottom">© Jornal do Fabricio · Publicação de uso privado · Informações sujeitas à verificação nas fontes originais.</div></div></footer></main></body></html>'''
+
+def update():
+    with lock:
+        if state['running']:return
+        state['running']=True;state['message']='Coletando canais. Aguarde; a página recarregará automaticamente.'
+    try:
+        r=collect();state['message']=f'Coleta finalizada: {len(r["sources_ok"])} canais responderam, {len(r["sources_failed"])} falharam; {r["inserted"]} novos registros.'
+    except Exception as e:state['message']='Falha na coleta: '+str(e)
+    finally:state['running']=False
+class Handler(BaseHTTPRequestHandler):
+    def send_payload(self,body,mime='text/html; charset=utf-8',filename=None):
+        self.send_response(200);self.send_header('Content-Type',mime);self.send_header('Cache-Control','no-store');self.send_header('X-Content-Type-Options','nosniff');self.send_header('Content-Security-Policy',"default-src 'none'; img-src 'self' https:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; form-action 'self'; base-uri 'none'")
+        if filename:self.send_header('Content-Disposition',f'attachment; filename="{filename}"')
+        self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body)
+    def do_GET(self):
+        path=urlparse(self.path).path
+        if path.startswith('/thumb/'):
+            name=path.split('/')[-1]
+            if not re.fullmatch(r'[0-9a-f]{64}\.(?:jpg|png|webp)',name):self.send_error(404);return
+            file=BASE/'thumbnails'/name
+            if not file.is_file():self.send_error(404);return
+            self.send_payload(file.read_bytes(),mimetypes.guess_type(name)[0] or 'application/octet-stream');return
+        if path=='/':self.send_payload(page(self.path).encode('utf-8'));return
+        if path=='/exportar.csv':
+            data=report();buf=io.StringIO();w=csv.writer(buf);w.writerow(['Título','Fonte','Publicado UTC','URL','Editorias','Tipo de descoberta','Resumo','Status'])
+            for a in data['articles']:w.writerow([a['title'],a['source'],a['published'],a['url'],', '.join(a['sectors']),a['kind'],a['summary'],'NÃO CERTIFICADO'])
+            self.send_payload(('\ufeff'+buf.getvalue()).encode('utf-8'),'text/csv; charset=utf-8','jornal_do_fabricio_export.csv');return
+        self.send_error(404)
+    def do_POST(self):
+        if urlparse(self.path).path!='/atualizar':self.send_error(404);return
+        with lock: running=state['running']
+        if not running:threading.Thread(target=update,daemon=True).start()
+        self.send_response(303);self.send_header('Location','/');self.send_header('Content-Length','0');self.end_headers()
+if __name__=='__main__':
+    server=ThreadingHTTPServer((HOST,PORT),Handler)
+    print(f'Jornal do Fabricio v8: http://{HOST}:{PORT}/',flush=True)
+    threading.Thread(target=update,daemon=True).start()
+    threading.Timer(.7,lambda:webbrowser.open(f'http://{HOST}:{PORT}/')).start()
+    try:server.serve_forever()
+    except KeyboardInterrupt:pass
+    finally:server.server_close()
