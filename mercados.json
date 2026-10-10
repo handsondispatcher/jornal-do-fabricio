@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-10T02:45:40+00:00",
+  "checked_at": "2026-10-10T03:13:37+00:00",
   "items": [
     {
       "symbol": "USD/BRL",
@@ -24,14 +24,14 @@
     {
       "symbol": "IBOV",
       "label": "Ibovespa · B3",
-      "value": "209.066,91",
-      "price": 209066.90625,
+      "value": "209.067,00",
+      "price": 209067.0,
       "currency": "",
       "change": 1.38,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-10-09T13:00:00+00:00",
-      "status": "último ponto diário (pode ser parcial)",
+      "status": "último fechamento disponível",
       "stale": false
     },
     {
@@ -76,13 +76,13 @@
     {
       "symbol": "BTC/USD",
       "label": "Bitcoin",
-      "value": "US$ 82.571,87",
-      "price": 82571.87,
+      "value": "US$ 82.523,16",
+      "price": 82523.16,
       "currency": "US$",
-      "change": 0.63,
+      "change": 0.2,
       "change_period": "24h",
       "source": "Coinbase Exchange",
-      "asof": "2026-10-10T02:45:40+00:00",
+      "asof": "2026-10-10T03:13:37+00:00",
       "status": "cotação 24h/7",
       "stale": false
     }
