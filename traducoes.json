@@ -222,10 +222,6 @@
         }
       ]
     },
-    "Breaking News, World News and Video from Al Jazeera": {
-      "checked_at": 1791613026,
-      "items": []
-    },
     "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin": {
       "checked_at": 1791645140,
       "items": [
@@ -466,19 +462,6 @@
       "checked_at": 1791618257,
       "items": []
     },
-    "Taiwan’s leader says increasing defense spending to ‘deter war’": {
-      "checked_at": 1791613026,
-      "items": [
-        {
-          "title": "Taiwan's leader says increasing defence spending to 'deter war'",
-          "url": "https://www.yahoo.com/news/world/articles/taiwans-leader-says-increasing-defence-042557219.html",
-          "source": "www.yahoo.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
     "Taiwan's Lai calls on Indo-Pacific democracies to help maintain peace in National Day speech": {
       "checked_at": 1791630717,
       "items": [
@@ -577,7 +560,7 @@
       "items": []
     },
     "Morning recap": {
-      "checked_at": 1791656062,
+      "checked_at": 1791658072,
       "items": []
     },
     "Brasil x Argentina: onde assistir, horário e escalações do amistoso da Seleção Feminina": {
@@ -2129,7 +2112,7 @@
       "items": []
     },
     "Ex-lutador do UFC é atingido por tiros em emboscada na África e tragédia vem à tona": {
-      "checked_at": 1791656062,
+      "checked_at": 1791658072,
       "items": [
         {
           "title": "Ex-lutador do UFC é atingido por tiros em emboscada na África e tragédia vem à tona",
@@ -2296,7 +2279,7 @@
       "items": []
     },
     "Several injured in attack on airport in Saudi capital Riyadh": {
-      "checked_at": 1791656062,
+      "checked_at": 1791658072,
       "items": [
         {
           "title": "Injuries reported in attack on airport in Saudi capital Riyadh",
@@ -2343,7 +2326,7 @@
       ]
     },
     "OMS: Rússia confirmou morte em laboratório e disse que não foi registrado caso de peste": {
-      "checked_at": 1791656062,
+      "checked_at": 1791658072,
       "items": []
     },
     "Furacão de categoria 2, Isaías, perde força, mas mantém risco de enchentes e tornados nos EUA": {
@@ -2398,11 +2381,11 @@
       ]
     },
     "Melhores momentos: Al Ettifaq 1 x 1 Al Khaleej (Saudi Pro League)": {
-      "checked_at": 1791656062,
+      "checked_at": 1791658072,
       "items": []
     },
     "Delimitation designed to punish Tamil Nadu, reduce its voice in Parliament: Rahul Gandhi": {
-      "checked_at": 1791654171,
+      "checked_at": 1791658072,
       "items": [
         {
           "title": "Delimitation designed to punish Tamil Nadu, reduce its voice in Parliament: Rahul Gandhi",
@@ -2489,7 +2472,7 @@
       ]
     },
     "Ireland proposes €140 billion EU budget cut": {
-      "checked_at": 1791656062,
+      "checked_at": 1791658072,
       "items": [
         {
           "title": "Ireland proposes €140 billion cut to EU's next budget",
@@ -2510,7 +2493,7 @@
       ]
     },
     "Governo Federal enviará 290 pessoas e 6 aeronaves para ajudar no combate a incêndios no AM": {
-      "checked_at": 1791656062,
+      "checked_at": 1791658072,
       "items": [
         {
           "title": "Governo Federal enviará 290 pessoas e 6 aeronaves para ajudar no combate a incêndios no AM",
@@ -2534,6 +2517,90 @@
           "published": ""
         }
       ]
+    },
+    "Trump pede novo presidente na Ucrânia e acusa Zelensky de dificultar acordo com a Rússia": {
+      "checked_at": 1791658072,
+      "items": []
+    },
+    "Luisa Stefani e Dabrowski vão à final do WTA 1000 de Pequim": {
+      "checked_at": 1791658072,
+      "items": [
+        {
+          "title": "Luisa Stefani e Dabrowski vão à final do WTA 1000 de Pequim",
+          "url": "https://www.gazetaesportiva.com/mais-esportes/tenis/luisa-stefani-final-wta-1000-pequim/",
+          "source": "www.gazetaesportiva.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Tênis: Luisa Stefani avança à decisão do WTA 1000 de Pequim e disputará 6ª final na temporada",
+          "url": "https://www.itatiaia.com.br/esportes/tenis/tenis-luisa-stefani-avanca-a-decisao-do-wta-1000-de-pequim-e-disputara-6a-final-na-temporada/",
+          "source": "www.itatiaia.com.br",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Luisa Stefani e Dabrowski vencem campeãs olímpicas e vão à semi do WTA de Pequim",
+          "url": "https://www.itatiaia.com.br/esportes/tenis/luisa-stefani-e-dabrowski-vencem-campeas-olimpicas-e-vao-a-semi-do-wta-de-pequim/",
+          "source": "www.itatiaia.com.br",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Penguin Poop Is Turning Antarctica Green, and Scientists Are Concerned": {
+      "checked_at": 1791658072,
+      "items": [
+        {
+          "title": "Penguin Poop Is Turning Antarctica Green, and Scientists Are Concerned",
+          "url": "https://scitechdaily.com/penguin-poop-is-turning-antarctica-green-and-scientists-are-concerned/",
+          "source": "scitechdaily.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Trump conclama Ucrânia a parar de atacar refinarias russas": {
+      "checked_at": 1791658072,
+      "items": [
+        {
+          "title": "Trump conclama Ucrânia a parar de atacar refinarias russas",
+          "url": "https://noticias.uol.com.br/ultimas-noticias/afp/2026/10/10/trump-conclama-ucrania-a-parar-de-atacar-refinarias-russas.htm",
+          "source": "noticias.uol.com.br",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Escassez de gasóleo não tem a ver com o Médio Oriente: Trump culpa Ucrânia e pede a Zelensky que pare de atacar refinarias russas",
+          "url": "https://www.msn.com/pt-pt/noticias/ultimas/escassez-de-gas%C3%B3leo-n%C3%A3o-tem-a-ver-com-o-m%C3%A9dio-oriente-trump-culpa-ucr%C3%A2nia-e-pede-a-zelensky-que-pare-de-atacar-refinarias-russas/ar-AA2c8fvZ",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Calderano derrota favorito Felix Lebrun e avança à semi do China Smash": {
+      "checked_at": 1791658072,
+      "items": [
+        {
+          "title": "Calderano derrota favorito Felix Lebrun e avança à semi do China Smash",
+          "url": "https://www.jornaldeuberaba.com.br/noticia/166997/calderano-derrota-favorito-felix-lebrun-e-avanca-a-semi-do-china-smash",
+          "source": "www.jornaldeuberaba.com.br",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "UE critica suspensão de sanções americanas ao diesel russo; Ucrânia relata ataque com 12 mortos": {
+      "checked_at": 1791658072,
+      "items": []
     }
   },
   "Taiwan's US envoy says ties robust after Trump-Xi summit": "Enviado dos EUA de Taiwan diz que laços estão robustos após cimeira Trump-Xi",
@@ -4338,5 +4405,13 @@
   "US-Israel-Iran War Latest News: ‘More US Blood and Treasure’ – Iran’s Araghchi Accuses Netanyahu of Seeking Political Survival Amid Escalating Tensions The Sunday Guardian": "Últimas notícias da guerra EUA-Israel-Irã: ‘Mais sangue e tesouro dos EUA’ – Araghchi do Irã acusa Netanyahu de buscar sobrevivência política em meio a tensões crescentes The Sunday Guardian",
   "Top 10 countries that received most US Aid Vanguard News": "Os 10 principais países que mais receberam notícias do US Aid Vanguard",
   "US-Backed Gaza Ceasefire Exists in Name Only As Israeli Attacks Continue: NGOs": "O cessar-fogo em Gaza apoiado pelos EUA existe apenas no nome enquanto os ataques israelenses continuam: ONGs",
-  "US-Backed Gaza Ceasefire Exists in Name Only As Israeli Attacks Continue: NGOs تسنیم": "O cessar-fogo em Gaza apoiado pelos EUA existe apenas no nome enquanto os ataques israelenses continuam: ONGs"
+  "US-Backed Gaza Ceasefire Exists in Name Only As Israeli Attacks Continue: NGOs تسنیم": "O cessar-fogo em Gaza apoiado pelos EUA existe apenas no nome enquanto os ataques israelenses continuam: ONGs",
+  "Penguin Poop Is Turning Antarctica Green, and Scientists Are Concerned": "Cocô de pinguim está deixando a Antártica verde e os cientistas estão preocupados",
+  "Penguins may be transforming Antarctica’s snowy coastline in an unexpected way.": "Os pinguins podem estar a transformar a costa nevada da Antártida de uma forma inesperada.",
+  "Dozens reported injured in Yemeni Houthi attack at Riyadh airport": "Dezenas de feridos em ataque iemenita Houthi no aeroporto de Riad",
+  "Dozens reported injured in Yemeni Houthi attack at Riyadh airport The Guardian": "Dezenas de feridos no ataque iemenita Houthi no aeroporto de Riade The Guardian",
+  "Ethiopian-Eritrean fighting raises fears of wider war as Egypt builds Red Sea alliance - analysis": "Os combates entre a Etiópia e a Eritreia levantam temores de uma guerra mais ampla à medida que o Egito constrói uma aliança no Mar Vermelho – análise",
+  "Ethiopian-Eritrean fighting raises fears of wider war as Egypt builds Red Sea alliance - analysis The Jerusalem Post": "Os combates entre a Etiópia e a Eritreia levantam temores de uma guerra mais ampla à medida que o Egito constrói uma aliança no Mar Vermelho - análise The Jerusalem Post",
+  "Republicans Warn Trump's Putin Diesel Deal Could Help Russia's War Effort": "Republicanos alertam que o acordo de Trump com Putin Diesel pode ajudar o esforço de guerra da Rússia",
+  "Republicans Warn Trump's Putin Diesel Deal Could Help Russia's War Effort Newsweek": "Republicanos alertam que o acordo de Trump com Putin Diesel pode ajudar o esforço de guerra da Rússia Newsweek"
 }
