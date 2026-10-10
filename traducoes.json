@@ -247,7 +247,7 @@
       "items": []
     },
     "‘There is no other scientist quite like Francis Halzen’": {
-      "checked_at": 1791636615,
+      "checked_at": 1791639858,
       "items": []
     },
     "Ladrões roubam 30 mil garrafas de vinho da Antinori na Itália": {
@@ -991,7 +991,7 @@
       "items": []
     },
     "Morning recap": {
-      "checked_at": 1791636615,
+      "checked_at": 1791639858,
       "items": []
     },
     "Brasil x Argentina: onde assistir, horário e escalações do amistoso da Seleção Feminina": {
@@ -1690,15 +1690,15 @@
       ]
     },
     "Preço do milho cai forte nos EUA após governo liberar oferta maior do que o esperado": {
-      "checked_at": 1791636615,
+      "checked_at": 1791639858,
       "items": []
     },
     "How a series of miscalculations restarted Saudi Arabia’s war in Yemen": {
-      "checked_at": 1791636615,
+      "checked_at": 1791639858,
       "items": []
     },
     "Drone strike in Sudan kills 40, Lebanon welcomes US flight ban lift, and other Mideast developments": {
-      "checked_at": 1791636615,
+      "checked_at": 1791639858,
       "items": [
         {
           "title": "Drone strike in Sudan kills 40, Lebanon welcomes US flight ban lift, and other Mideast developments",
@@ -1711,7 +1711,7 @@
       ]
     },
     "The world’s most transparent property markets have been named": {
-      "checked_at": 1791634563,
+      "checked_at": 1791639858,
       "items": []
     },
     "Canada chooses sides as U.S. moves to sanction International Criminal Court": {
@@ -1757,7 +1757,7 @@
       ]
     },
     "Hugo Calderano vence rival francês e avança à semifinal do China Smash": {
-      "checked_at": 1791636615,
+      "checked_at": 1791639858,
       "items": []
     },
     "Ukraine hits Russian oil hub as Zelensky fumes over US diesel deal": {
@@ -2028,6 +2028,77 @@
           "title": "Cars torched and shops looted as anti-migrant violence erupts in South Africa",
           "url": "https://www.msn.com/en-us/news/other/cars-torched-and-shops-looted-as-anti-migrant-violence-erupts-in-south-africa/ar-AA2dS8Fu",
           "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "IA da Anthropic envia denúncia falsa sobre homicídio à polícia dos EUA": {
+      "checked_at": 1791639858,
+      "items": [
+        {
+          "title": "Claude, IA da Anthropic, enviou denúncia falsa de caso de homicídio não resolvido à polícia nos EUA",
+          "url": "https://oglobo.globo.com/economia/tecnologia/noticia/2026/10/10/claude-ia-da-anthropic-enviou-denuncia-falsa-de-caso-de-homicidio-nao-resolvido-a-policia-nos-eua.ghtml",
+          "source": "oglobo.globo.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "IA da Anthropic envia denúncia falsa de homicídio a site de polícia nos EUA",
+          "url": "https://www.msn.com/pt-br/noticias/other/ia-da-anthropic-envia-den%C3%BAncia-falsa-de-homic%C3%ADdio-a-site-de-pol%C3%ADcia-nos-eua/ar-AA2dVnbq",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "IA da Anthropic envia denúncia falsa de homicídio para site da polícia",
+          "url": "https://www.msn.com/pt-br/noticias/other/ia-da-anthropic-envia-den%C3%BAncia-falsa-de-homic%C3%ADdio-para-site-da-pol%C3%ADcia/ar-AA2dVkFo",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "ONU demite mais de 10 mil pessoas e reduz operações em meio a dívida bilionária que ameaça ajuda a refugiados": {
+      "checked_at": 1791639858,
+      "items": []
+    },
+    "Lai Ching-te vows stronger defense as China condemns Taiwan independence push - CHOSUNBIZ": {
+      "checked_at": 1791639858,
+      "items": [
+        {
+          "title": "Lai Ching-te vows stronger defense as China condemns Taiwan independence push",
+          "url": "https://biz.chosun.com/en/en-international/2026/10/10/H4N3UTEN2JFEZK3ATLXQC4G6HQ/",
+          "source": "biz.chosun.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "The Responsibility to Protect: If Not Ukraine, Then Where?": {
+      "checked_at": 1791639858,
+      "items": []
+    },
+    "Baixa aprovação de Trump deve custar cadeiras no Congresso; entenda | #MapaMundi": {
+      "checked_at": 1791639858,
+      "items": []
+    },
+    "Copiloto tentou repetir o 11 de Setembro em Israel e foi impedido pelos passageiros": {
+      "checked_at": 1791639858,
+      "items": []
+    },
+    "Ministra do Trabalho diz que flexibilização dos regimes laborais na Europa foi \"prudência política\"": {
+      "checked_at": 1791639858,
+      "items": [
+        {
+          "title": "Flexibilização laboral é \"prudência política\", diz ministra",
+          "url": "https://observador.pt/2026/10/10/ministra-do-trabalho-diz-que-flexibilizacao-dos-regimes-laborais-na-europa-foi-prudencia-politica/",
+          "source": "observador.pt",
           "summary": "",
           "image_url": "",
           "published": ""
@@ -3721,5 +3792,22 @@
   "Watch: Fleeing Kyiv for the countryside ahead of winter": "Ver: Fugindo de Kyiv para o campo antes do inverno",
   "A Kyiv resident told the BBC she has moved away from \"everything that can be a Russian target\" as Ukraine braces for another cold winter under intense attacks.": "Uma residente de Kiev disse à BBC que se afastou de “tudo que possa ser um alvo russo”, enquanto a Ucrânia se prepara para outro inverno frio sob ataques intensos.",
   "Alonzo Lunsford tells the BBC the punishment befits the crime but he has some doubts whether the public should be able to watch it.": "Alonzo Lunsford disse à BBC que a punição é adequada ao crime, mas tem algumas dúvidas se o público deveria poder assisti-lo.",
-  "Russian strikes and approaching winter force some in Kyiv to pack bags and flee": "Os ataques russos e o inverno que se aproxima forçam alguns em Kiev a fazer as malas e fugir"
+  "Russian strikes and approaching winter force some in Kyiv to pack bags and flee": "Os ataques russos e o inverno que se aproxima forçam alguns em Kiev a fazer as malas e fugir",
+  "Lai Ching-te vows stronger defense as China condemns Taiwan independence push": "Lai Ching-te promete defesa mais forte enquanto China condena iniciativa de independência de Taiwan",
+  "Lai Ching-te vows stronger defense as China condemns Taiwan independence push Taiwan President Lai Ching-te said in a National Day Double Ten Day add": "Lai Ching-te promete defesa mais forte enquanto a China condena a independência de Taiwan, disse o presidente de Taiwan, Lai Ching-te, em um Dia Nacional Double Ten Day add",
+  "The Responsibility to Protect: If Not Ukraine, Then Where?": "A responsabilidade de proteger: se não for a Ucrânia, então onde?",
+  "The Responsibility to Protect: If Not Ukraine, Then Where? The National Interest": "A responsabilidade de proteger: se não for a Ucrânia, então onde? O Interesse Nacional",
+  "Obi mourns General Obiakor, says soldiers who defend Nigeria deserve better care": "Obi lamenta o general Obiakor, diz que os soldados que defendem a Nigéria merecem melhores cuidados",
+  "Obi mourns General Obiakor, says soldiers who defend Nigeria deserve better care National Accord Newspaper": "Obi lamenta o general Obiakor, diz que os soldados que defendem a Nigéria merecem melhores cuidados Jornal do Acordo Nacional",
+  "Ukraine hits Russian oil hub as Zelensky fumes over US diesel deal The Independent": "Ucrânia atinge centro petrolífero russo enquanto Zelensky se irrita com acordo de diesel com os EUA The Independent",
+  "Kazakhstan overtakes Norway and Saudi Arabia in global influence ranking": "O Cazaquistão ultrapassa a Noruega e a Arábia Saudita no ranking de influência global",
+  "Kazakhstan overtakes Norway and Saudi Arabia in global influence ranking DKNews.kz": "O Cazaquistão ultrapassa a Noruega e a Arábia Saudita no ranking de influência global DKNews.kz",
+  "SpaceX launches 21 data satellites for the Space Development Agency": "SpaceX lança 21 satélites de dados para a Agência de Desenvolvimento Espacial",
+  "SpaceX launches 21 data satellites for the Space Development Agency Spaceflight Now": "SpaceX lança 21 satélites de dados para a Agência de Desenvolvimento Espacial Spaceflight Now",
+  "Putin tells Trump Ukraine drone attacks have derailed peace talks": "Putin diz a Trump que ataques de drones na Ucrânia atrapalharam negociações de paz",
+  "Putin tells Trump Ukraine drone attacks have derailed peace talks Saudi Gazette": "Putin diz a Trump que ataques de drones na Ucrânia atrapalharam negociações de paz Saudi Gazette",
+  "Placard-waving opponents highlight concerns about a data centre development on the local landscape.": "Os oponentes que agitam cartazes destacam preocupações sobre o desenvolvimento de um data center no cenário local.",
+  "As federal politicians vow to cut immigration, regional Queensland businesses need ‘every hand we can get’ The Guardian": "Enquanto os políticos federais prometem reduzir a imigração, as empresas regionais de Queensland precisam de “toda ajuda que pudermos obter” The Guardian",
+  "Why the United States Couldn’t Stop Its Fatal Descent Into Vietnam": "Por que os Estados Unidos não conseguiram impedir a sua descida fatal ao Vietname",
+  "Why the United States Couldn’t Stop Its Fatal Descent Into Vietnam TheCollector": "Por que os Estados Unidos não conseguiram impedir sua descida fatal ao Vietnã TheCollector"
 }
