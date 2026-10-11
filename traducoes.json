@@ -234,35 +234,6 @@
         }
       ]
     },
-    "Twelve killed in attack on airport in Saudi capital Riyadh": {
-      "checked_at": 1791692036,
-      "items": [
-        {
-          "title": "Saudi Arabia: 12 killed, hundreds injured in Riyadh airport attack",
-          "url": "https://www.msn.com/en-xl/news/other/saudi-arabia-suspends-operations-at-riyadh-airport-after-an-attack-causes-multiple-injuries/ar-AA2dXv0U",
-          "source": "www.msn.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Saudi Arabia: Twelve Killed in Attack on Riyadh Airport",
-          "url": "https://www.bluewin.ch/en/news/saudi-arabia-twelve-killed-in-attack-on-riyadh-airport-li.3631434",
-          "source": "www.bluewin.ch",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "12 killed, 309 injured in attack on Riyadh airport as Houthis, Saudi Arabia trade strikes",
-          "url": "https://english.news.cn/20261011/19ba56c7dc3f4a13a6af24b83425555c/c.html",
-          "source": "english.news.cn",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
     "F-1: veja o grid de largada para o GP de Singapura com Verstappen na pole e Bortoleto em 14º": {
       "checked_at": 1791697487,
       "items": [
@@ -385,10 +356,6 @@
           "published": ""
         }
       ]
-    },
-    "Prêmio Nobel da Paz: ex-alta-comissária da ONU é reconhecida por atuação para punir crimes de guerra e genocídio": {
-      "checked_at": 1791692036,
-      "items": []
     },
     "World condemns deadly Houthi attack on Saudi Arabia’s Riyadh airport": {
       "checked_at": 1791719024,
@@ -597,7 +564,7 @@
       "items": []
     },
     "Climate Tipping Points Research Has Blind Spot: Greenland Crowds Out Higher-Risk Systems": {
-      "checked_at": 1791735166,
+      "checked_at": 1791737120,
       "items": [
         {
           "title": "Climate tipping points research has blind spot: Greenland crowds out higher-risk systems",
@@ -1880,7 +1847,7 @@
       "items": []
     },
     "Senate president, Norwegian ambassador discuss ties, regional tensions": {
-      "checked_at": 1791735166,
+      "checked_at": 1791737120,
       "items": [
         {
           "title": "Senate president, Norwegian ambassador discuss ties, regional tensions",
@@ -2200,7 +2167,7 @@
       "items": []
     },
     "Donald Tusk reafirma apoio total a Zelensky e líderes coordenam ações antes de reuniões na UE": {
-      "checked_at": 1791735166,
+      "checked_at": 1791737120,
       "items": [
         {
           "title": "Donald Tusk reafirma apoio total a Zelensky e líderes coordenam ações",
@@ -2303,7 +2270,7 @@
       "items": []
     },
     "Zheng Qinwen conquista em Pequim seu primeiro título de WTA 1000": {
-      "checked_at": 1791735166,
+      "checked_at": 1791737120,
       "items": [
         {
           "title": "Zheng Qinwen conquista em Pequim seu primeiro título de WTA 1000",
@@ -2447,7 +2414,7 @@
       ]
     },
     "India vs Malaysia, AFC U-17 Women’s Asian Cup 2027 Qualifiers: Qualification Scenarios, LIVE streaming info": {
-      "checked_at": 1791735166,
+      "checked_at": 1791737120,
       "items": [
         {
           "title": "India vs Malaysia, AFC U-17 Women’s Asian Cup 2027 Qualifiers: Qualification Scenarios, LIVE streaming info",
@@ -2489,7 +2456,7 @@
       ]
     },
     "African Union mourns 109 migrants killed in Djibouti boat tragedy": {
-      "checked_at": 1791735166,
+      "checked_at": 1791737120,
       "items": []
     },
     "Shane Jones goes full nationalist": {
@@ -2541,6 +2508,173 @@
           "title": "Middle East crisis live: Riyadh airport reportedly hit again, day after deadly attack that killed 12",
           "url": "https://www.theguardian.com/world/live/2026/oct/11/saudi-arabia-riyadh-airport-houthis-yemen-attack-blockade-trump-latest-news-updates?source=newscura",
           "source": "www.theguardian.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Trump claims Russia and Ukraine agree to energy ceasefire, but Zelenskyy says this is ‘news for me’": {
+      "checked_at": 1791737120,
+      "items": [
+        {
+          "title": "Trump claims Russia and Ukraine agree to energy ceasefire, but Zelenskyy says this is ‘news for me’",
+          "url": "https://www.nbcnews.com/world/ukraine/trump-russia-ukraine-agree-energy-ceasefire-zelenskyy-diesel-rcna602766",
+          "source": "www.nbcnews.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Trump says Russia and Ukraine have reached ‘energy ceasefire’—Zelenskyy reportedly calls that ‘news for me’",
+          "url": "https://www.msn.com/en-us/news/news/trump-says-russia-and-ukraine-have-reached-energy-ceasefire-zelenskyy-reportedly-calls-that-news-for-me/ar-AA2e0Fmz",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Trump claims Russia and Ukraine agree to energy ceasefire",
+          "url": "https://www.msn.com/en-us/news/other/trump-claims-russia-and-ukraine-agree-to-energy-ceasefire/ar-AA2e0DgF",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Ukraine war latest: Zelenskyy responds after Trump announces Russia-Ukraine 'energy ceasefire'",
+          "url": "https://news.sky.com/story/vladimir-putin-blamed-for-death-of-critic-as-russia-claims-alexei-navalny-felt-unwell-after-walk-12541713",
+          "source": "news.sky.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Zelenskyy signals support for Russia-Ukraine ‘energy ceasefire’ after surprise Trump announcement – live updates",
+          "url": "https://www.theguardian.com/us-news/live/2026/oct/11/donald-trump-ukraine-russia-energy-ceasefire-diesel-latest-updates",
+          "source": "www.theguardian.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Trump says Russia and Ukraine reached ‘energy ceasefire’; Zelensky: ‘News to me’",
+          "url": "https://www.timesofisrael.com/trump-says-russia-and-ukraine-reached-energy-ceasefire-zelensky-news-to-me/",
+          "source": "www.timesofisrael.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Trump announces Russia-Ukraine 'energy ceasefire effective immediately'; Zelenskyy says 'news for me'",
+          "url": "https://timesofindia.indiatimes.com/world/us/russia-ukraine-agreed-on-energy-ceasefire-effective-immediately-says-trump/articleshow/134872127.cms",
+          "source": "timesofindia.indiatimes.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "'News to me': Zelenskyy reacts to Trump’s proposed energy ceasefire",
+          "url": "https://english.mathrubhumi.com/news/world/zelenskyy-reacts-trump-energy-ceasefire-announcement-ufgh7i0a",
+          "source": "english.mathrubhumi.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Polônia anuncia detenção de homem por suposto plano para matar o premiê": {
+      "checked_at": 1791737120,
+      "items": [
+        {
+          "title": "Polônia anuncia detenção de homem por suposto plano para matar o premiê",
+          "url": "https://noticias.uol.com.br/ultimas-noticias/afp/2026/10/11/polonia-anuncia-detencao-de-homem-por-suposto-plano-para-matar-o-premie.htm",
+          "source": "noticias.uol.com.br",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Saudi capital airport hit by second strike in two days": {
+      "checked_at": 1791737120,
+      "items": [
+        {
+          "title": "Saudi capital airport hit by second strike in two days",
+          "url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o",
+          "source": "www.bbc.co.uk",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Riyadh airport hit by second strike in two days, Saudi-led coalition says",
+          "url": "https://www.bbc.com/news/live/cqy7lxd104xet?page=2",
+          "source": "www.bbc.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "União Africana pede combate ao tráfico de migrantes após naufrágio que deixou 139 mortos no Djibuti": {
+      "checked_at": 1791737120,
+      "items": [
+        {
+          "title": "União Africana pede combate ao tráfico de migrantes após naufrágio que deixou 139 mortos no Djibuti",
+          "url": "https://www.rfi.fr/br/%C3%A1frica/20261011-uni%C3%A3o-africana-pede-combate-ao-tr%C3%A1fico-de-migrantes-ap%C3%B3s-naufr%C3%A1gio-que-deixou-139-mortos-no-djibuti",
+          "source": "www.rfi.fr",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "'Don't be afraid': Rahul Gandhi invites people to join Opposition parties’ march to SC on Oct 12": {
+      "checked_at": 1791737120,
+      "items": [
+        {
+          "title": "'Don't be afraid': Rahul Gandhi invites people to join Opposition parties’ march to SC on Oct 12",
+          "url": "https://economictimes.indiatimes.com/news/politics-and-nation/dont-be-afraid-rahul-gandhi-invites-people-to-join-opposition-parties-march-to-sc-on-oct-12/videoshow/134873464.cms",
+          "source": "economictimes.indiatimes.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Trump anuncia trégua energética entre Rússia e Ucrânia; o que se sabe": {
+      "checked_at": 1791737120,
+      "items": [
+        {
+          "title": "Trump anuncia trégua energética entre Rússia e Ucrânia; o que se sabe",
+          "url": "https://www.msn.com/pt-br/noticias/mundo/trump-anuncia-tr%C3%A9gua-energ%C3%A9tica-entre-r%C3%BAssia-e-ucr%C3%A2nia-o-que-se-sabe/ar-AA2e0FH3",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Europe today: Trump alega trégua energética Rússia-Ucrânia e abrandamento da IA agita mercados",
+          "url": "https://www.msn.com/pt-pt/noticias/ultimas/europe-today-trump-alega-tr%C3%A9gua-energ%C3%A9tica-r%C3%BAssia-ucr%C3%A2nia-e-abrandamento-da-ia-agita-mercados/ar-AA2cezKT",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Russia-Ukraine War Latest News: Energy Ceasefire Could Give Kyiv ‘Breathing Space’ Amid Russian Attacks, Analyst Warns of Uncertainty Amid Ongoing Tensions": {
+      "checked_at": 1791737120,
+      "items": []
+    },
+    "Ao menos 139 imigrantes morrem após naufrágio de barco que ia de Djibuti ao Iêmen, diz ONU": {
+      "checked_at": 1791737120,
+      "items": [
+        {
+          "title": "Ao menos 139 imigrantes morrem após naufrágio de barco que ia de Djibuti ao Iêmen, diz ONU",
+          "url": "https://www.msn.com/pt-br/noticias/mundo/ao-menos-139-imigrantes-morrem-ap%C3%B3s-naufr%C3%A1gio-de-barco-que-ia-de-djibuti-ao-i%C3%AAmen-diz-onu/ar-AA2e17UB",
+          "source": "www.msn.com",
           "summary": "",
           "image_url": "",
           "published": ""
