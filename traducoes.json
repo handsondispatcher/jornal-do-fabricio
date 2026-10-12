@@ -338,19 +338,6 @@
         }
       ]
     },
-    "Polônia anuncia detenção de homem por suposto plano para matar o premiê": {
-      "checked_at": 1791738743,
-      "items": [
-        {
-          "title": "Polônia anuncia detenção de homem por suposto plano para matar o premiê",
-          "url": "https://noticias.uol.com.br/ultimas-noticias/afp/2026/10/11/polonia-anuncia-detencao-de-homem-por-suposto-plano-para-matar-o-premie.htm",
-          "source": "noticias.uol.com.br",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
     "'Don't be afraid': Rahul Gandhi invites people to join Opposition parties’ march to SC on Oct 12": {
       "checked_at": 1791751512,
       "items": [
@@ -385,10 +372,6 @@
         }
       ]
     },
-    "Russia-Ukraine War Latest News: Energy Ceasefire Could Give Kyiv ‘Breathing Space’ Amid Russian Attacks, Analyst Warns of Uncertainty Amid Ongoing Tensions": {
-      "checked_at": 1791738743,
-      "items": []
-    },
     "Ao menos 139 imigrantes morrem após naufrágio de barco que ia de Djibuti ao Iêmen, diz ONU": {
       "checked_at": 1791742481,
       "items": [
@@ -401,10 +384,6 @@
           "published": ""
         }
       ]
-    },
-    "Ukraine war latest: Russia pounds Kyiv's energy infrastructure as Trump’s energy ceasefire claim catches Ukraine off guard": {
-      "checked_at": 1791738743,
-      "items": []
     },
     "Classificação da F1: como ficou a disputa dos pilotos após a vitória de Verstappen em Singapura": {
       "checked_at": 1791749560,
@@ -430,31 +409,6 @@
           "published": ""
         }
       ]
-    },
-    "União Africana pede combate ao tráfico de migrantes após naufrágio que deixou 139 mortos no Djibuti - 11/10/2026": {
-      "checked_at": 1791738743,
-      "items": [
-        {
-          "title": "União Africana pede combate ao tráfico de migrantes após naufrágio que deixou 139 mortos no Djibuti",
-          "url": "https://www.rfi.fr/br/%C3%A1frica/20261011-uni%C3%A3o-africana-pede-combate-ao-tr%C3%A1fico-de-migrantes-ap%C3%B3s-naufr%C3%A1gio-que-deixou-139-mortos-no-djibuti",
-          "source": "www.rfi.fr",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
-    "Africa : 215 billion USD for 69 flagship projects": {
-      "checked_at": 1791738743,
-      "items": []
-    },
-    "Why Bank Of Nova Scotia (TSX:BNS) Is Getting Attention Today": {
-      "checked_at": 1791738743,
-      "items": []
-    },
-    "Stop hostile talk, Taiwan urges China": {
-      "checked_at": 1791738743,
-      "items": []
     },
     "Corredor Andes-Atlântico: o que se sabe sobre o ambicioso projeto dos EUA para acessar recursos estratégicos da Argentina (e competir com a China)": {
       "checked_at": 1791740820,
@@ -1798,7 +1752,7 @@
       ]
     },
     "Petróleo avança com escalada na Arábia Saudita e pressão sobre mercados": {
-      "checked_at": 1791780594,
+      "checked_at": 1791782137,
       "items": [
         {
           "title": "Petróleo avança com escalada na Arábia Saudita e pressão sobre mercados",
@@ -2104,7 +2058,7 @@
       "items": []
     },
     "Global AI trade shift could bring foreign flows back to Indian market: Experts": {
-      "checked_at": 1791780594,
+      "checked_at": 1791782137,
       "items": [
         {
           "title": "Global AI trade shift could bring foreign flows back to Indian market: Experts",
@@ -2117,7 +2071,7 @@
       ]
     },
     "Address To Australian Industry Group National Forum": {
-      "checked_at": 1791780594,
+      "checked_at": 1791782137,
       "items": []
     },
     "Houthis Claim Strikes on Two Aramco Sites as Airlines Cancel Riyadh Flights": {
@@ -2125,7 +2079,7 @@
       "items": []
     },
     "Finlândia supera Espanha e lidera desemprego na Europa": {
-      "checked_at": 1791780594,
+      "checked_at": 1791782137,
       "items": []
     },
     "Indonesia’s naval hospital ship visits Fiji": {
@@ -2142,11 +2096,11 @@
       ]
     },
     "Eight tests for the Trump-Xi 2026 détente": {
-      "checked_at": 1791780594,
+      "checked_at": 1791782137,
       "items": []
     },
     "From Mahabharata To Model UN! Indores SGSITS Brings Diplomacy, Leadership And Ethics Into Focus At MUN 2026": {
-      "checked_at": 1791780594,
+      "checked_at": 1791782137,
       "items": [
         {
           "title": "From Mahabharata To Model UN! Indore's SGSITS Brings Diplomacy, Leadership And Ethics Into Focus At MUN 2026",
@@ -2159,7 +2113,7 @@
       ]
     },
     "Afreximbank backs new Africa Credit Rating Agency, urges independence": {
-      "checked_at": 1791780594,
+      "checked_at": 1791782137,
       "items": [
         {
           "title": "Afreximbank backs new Africa Credit Rating Agency, urges independence",
@@ -2176,7 +2130,7 @@
       "items": []
     },
     "Nobel-Winning Discovery Allows Creation of Chiral Drugs on Demand": {
-      "checked_at": 1791780594,
+      "checked_at": 1791782137,
       "items": [
         {
           "title": "Nobel-Winning Discovery Allows Creation of Chiral Drugs on Demand",
@@ -2189,7 +2143,7 @@
       ]
     },
     "Ukraine-Russia war latest: Zelensky says Putin struck power plant hours after Trump ‘ceasefire’ announcement": {
-      "checked_at": 1791780594,
+      "checked_at": 1791782137,
       "items": [
         {
           "title": "Zelensky accuses Russia of striking power plant after Trump's claim of energy ceasefire",
@@ -2208,6 +2162,133 @@
           "published": ""
         }
       ]
+    },
+    "China sanctions Paraguay, Belize ministers over Taiwan ties": {
+      "checked_at": 1791782137,
+      "items": [
+        {
+          "title": "China sanctions Paraguay, Belize ministers over Taiwan ties",
+          "url": "https://www.msn.com/en-us/news/other/china-sanctions-paraguay-belize-ministers-over-taiwan-ties/ar-AA2e2o9J",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "China sanctions Paraguay, Belize ministers, freezes their assets over Taiwan ties; visa ban also imposed",
+          "url": "https://www.hindustantimes.com/world-news/china-sanctions-paraguay-belize-ministers-over-diplomatic-ties-with-taiwan-beijing-freezes-assets-and-imposes-visa-bans-101791779894051.html",
+          "source": "www.hindustantimes.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "China sanctions ministers from Paraguay and Belize over Taiwan ties",
+          "url": "https://www.japantimes.co.jp/news/2026/10/12/asia-pacific/china-paraguay-belize-sanctions-taiwan/",
+          "source": "www.japantimes.co.jp",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "China bars Paraguay and Belize ministers for backing Taiwan ties",
+          "url": "https://www.newsbytesapp.com/news/world/china-bars-paraguay-and-belize-ministers-for-backing-taiwan-ties/tldr",
+          "source": "www.newsbytesapp.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "China imposes sanctions on ministers of Paraguay and Belize — Channel NewsAsia",
+          "url": "https://ua.news/en/world/kitai-vviv-sanktsiyi-proti-ministriv-paragvaiu-i-belizu-channel-newsasia",
+          "source": "ua.news",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "China announces sanctions on Belize, Paraguay ministers over Taiwan ties",
+          "url": "https://hongkongfp.com/2026/10/12/china-announces-sanctions-on-belize-paraguay-ministers-over-taiwan-ties/",
+          "source": "hongkongfp.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "UK PM Burnham says Russia interfered in 2016 Brexit vote": {
+      "checked_at": 1791782137,
+      "items": [
+        {
+          "title": "UK prime minister say it is 'clear' Russia interfered in 2016 Brexit referendum",
+          "url": "https://www.msn.com/en-us/news/other/uk-prime-minister-say-it-is-clear-russia-interfered-in-2016-brexit-referendum/ar-AA2e1t87",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "UK PM Burnham says Russia interfered in 2016 Brexit vote",
+          "url": "https://www.msn.com/en-us/news/other/uk-pm-burnham-says-russia-interfered-in-2016-brexit-vote/ar-AA2e1fvG",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Russia ‘interfered’ in 2016 Brexit vote, says Andy Burnham",
+          "url": "https://www.ft.com/content/4fcbf57e-c73e-4ced-be4a-5ecc6f4874de?syn-25a6b1a6=1",
+          "source": "www.ft.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "PM says it is 'clear' Russia interfered with Brexit vote",
+          "url": "https://www.msn.com/en-us/news/other/pm-says-it-is-clear-russia-interfered-with-brexit-vote/ar-AA2e10Ou",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Burnham says Russia interfered in 2016 Brexit vote",
+          "url": "https://ijr.com/discover/burnham-says-russia-interfered-in-2016-brexit-vote-7a173863",
+          "source": "ijr.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Burnham says it is ‘clear’ Russia interfered in Brexit referendum",
+          "url": "https://www.yahoo.com/news/politics/articles/burnham-says-clear-russia-interfered-174833773.html",
+          "source": "www.yahoo.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "What's In A Name? Enough To Ensnare Australia, NZ And PNG In A Legal Battle Over The Rugby Team Name 'Chiefs'": {
+      "checked_at": 1791782137,
+      "items": [
+        {
+          "title": "What’s in a name? Enough to ensnare Australia, NZ and PNG in a legal battle over the rugby team name ‘Chiefs’",
+          "url": "https://theconversation.com/whats-in-a-name-enough-to-ensnare-australia-nz-and-png-in-a-legal-battle-over-the-rugby-team-name-chiefs-294045",
+          "source": "theconversation.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Why a cassowary is on the new EU envoy’s to-do list": {
+      "checked_at": 1791782137,
+      "items": []
+    },
+    "LAST WEEK IN REVIEW": {
+      "checked_at": 1791782137,
+      "items": []
     }
   },
   "Taiwan's US envoy says ties robust after Trump-Xi summit": "Enviado dos EUA de Taiwan diz que laços estão robustos após cimeira Trump-Xi",
