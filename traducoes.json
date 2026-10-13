@@ -291,18 +291,6 @@
         }
       ]
     },
-    "US, Japan seek closer Quad coordination": {
-      "checked_at": 1791846844,
-      "items": []
-    },
-    "O peso do agro na urna explica a geografia do voto no 1º turno, segundo economista da Universidade de Londres": {
-      "checked_at": 1791846844,
-      "items": []
-    },
-    "Aviões militares iniciam combate a focos de incêndio no Amazonas": {
-      "checked_at": 1791846844,
-      "items": []
-    },
     "Petróleo fecha em alta com ataques houthis contra sauditas e falha de cessar-fogo na Ucrânia": {
       "checked_at": 1791877823,
       "items": [
@@ -310,19 +298,6 @@
           "title": "Petróleo fecha em alta com ataques houthis contra sauditas e falha de cessar-fogo na Ucrânia",
           "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/10/12/petroleo-fecha-em-alta-com-ataques-houthis-contra-sauditas-e-falha-de-cessar-fogo-na-ucrania.htm",
           "source": "economia.uol.com.br",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
-    "Petróleo fecha em alta após ataques dos houthis na Arábia Saudita": {
-      "checked_at": 1791846844,
-      "items": [
-        {
-          "title": "Petróleo fecha em alta após ataques na Arábia Saudita gerarem preocupações com oferta",
-          "url": "https://www.terra.com.br/economia/petroleo-fecha-em-alta-apos-ataques-na-arabia-saudita-gerarem-preocupacoes-com-oferta,f899f58677c0a544dd7cfe4e6dc71277dnle63cg.html",
-          "source": "www.terra.com.br",
           "summary": "",
           "image_url": "",
           "published": ""
@@ -342,14 +317,6 @@
         }
       ]
     },
-    "Telescópio Fast da China identifica pulsar como parte de um sistema estelar triplo primordial em evolução orbitado por uma anã branca": {
-      "checked_at": 1791846844,
-      "items": []
-    },
-    "Van cai em precipício e deixa 10 mortos na Bolívia": {
-      "checked_at": 1791846844,
-      "items": []
-    },
     "Zelensky comemora as novas sanções \"necessárias\" da União Europeia contra a Rússia": {
       "checked_at": 1791851007,
       "items": []
@@ -360,10 +327,6 @@
     },
     "Qantas launches major sale to beloved Aussie destination from $289": {
       "checked_at": 1791848697,
-      "items": []
-    },
-    "Musk spent $276 mil. to boost Republicans in midterms: US media": {
-      "checked_at": 1791846844,
       "items": []
     },
     "Ucrânia acusa Rússia de violar cessar-fogo energético | #PoderExpresso": {
@@ -378,10 +341,6 @@
           "published": ""
         }
       ]
-    },
-    "Australian freed from Iraq thanks family after landing in Ireland": {
-      "checked_at": 1791846844,
-      "items": []
     },
     "Pequenas comunidades impactadas pelo terremoto no Panamá ainda estão isoladas": {
       "checked_at": 1791848697,
@@ -550,7 +509,7 @@
       "items": []
     },
     "Stem cell discovery opens nonsurgical era for lumbar spinal stenosis": {
-      "checked_at": 1791888576,
+      "checked_at": 1791890174,
       "items": []
     },
     "Merchant Nun, Mexico City – Photo of the Day": {
@@ -1565,11 +1524,11 @@
       "items": []
     },
     "Day in Trade: UK and EU confirm 20 November date for much-awaited leaders’ summit": {
-      "checked_at": 1791888576,
+      "checked_at": 1791890174,
       "items": []
     },
     "NTPC might export green ammonia to Japan, South Korea, Germany": {
-      "checked_at": 1791888576,
+      "checked_at": 1791890174,
       "items": [
         {
           "title": "NTPC might export green ammonia to Japan, South Korea, Germany",
@@ -1582,7 +1541,7 @@
       ]
     },
     "Africa Must Invest in Quality Seed to Secure Its Food Future, AU Summit Says": {
-      "checked_at": 1791888576,
+      "checked_at": 1791890174,
       "items": []
     },
     "Investimento em IA impulsiona crescimento global, mas guerra e dívida ameaçam perspectivas, diz FMI": {
@@ -1590,7 +1549,7 @@
       "items": []
     },
     "Soja recua em Chicago nesta 3ª (13), com pressão do farelo e atenta à colheita nos EUA": {
-      "checked_at": 1791888576,
+      "checked_at": 1791890174,
       "items": []
     },
     "Europe's Gulf Gamble: Is Brussels Sacrificing Human Rights for Energy, Trade and Political Influence?": {
@@ -1604,6 +1563,103 @@
     "Índia prende dirigentes de movimento estudantil das \"baratas\"": {
       "checked_at": 1791888576,
       "items": []
+    },
+    "Seleção Brasileira enfrenta a Argentina novamente nesta terça-feira": {
+      "checked_at": 1791890174,
+      "items": []
+    },
+    "Maioria pró-Europa começa a revogar leis anti-LGBTQIA+ na Hungria": {
+      "checked_at": 1791890174,
+      "items": []
+    },
+    "IMF warns global economy ‘could soon test the limits of resilience’": {
+      "checked_at": 1791890174,
+      "items": [
+        {
+          "title": "IMF warns global economy ‘could soon test the limits of resilience’",
+          "url": "https://www.theguardian.com/business/2026/oct/13/imf-global-economy-world-economic-outlook-uk-gdp-forecast-2026",
+          "source": "www.theguardian.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "IMF warns global economy nearing \"limits of resilience\"",
+          "url": "https://www.msn.com/en-us/money/economy/imf-warns-global-economy-nearing-limits-of-resilience/ar-AA2e6e1k",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Cristiano Ronaldo se aproxima do milésimo gol na carreira após marcar na Champions da Ásia": {
+      "checked_at": 1791890174,
+      "items": [
+        {
+          "title": "Cristiano Ronaldo se aproxima do milésimo gol e Al-Nassr vence",
+          "url": "https://www.msn.com/pt-br/esportes/futebol/cristiano-ronaldo-se-aproxima-do-mil%C3%A9simo-gol-e-al-nassr-vence/ar-AA1ADB4P",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Nunes Marques se reúne com campanhas de Lula e Flávio Bolsonaro em meio a guerra de liminares sobre canais no WhatsApp": {
+      "checked_at": 1791890174,
+      "items": [
+        {
+          "title": "Nunes Marques reúne campanhas de Lula e Flávio em meio a guerra judicial por derrubada de canal pró-petista",
+          "url": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/10/13/nunes-marques-reune-campanhas-de-lula-e-flavio-em-meio-a-guerra-judicial-por-derrubada-de-canal-pro-petista.ghtml",
+          "source": "oglobo.globo.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Nunes Marques convoca campanhas de Flávio e Lula para reunião em meio a guerra de liminares no TSE",
+          "url": "https://www.msn.com/pt-br/noticias/other/nunes-marques-convoca-campanhas-de-fl%C3%A1vio-e-lula-para-reuni%C3%A3o-em-meio-a-guerra-de-liminares-no-tse/ar-AA2e4vsR",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "‘Political instrument’: Himanta Sarma targets Rahul Gandhi over Lord Shiva reference": {
+      "checked_at": 1791890174,
+      "items": []
+    },
+    "Cidade do Peru elege prefeito de esquerda chamado Hitler Mussolini": {
+      "checked_at": 1791890174,
+      "items": []
+    },
+    "Von der Leyen alerta sobre escalada da guerra na Ucrânia e condena ataques no Mar Negro": {
+      "checked_at": 1791890174,
+      "items": [
+        {
+          "title": "Von der Leyen alerta sobre escalada da guerra na Ucrânia e condena ataques no Mar Negro",
+          "url": "https://www.opovo.com.br/noticias/mundo/2026/10/13/von-der-leyen-alerta-sobre-escalada-da-guerra-na-ucrania-e-condena-ataques-no-mar-negro.html",
+          "source": "www.opovo.com.br",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "‘There Are No Words’: Dozens Killed in Airstrikes Near Sudan-Egypt Border": {
+      "checked_at": 1791890174,
+      "items": [
+        {
+          "title": "‘There Are No Words’: Dozens Killed in Airstrikes Near Sudan-Egypt Border",
+          "url": "https://www.nytimes.com/2026/10/12/world/africa/egypt-sudan-goldmine-strike.html",
+          "source": "www.nytimes.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
     }
   },
   "Taiwan's US envoy says ties robust after Trump-Xi summit": "Enviado dos EUA de Taiwan diz que laços estão robustos após cimeira Trump-Xi",
@@ -4540,5 +4596,21 @@
   "IMF sees world growth this year, warns of AI, debt risks 朝日新聞": "FMI vê crescimento mundial este ano, alerta sobre IA, riscos de dívida Asahi Shimbun",
   "‘Bulls**t’: Economist on real inflation cause News.com.au": "‘Bulls**t’: Economista sobre inflação real causa News.com.au",
   "The second instalment of Planet Zoo champions raising animals to be released into wildlife reserves.": "A segunda parcela do Planet Zoo defende a criação de animais para serem soltos em reservas de vida selvagem.",
-  "Greens’ economic development plan will create 284,000 jobs Green Party of Aotearoa New Zealand": "O plano de desenvolvimento económico dos Verdes criará 284.000 empregos Partido Verde de Aotearoa Nova Zelândia"
+  "Greens’ economic development plan will create 284,000 jobs Green Party of Aotearoa New Zealand": "O plano de desenvolvimento económico dos Verdes criará 284.000 empregos Partido Verde de Aotearoa Nova Zelândia",
+  "World Economic Outlook says states’ oil stocks are low and budgets are overstretched, as it upgrades UK GDP growth forecast for 2026": "O World Economic Outlook diz que os stocks de petróleo dos estados estão baixos e os orçamentos estão sobrecarregados, uma vez que atualiza a previsão de crescimento do PIB do Reino Unido para 2026",
+  "NASA Science, Cargo Launch on 35th SpaceX Resupply Mission to Station": "NASA Science, lançamento de carga na 35ª missão de reabastecimento da SpaceX para a estação",
+  "NASA Science, Cargo Launch on 35th SpaceX Resupply Mission to Station NASA (.gov)": "NASA Science, lançamento de carga na 35ª missão de reabastecimento da SpaceX para a estação NASA (.gov)",
+  "‘Political instrument’: Himanta Sarma targets Rahul Gandhi over Lord Shiva reference The Economic Times": "‘Instrumento político’: Himanta Sarma tem como alvo Rahul Gandhi em vez de referência a Lord Shiva The Economic Times",
+  "Bulgaria summons Russian ambassador after ship sinks in Black Sea drone attack": "Bulgária convoca embaixador russo após navio afundar em ataque de drone no Mar Negro",
+  "Eleven crew members are missing after a merchant ship was sunk overnight, local officials say.": "Onze tripulantes estão desaparecidos depois que um navio mercante foi afundado durante a noite, dizem autoridades locais.",
+  "PIN IT: SpaceX launch makes ‘space jellyfish’ effect in sky. Here’s the science behind it - Clone": "PIN IT: O lançamento da SpaceX cria o efeito de ‘água-viva espacial’ no céu. Aqui está a ciência por trás disso - Clone",
+  "PIN IT: SpaceX launch makes ‘space jellyfish’ effect in sky. Here’s the science behind it - Clone WKMG": "PIN IT: O lançamento da SpaceX cria o efeito de ‘água-viva espacial’ no céu. Aqui está a ciência por trás disso – Clone WKMG",
+  "SpaceX Rocket Launch Today: Can North Carolina Residents See the Falcon 9 ‘Jellyfish’ Effect? Check CRS-35 Launch Time, Viewing Tips, Mission Details and More": "Lançamento do foguete SpaceX hoje: os residentes da Carolina do Norte podem ver o efeito ‘água-viva’ do Falcon 9? Verifique o horário de lançamento do CRS-35, dicas de visualização, detalhes da missão e muito mais",
+  "SpaceX Rocket Launch Today: Can North Carolina Residents See the Falcon 9 ‘Jellyfish’ Effect? Check CRS-35 Launch Time, Viewing Tips, Mission Details and More The Sunday Guardian": "Lançamento do foguete SpaceX hoje: os residentes da Carolina do Norte podem ver o efeito ‘água-viva’ do Falcon 9? Verifique o horário de lançamento do CRS-35, dicas de visualização, detalhes da missão e muito mais The Sunday Guardian",
+  "Türkiye's UN envoy calls on Israel to stop reckless attacks in Syria": "Enviado de Türkiye na ONU pede a Israel que pare com ataques imprudentes na Síria",
+  "Türkiye's UN envoy calls on Israel to stop reckless attacks in Syria Daily Sabah": "Enviado de Türkiye na ONU pede a Israel que pare com ataques imprudentes na Síria Daily Sabah",
+  "Science breakthrough: Scientists at UK university make stunning discovery explaining why life exists": "Avanço científico: Cientistas da universidade do Reino Unido fazem uma descoberta impressionante que explica por que a vida existe",
+  "Science breakthrough: Scientists at UK university make stunning discovery explaining why life exists GB News": "Avanço científico: Cientistas da universidade do Reino Unido fazem uma descoberta impressionante que explica por que a vida existe GB News",
+  "AU Seed Summit Builds on Kampala Declaration to Advance Africa’s Food Security": "Cimeira de Sementes da UA baseia-se na Declaração de Kampala para promover a segurança alimentar de África",
+  "AU Seed Summit Builds on Kampala Declaration to Advance Africa’s Food Security UG Diplomat": "Cimeira de Sementes da UA baseia-se na Declaração de Kampala para promover o diplomata UG da segurança alimentar de África"
 }
