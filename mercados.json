@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-13T17:15:16+00:00",
+  "checked_at": "2026-10-13T17:47:06+00:00",
   "items": [
     {
       "symbol": "USD/BRL",
@@ -24,10 +24,10 @@
     {
       "symbol": "IBOV",
       "label": "Ibovespa · B3",
-      "value": "206.777,42",
-      "price": 206777.421875,
+      "value": "206.939,88",
+      "price": 206939.875,
       "currency": "",
-      "change": -1.1,
+      "change": -1.02,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-10-13T13:00:00+00:00",
@@ -37,10 +37,10 @@
     {
       "symbol": "BRENT",
       "label": "Petróleo Brent (futuro)",
-      "value": "US$ 106,09",
-      "price": 106.08999633789062,
+      "value": "US$ 105,70",
+      "price": 105.69999694824219,
       "currency": "US$",
-      "change": -0.53,
+      "change": -0.89,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-10-13T04:00:00+00:00",
@@ -50,10 +50,10 @@
     {
       "symbol": "S&P 500",
       "label": "S&P 500",
-      "value": "7.798,65",
-      "price": 7798.64990234375,
+      "value": "7.800,36",
+      "price": 7800.35986328125,
       "currency": "",
-      "change": -0.11,
+      "change": -0.09,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-10-13T13:30:00+00:00",
@@ -63,8 +63,8 @@
     {
       "symbol": "NASDAQ",
       "label": "Nasdaq Composite",
-      "value": "27.190,37",
-      "price": 27190.365234375,
+      "value": "27.190,05",
+      "price": 27190.052734375,
       "currency": "",
       "change": -0.2,
       "change_period": "comparação entre pontos diários",
@@ -76,13 +76,13 @@
     {
       "symbol": "BTC/USD",
       "label": "Bitcoin",
-      "value": "US$ 83.087,03",
-      "price": 83087.03,
+      "value": "US$ 83.068,41",
+      "price": 83068.41,
       "currency": "US$",
-      "change": 0.84,
+      "change": 0.82,
       "change_period": "24h",
       "source": "Coinbase Exchange",
-      "asof": "2026-10-13T17:15:16+00:00",
+      "asof": "2026-10-13T17:47:06+00:00",
       "status": "cotação 24h/7",
       "stale": false
     }
