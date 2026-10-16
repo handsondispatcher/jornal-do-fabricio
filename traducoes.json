@@ -282,23 +282,6 @@
         }
       ]
     },
-    "Protestos estudantis globais: confrontos e ocupações na Europa e América do Sul": {
-      "checked_at": 1792116010,
-      "items": []
-    },
-    "Taiwan tells its people to shun Chinese anniversary events for revolutionary hero": {
-      "checked_at": 1792116010,
-      "items": [
-        {
-          "title": "Taiwan tells its people to shun Chinese anniversary events for revolutionary hero",
-          "url": "https://www.sacbee.com/news/nation-world/world/article317644809.html",
-          "source": "www.sacbee.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
     "EU summit focuses on competitiveness, energy prices amid mounting economic pressure": {
       "checked_at": 1792121069,
       "items": []
@@ -307,34 +290,9 @@
       "checked_at": 1792117946,
       "items": []
     },
-    "‘Incredibly fitting’: Supercars return to Phillip Island after MotoGP heist": {
-      "checked_at": 1792116010,
-      "items": []
-    },
     "From 'switching' brain cells on and off with light to 'capturing' cosmic particles under Antarctic ice.": {
       "checked_at": 1792123277,
       "items": []
-    },
-    "Trump diz que está conversando com Rússia e China sobre desnuclearização": {
-      "checked_at": 1792116010,
-      "items": [
-        {
-          "title": "Trump diz que está conversando com Rússia e China sobre desnuclearização",
-          "url": "https://www.msn.com/pt-br/noticias/mundo/trump-diz-que-est%C3%A1-conversando-com-r%C3%BAssia-e-china-sobre-desnucleariza%C3%A7%C3%A3o/ar-AA2elltP",
-          "source": "www.msn.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Trump diz que está conversando com Rússia e China sobre a desnuclearização",
-          "url": "https://www.cnnbrasil.com.br/internacional/trump-diz-que-esta-conversando-com-russia-e-china-sobre-a-desnuclearizacao/",
-          "source": "www.cnnbrasil.com.br",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
     },
     "Houthi Missiles Strike Government Headquarters in Yemen": {
       "checked_at": 1792117946,
@@ -1297,11 +1255,11 @@
       "items": []
     },
     "'We are big ocean states': PIF rebukes critics over pre-COP attendance fixation": {
-      "checked_at": 1792157709,
+      "checked_at": 1792160894,
       "items": []
     },
     "Scientists discover a plastic-eating “Pac-Man” enzyme with a surprising secret": {
-      "checked_at": 1792157709,
+      "checked_at": 1792160894,
       "items": [
         {
           "title": "Scientists discover a plastic-eating “Pac-Man” enzyme with a surprising secret",
@@ -1475,7 +1433,7 @@
       "items": []
     },
     "US senators call for investigation into Ukraine's Starlink restrictions": {
-      "checked_at": 1792153847,
+      "checked_at": 1792160894,
       "items": [
         {
           "title": "US senators call for investigation into Ukraine's Starlink restrictions",
@@ -1632,7 +1590,7 @@
       ]
     },
     "Patients in chains rescued from suspected illegal rehab centre in South Africa": {
-      "checked_at": 1792157709,
+      "checked_at": 1792160894,
       "items": [
         {
           "title": "Patients in chains rescued from suspected illegal rehab centre in South Africa",
@@ -1718,6 +1676,198 @@
           "title": "Israel suspends the entry of commercial goods into Gaza",
           "url": "https://vreme.com/en/svet/izrael-komercijalna-robea-gaza/",
           "source": "vreme.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Ramon Dino é confirmado no Mr. Olympia Brasil após perder título na disputa nos EUA": {
+      "checked_at": 1792160894,
+      "items": [
+        {
+          "title": "Ramon Dino é confirmado no Mr. Olympia Brasil após perder título na disputa nos EUA",
+          "url": "https://www.nsctotal.com.br/esportes/ramon-dino-e-confirmado-no-mr-olympia-brasil-apos-perder-titulo-na-disputa-nos-eua",
+          "source": "www.nsctotal.com.br",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Parlamento ratifica proposta do Parlamento Europeu que permite voto por procuração para eurodeputadas grávidas": {
+      "checked_at": 1792160894,
+      "items": [
+        {
+          "title": "Parlamento ratifica proposta do Parlamento Europeu que permite voto por procuração para eurodeputadas grávidas",
+          "url": "https://observador.pt/2026/10/16/parlamento-ratifica-proposta-do-parlamento-europeu-que-permite-voto-por-procuracao-para-eurodeputadas-gravidas/",
+          "source": "observador.pt",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Voto por procuração para grávidas no Parlamento Europeu",
+          "url": "https://observador.pt/2026/05/26/eurodeputadas-gravidas-e-maes-recentes-podem-votar-por-procuracao-conselho-da-ue-aprova-alteracao-ao-ato-eleitoral-europeu/",
+          "source": "observador.pt",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "China's non-tariff barriers biggest hurdle for Indian exports: Sitharaman": {
+      "checked_at": 1792160894,
+      "items": [
+        {
+          "title": "China's non-tariff barriers biggest hurdle for Indian exports: Sitharaman",
+          "url": "https://www.business-standard.com/economy/news/china-s-non-tariff-barriers-biggest-hurdle-for-indian-exports-sitharaman-126101601245_1.html",
+          "source": "www.business-standard.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "China’s non-tariff barriers biggest trade hurdle, says FM Sitharaman",
+          "url": "https://www.fortuneindia.com/business-news/chinas-non-tariff-barriers-biggest-trade-hurdle-says-fm-sitharaman/165159",
+          "source": "www.fortuneindia.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "China's Non-Tariff Barriers Biggest Hurdle For Trade Ties: Sitharaman",
+          "url": "https://www.freepressjournal.in/business/chinas-non-tariff-barriers-biggest-hurdle-for-trade-ties-sitharaman",
+          "source": "www.freepressjournal.in",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Sitharaman hopes India-US trade deal will be concluded soon, flags China's non-tariff barriers",
+          "url": "https://www.msn.com/en-in/money/economy/sitharaman-hopes-india-us-trade-deal-will-be-concluded-soon-flags-china-s-non-tariff-barriers/ar-AA2em1ms",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Wang Yi Urges Israel to Halt West Bank Settlements in Azerbaijan": {
+      "checked_at": 1792160894,
+      "items": [
+        {
+          "title": "China Urges Israel To Halt West Bank Settlements, Reaffirms Support For Palestinian Statehood",
+          "url": "https://www.outlookindia.com/international/china-urges-israel-halt-west-bank-settlements",
+          "source": "www.outlookindia.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Chinese Foreign Minister Urges Israel to Halt West Bank Settlements",
+          "url": "https://ijr.com/discover/china-presses-israel-on-settlements-gaza-access-05b42632",
+          "source": "ijr.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Wang Yi Urges Israel to Halt West Bank Settlements in Azerbaijan",
+          "url": "https://www.el-balad.com/17058089",
+          "source": "www.el-balad.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Wang Yi urges Israel to halt West Bank settlements",
+          "url": "https://minutemirror.com.pk/wang-yi-urges-israel-halt-645815/",
+          "source": "minutemirror.com.pk",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "China urges Israel to halt West Bank settlements, reopen Gaza access",
+          "url": "https://www.msn.com/en-in/news/other/china-urges-israel-to-halt-west-bank-settlements-reopen-gaza-access/ar-AA2emWkx",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "China Urges ‘Israel’ to Halt, Reverse Forced Establishment West Bank Settlements",
+          "url": "https://english.almanar.com.lb/article/138812/",
+          "source": "english.almanar.com.lb",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Zelensky reage às críticas de Trump após ataques a refinarias russas: ‘defesa da Ucrânia’": {
+      "checked_at": 1792160894,
+      "items": [
+        {
+          "title": "Zelensky desafia Trump com mais ataques a refinarias russas",
+          "url": "https://www.msn.com/pt-br/noticias/mundo/zelensky-desafia-trump-com-mais-ataques-a-refinarias-russas/ar-AA2ejy0I",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Europa proíbe imagens íntimas criadas por IA sem consentimento e estabelece prazo para empresas": {
+      "checked_at": 1792160894,
+      "items": [
+        {
+          "title": "Europa quer travar imagens íntimas criadas por IA sem consentimento",
+          "url": "https://www.msn.com/pt-pt/noticias/ultimas/europa-quer-travar-imagens-%C3%ADntimas-criadas-por-ia-sem-consentimento/ar-AA25MwN8",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Comissão Europeia apresenta nova estratégia para combater tráfico de seres humanos": {
+      "checked_at": 1792160894,
+      "items": []
+    },
+    "Artista caxiense representa o Brasil ao lado de Fafá de Belém em evento cultural em Macau, na China": {
+      "checked_at": 1792160894,
+      "items": [
+        {
+          "title": "Artista caxiense representa o Brasil ao lado de Fafá de Belém em evento cultural em Macau, na China",
+          "url": "https://gauchazh.clicrbs.com.br/pioneiro/cultura-e-lazer/noticia/2026/10/artista-caxiense-representa-o-brasil-ao-lado-de-fafa-de-belem-em-evento-cultural-em-macau-na-china-cmvb0ta8w01v3014ls2isk9fv.html",
+          "source": "gauchazh.clicrbs.com.br",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Opening Ceremony of the 89th Ordinary Session of the African Commission on Human and Peoples' Rights": {
+      "checked_at": 1792160894,
+      "items": []
+    },
+    "Mais de 340 crianças mortas em Gaza desde cessar-fogo": {
+      "checked_at": 1792160894,
+      "items": [
+        {
+          "title": "Mais de 340 crianças mortas em Gaza desde cessar-fogo",
+          "url": "https://observador.pt/2026/10/16/mais-de-340-criancas-mortas-em-gaza-desde-cessar-fogo/",
+          "source": "observador.pt",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Dados da UNICEF. Mais de 340 crianças mortas em Gaza desde cessar-fogo",
+          "url": "https://www.msn.com/pt-pt/noticias/ultimas/dados-da-unicef-mais-de-340-crian%C3%A7as-mortas-em-gaza-desde-cessar-fogo/ar-AA2enl0m",
+          "source": "www.msn.com",
           "summary": "",
           "image_url": "",
           "published": ""
@@ -6284,5 +6434,35 @@
   "Why selling Victoria’s venture fund to fix healthcare is a false economy Startup Daily": "Por que vender o fundo de risco de Victoria para consertar a saúde é uma economia falsa Startup Daily",
   "EU restores Horizon Europe and Erasmus+ funding to Hungary": "UE restaura financiamento do Horizonte Europa e Erasmus+ para a Hungria",
   "EU restores Horizon Europe and Erasmus+ funding to Hungary Chemistry World": "UE restaura financiamento do Horizonte Europa e Erasmus+ à Hungria Chemistry World",
-  "US Iran War Live Updates: UKMTO warns of ‘severe’ threat to shipping in Strait of Hormuz The Indian Express": "Atualizações ao vivo da Guerra do Irã dos EUA: UKMTO alerta sobre ameaça \"grave\" ao transporte marítimo no Estreito de Ormuz The Indian Express"
+  "US Iran War Live Updates: UKMTO warns of ‘severe’ threat to shipping in Strait of Hormuz The Indian Express": "Atualizações ao vivo da Guerra do Irã dos EUA: UKMTO alerta sobre ameaça \"grave\" ao transporte marítimo no Estreito de Ormuz The Indian Express",
+  "China's non-tariff barriers biggest hurdle for Indian exports: Sitharaman": "As barreiras não tarifárias da China são o maior obstáculo para as exportações indianas: Sitharaman",
+  "Finance Minister Nirmala Sitharaman says China has denied market access to Indian products despite repeated requests, while calling for a review of India's trade pact with Asean.": "A ministra das Finanças, Nirmala Sitharaman, diz que a China negou o acesso ao mercado aos produtos indianos, apesar dos repetidos pedidos, ao mesmo tempo que apela a uma revisão do pacto comercial da Índia com a Asean.",
+  "China Urges Israel To Halt West Bank Settlements, Reaffirms Support For Palestinian Statehood": "China insta Israel a suspender assentamentos na Cisjordânia e reafirma apoio ao Estado palestino",
+  "Chinese Foreign Minister Wang Yi has urged Israel to halt and reverse settlement expansion in the occupied West Bank while reaffirming Beijing’s support for a two-state solution to the Israeli-Palestinian conflict": "O ministro das Relações Exteriores da China, Wang Yi, instou Israel a interromper e reverter a expansão dos assentamentos na Cisjordânia ocupada, ao mesmo tempo que reafirmou o apoio de Pequim a uma solução de dois Estados para o conflito israelo-palestiniano.",
+  "Opening Ceremony of the 89th Ordinary Session of the African Commission on Human and Peoples' Rights": "Cerimónia de Abertura da 89ª Sessão Ordinária da Comissão Africana dos Direitos Humanos e dos Povos",
+  "Opening Ceremony of the 89th Ordinary Session of the African Commission on Human and Peoples' Rights African Commission on Human and Peoples' Rights": "Cerimónia de Abertura da 89ª Sessão Ordinária da Comissão Africana dos Direitos Humanos e dos Povos Comissão Africana dos Direitos Humanos e dos Povos",
+  "S&D Conference on Quality Jobs: Europe must protect workers … Easy News Press Agency": "Conferência S&D sobre Empregos de Qualidade: A Europa deve proteger os trabalhadores… Easy News Press Agency",
+  "EU Summit: European Leaders Pledge Support for Ukraine's Zelenskyy": "Cimeira da UE: Líderes europeus prometem apoio a Zelenskyy da Ucrânia",
+  "EU Summit: European Leaders Pledge Support for Ukraine's Zelenskyy Tempo.co English": "Cimeira da UE: Líderes europeus prometem apoio a Zelenskyy da Ucrânia Tempo.co Português",
+  "Uzbekistan appoints first permanent representative to African Union – News from Uzbekistan": "Uzbequistão nomeia primeiro representante permanente na União Africana – Notícias do Uzbequistão",
+  "Uzbekistan appoints first permanent representative to African Union – News from Uzbekistan Газета.uz": "Uzbequistão nomeia primeiro representante permanente na União Africana – Notícias do Uzbequistão Gazeta.uz",
+  "Blue Origin to add new Florida launch pads, seeks aggressive increase in New Glenn flight rate": "Blue Origin adicionará novas plataformas de lançamento na Flórida e busca aumento agressivo na taxa de voo de New Glenn",
+  "Blue Origin to add new Florida launch pads, seeks aggressive increase in New Glenn flight rate Spaceflight Now": "Blue Origin adicionará novas plataformas de lançamento na Flórida e busca aumento agressivo na taxa de voo de New Glenn Spaceflight Now",
+  "Towering glacial ice cliffs may collapse in fits and starts New Scientist": "Imponentes penhascos de gelo glacial podem desabar aos trancos e barrancos Novo Cientista",
+  "This NASA Hubble Space Telescope image features the edge-on, intermediate spiral galaxy NGC 1827, located roughly 37 million light-years away in the constellation Columba, the Dove.": "Esta imagem do Telescópio Espacial Hubble da NASA mostra a galáxia espiral intermediária NGC 1827, localizada a cerca de 37 milhões de anos-luz de distância, na constelação de Columba, a Pomba.",
+  "Bordeaux Will Host The Bartenders Society Final for the First Time in October": "Bordeaux sediará a final da Bartenders Society pela primeira vez em outubro",
+  "Bordeaux Will Host The Bartenders Society Final for the First Time in October Vinetur": "Bordeaux sediará a final da Bartenders Society pela primeira vez em outubro Vinetur",
+  "Suella Braverman and the Conservative Right: Key Policies, ECHR Stance, and Westminster Influence Explained": "Suella Braverman e a direita conservadora: políticas-chave, posição da CEDH e influência de Westminster explicadas",
+  "Suella Braverman and the Conservative Right: Key Policies, ECHR Stance, and Westminster Influence Explained cristinaiglesias.com": "Suella Braverman e a direita conservadora: políticas-chave, posição da CEDH e influência de Westminster explicadas cristinaiglesias.com",
+  "Israel halts commercial shipments into Gaza as winter shortages loom": "Israel interrompe remessas comerciais para Gaza à medida que a escassez de inverno se aproxima",
+  "Israel halts commercial shipments into Gaza as winter shortages loom Daily Sabah": "Israel interrompe remessas comerciais para Gaza à medida que a escassez de inverno se aproxima Daily Sabah",
+  "Joshua Foster \"lost control\" of his son while showing him the view of a water park from a window.": "Joshua Foster “perdeu o controle” de seu filho ao mostrar-lhe a vista de um parque aquático pela janela.",
+  "China tells Trump's press secretary to visit 'more often' after toilet comments": "China diz ao secretário de imprensa de Trump para visitá-lo “com mais frequência” após comentários sobre banheiros",
+  "China tells Trump's press secretary to visit 'more often' after toilet comments NST Online": "China diz ao secretário de imprensa de Trump para visitá-lo 'com mais frequência' após comentários sobre banheiros NST Online",
+  "India's 'cockroach' party founder detained ahead of protest": "Fundador do partido ‘barata’ da Índia é detido antes de protesto",
+  "The youth-led movement planned a fresh Delhi protest after mass detentions last week and the jailing of two leaders.": "O movimento liderado por jovens planeou um novo protesto em Deli, após detenções em massa na semana passada e a prisão de dois líderes.",
+  "Ships in Strait of Hormuz still face \"indiscriminate attacks,\" maritime monitor warns": "Navios no Estreito de Ormuz ainda enfrentam “ataques indiscriminados”, alerta monitor marítimo",
+  "Ships in Strait of Hormuz still face \"indiscriminate attacks,\" maritime monitor warns CBS News": "Navios no Estreito de Ormuz ainda enfrentam “ataques indiscriminados”, alerta monitor marítimo CBS News",
+  "Top 10 most powerful passports in 2026: India climbs rankings, Singapore tops list": "Os 10 passaportes mais poderosos em 2026: Índia sobe na classificação, Cingapura no topo da lista",
+  "Top 10 most powerful passports in 2026: India climbs rankings, Singapore tops list The Indian Express": "Os 10 passaportes mais poderosos em 2026: Índia sobe na classificação, Cingapura no topo da lista The Indian Express"
 }
