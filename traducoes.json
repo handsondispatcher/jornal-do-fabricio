@@ -1038,7 +1038,7 @@
       "items": []
     },
     "What Science Changed Its Mind About in 2026": {
-      "checked_at": 1792194638,
+      "checked_at": 1792196908,
       "items": [
         {
           "title": "What Science Changed Its Mind About in 2026",
@@ -1148,7 +1148,7 @@
       ]
     },
     "Fetu Samoa win praise despite loss": {
-      "checked_at": 1792194638,
+      "checked_at": 1792196908,
       "items": []
     },
     "Secretária de imprensa de Trump deixa cargo após menos de uma semana no posto, diz TV dos EUA": {
@@ -1190,7 +1190,7 @@
       ]
     },
     "Carga de 13 toneladas de pneus pega fogo em MG e exige 50 mil litros de água no combate": {
-      "checked_at": 1792178668,
+      "checked_at": 1792196908,
       "items": []
     },
     "Europa dá o apoio possível a Zelenski, que se vê bode expiatório de Trump": {
@@ -1468,7 +1468,7 @@
       "items": []
     },
     "\"A Arte da Guerra\": “França tem uma economia que permite assegurar algumas disfunções”": {
-      "checked_at": 1792194638,
+      "checked_at": 1792196908,
       "items": [
         {
           "title": "“A Arte da Guerra”: “França tem uma economia que permite assegurar algumas disfunções”",
@@ -1736,7 +1736,7 @@
       ]
     },
     "China e Coreia do Norte inauguram ponte para comércio": {
-      "checked_at": 1792194638,
+      "checked_at": 1792196908,
       "items": [
         {
           "title": "China e Coreia do Norte inauguram ponte fronteiriça para impulsionar o comércio",
@@ -1805,7 +1805,7 @@
       ]
     },
     "El Niño has killed hundreds of children in Sudan": {
-      "checked_at": 1792194638,
+      "checked_at": 1792196908,
       "items": [
         {
           "title": "El Niño has killed hundreds of children in Sudan",
@@ -1826,7 +1826,7 @@
       "items": []
     },
     "China quer restringir exportações de tecnologias de IA e biotecnologia": {
-      "checked_at": 1792194638,
+      "checked_at": 1792196908,
       "items": [
         {
           "title": "China quer restringir exportações de tecnologias de IA e biotecnologia",
@@ -1839,7 +1839,7 @@
       ]
     },
     "Hyron Andrews: South African rugby side Lions confirm sudden death of player ahead of Champions Cup match in France against La Rochelle": {
-      "checked_at": 1792194638,
+      "checked_at": 1792196908,
       "items": [
         {
           "title": "Hyron Andrews: South African rugby side Lions confirm sudden death of player ahead of Champions Cup match in France against La Rochelle",
@@ -1860,7 +1860,7 @@
       ]
     },
     "Jackie era um babuíno de estimação que acompanhou seu tutor ao Exército sul-africano na Primeira Guerra Mundial, foi ferido em combate e acabou promovido": {
-      "checked_at": 1792194638,
+      "checked_at": 1792196908,
       "items": []
     },
     "Jordan Kids: ação solidária em prol do Hospital Santo Antônio": {
@@ -1955,6 +1955,44 @@
     },
     "What Israel's Halt on Commercial Goods to Gaza Means for Food and Prices": {
       "checked_at": 1792194638,
+      "items": []
+    },
+    "Donald Trump threatens action against Clinton, Obama, Biden over possible impeachment": {
+      "checked_at": 1792196908,
+      "items": []
+    },
+    "Young Diplomats Explore Global Issues at PunaMUN": {
+      "checked_at": 1792196908,
+      "items": []
+    },
+    "EUA revoga restrições aéreas impostas ao México": {
+      "checked_at": 1792196908,
+      "items": [
+        {
+          "title": "EUA revoga restrições aéreas impostas ao México",
+          "url": "https://noticias.uol.com.br/ultimas-noticias/afp/2026/10/16/eua-revoga-restricoes-aereas-impostas-ao-mexico.htm",
+          "source": "noticias.uol.com.br",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Vladimir Putin defende continuidade de ataques contra infraestrutura da Ucrânia": {
+      "checked_at": 1792196908,
+      "items": [
+        {
+          "title": "Vladimir Putin determina continuidade de ataques em larga escala contra alvos na Ucrânia",
+          "url": "https://www.gp1.com.br/internacional/noticia/2026/10/16/vladimir-putin-determina-continuidade-de-ataques-em-larga-escala-contra-alvos-na-ucrania-634159.html",
+          "source": "www.gp1.com.br",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "On Our Radar": {
+      "checked_at": 1792196908,
       "items": []
     }
   },
@@ -6801,5 +6839,17 @@
   "Roundtable on Water in a Changing World: Peace, Cooperation, Diplomacy and Canada's role in the Global Agenda": "Mesa Redonda sobre a Água num Mundo em Mudança: Paz, Cooperação, Diplomacia e o papel do Canadá na Agenda Global",
   "Roundtable on Water in a Changing World: Peace, Cooperation, Diplomacy and Canada's role in the Global Agenda UNU | United Nations University": "Mesa Redonda sobre Água num Mundo em Mudança: Paz, Cooperação, Diplomacia e o papel do Canadá na Agenda Global UNU | Universidade das Nações Unidas",
   "James Webb reveals a strange bulge in an alien planet's atmosphere": "James Webb revela uma estranha protuberância na atmosfera de um planeta alienígena",
-  "James Webb reveals a strange bulge in an alien planet's atmosphere Science Daily": "James Webb revela uma estranha protuberância na atmosfera de um planeta alienígena Science Daily"
+  "James Webb reveals a strange bulge in an alien planet's atmosphere Science Daily": "James Webb revela uma estranha protuberância na atmosfera de um planeta alienígena Science Daily",
+  "Donald Trump threatens action against Clinton, Obama, Biden over possible impeachment": "Donald Trump ameaça ação contra Clinton, Obama, Biden sobre possível impeachment",
+  "Donald Trump threatens action against Clinton, Obama, Biden over possible impeachment The Jerusalem Post": "Donald Trump ameaça tomar medidas contra Clinton, Obama e Biden sobre possível impeachment The Jerusalem Post",
+  "Young Diplomats Explore Global Issues at PunaMUN Punahou School": "Jovens diplomatas exploram questões globais na escola PunaMUN Punahou",
+  "On Our Radar International Crisis Group": "Em Nosso Radar Grupo de Crise Internacional",
+  "South Korea, Japan detect multiple North Korean ballistic missile launches News On AIR": "Coreia do Sul e Japão detectam múltiplos lançamentos de mísseis balísticos norte-coreanos News On AIR",
+  "Trump 'completely wrong' to restrict support for Ukraine, Italian minister tells BBC": "Trump está 'completamente errado' ao restringir o apoio à Ucrânia, disse ministro italiano à BBC",
+  "Defence Minister Guido Crosetto tells the BBC the US risks prolonging Russia's full-scale invasion rather than helping to end it.": "O ministro da Defesa, Guido Crosetto, disse à BBC que os EUA correm o risco de prolongar a invasão em grande escala da Rússia, em vez de ajudar a acabar com ela.",
+  "Who will win the 2026 midterms? Latest polls, odds and predictions": "Quem vencerá as provas intermediárias de 2026? Últimas pesquisas, probabilidades e previsões",
+  "EU faces growing pressure to plug Ukraine’s Starlink gap": "UE enfrenta pressão crescente para preencher a lacuna Starlink da Ucrânia",
+  "EU faces growing pressure to plug Ukraine’s Starlink gap POLITICO.eu": "A UE enfrenta pressão crescente para colmatar a lacuna Starlink da Ucrânia POLITICO.eu",
+  "Trump allies discuss martial law ahead of midterms": "Aliados de Trump discutem lei marcial antes das eleições intercalares",
+  "Trump allies discuss martial law ahead of midterms Newsweek": "Aliados de Trump discutem lei marcial antes das eleições intercalares Newsweek"
 }
