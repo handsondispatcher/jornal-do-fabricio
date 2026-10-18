@@ -247,12 +247,28 @@
       "items": []
     },
     "European diplomats attacked by Israeli settlers in West Bank": {
-      "checked_at": 1792294170,
+      "checked_at": 1792326219,
       "items": [
         {
           "title": "EU diplomats say they were attacked by settlers in West Bank",
           "url": "https://www.msn.com/en-us/news/other/eu-diplomats-say-they-were-attacked-by-settlers-in-west-bank/ar-AA2ermRJ",
           "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Masked settlers attack European diplomats in the occupied West Bank",
+          "url": "https://apnews.com/article/west-bank-israel-european-diplomats-settlers-89ebd068167669db357ad1fa4f3a8758",
+          "source": "apnews.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Israeli Settlers Attack European Diplomats in West Bank as Belgium Demands EU Sanctions",
+          "url": "https://eutoday.net/israeli-settlers-attack-european-diplomats-west-bank/",
+          "source": "eutoday.net",
           "summary": "",
           "image_url": "",
           "published": ""
@@ -266,22 +282,6 @@
           "published": ""
         },
         {
-          "title": "European diplomats attacked in West Bank a day after beating of Post photographer",
-          "url": "https://www.msn.com/en-us/news/other/european-diplomats-attacked-in-west-bank-a-day-after-beating-of-post-photographer/ar-AA2esbqY",
-          "source": "www.msn.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Masked Israeli settlers attack European diplomats in West Bank",
-          "url": "https://www.msn.com/en-us/news/other/masked-israeli-settlers-attack-european-diplomats-in-west-bank/ar-AA2erEIz",
-          "source": "www.msn.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
           "title": "Israeli Settlers Attack Palestinians and European Officials in West Bank",
           "url": "https://www.nytimes.com/2026/10/17/world/middleeast/israeli-settlers-attack-palestinians-diplomats-west-bank.html",
           "source": "www.nytimes.com",
@@ -290,25 +290,25 @@
           "published": ""
         },
         {
-          "title": "Israeli settlers attack Palestinians and European diplomats in West Bank, Belgium says",
-          "url": "https://www.abc.net.au/news/2026-10-18/israeli-settler-attack-palestinians-european-diplomats-west-bank/107280242",
-          "source": "www.abc.net.au",
+          "title": "Israeli settlers attack group of European diplomats in the occupied West Bank",
+          "url": "https://www.msn.com/en-us/news/other/israeli-settlers-attack-group-of-european-diplomats-in-the-occupied-west-bank/ar-AA2erYwI",
+          "source": "www.msn.com",
           "summary": "",
           "image_url": "",
           "published": ""
         },
         {
-          "title": "Masked settlers attack European diplomats in the occupied West Bank",
-          "url": "https://www.bostonglobe.com/2026/10/17/world/masked-settlers-attack-european-diplomats-occupied-west-bank/",
-          "source": "www.bostonglobe.com",
+          "title": "Masked Israeli Settlers Attack European Diplomats in West Bank",
+          "url": "https://www.msn.com/en-us/news/other/masked-israeli-settlers-attack-european-diplomats-in-west-bank/ar-AA2erEIz",
+          "source": "www.msn.com",
           "summary": "",
           "image_url": "",
           "published": ""
         },
         {
-          "title": "Israeli Settlers Attack European Diplomats in West Bank, Triggering Outrage",
-          "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008802450",
-          "source": "news.sbs.co.kr",
+          "title": "European diplomats attacked by Israeli settlers in West Bank",
+          "url": "https://www.msn.com/en-us/news/other/european-diplomats-attacked-by-israeli-settlers-in-west-bank/ar-AA2erX3X",
+          "source": "www.msn.com",
           "summary": "",
           "image_url": "",
           "published": ""
@@ -796,7 +796,7 @@
       "items": []
     },
     "Mirror Neuron Research Moves from Hype to Mechanisms": {
-      "checked_at": 1792324367,
+      "checked_at": 1792326219,
       "items": []
     },
     "Russia sanction waiver relief for India: What did Marco Rubio reveal about Trump’s tariff plan?": {
@@ -1161,7 +1161,7 @@
       ]
     },
     "From Diplomas to Industrial Power: How Africa Skills Week 2026 Is Redefining the Continent’s Future": {
-      "checked_at": 1792324367,
+      "checked_at": 1792326219,
       "items": []
     },
     "Iran War: Latest News, Live Coverage and Video": {
@@ -1169,7 +1169,7 @@
       "items": []
     },
     "Najaf Friday prayer leader condemns Azerbaijan’s hijab ban in schools": {
-      "checked_at": 1792324367,
+      "checked_at": 1792326219,
       "items": [
         {
           "title": "Najaf Friday prayer leader condemns Azerbaijan’s hijab ban in schools",
@@ -1346,11 +1346,11 @@
       ]
     },
     "Third Edition of the Abidjan Border Forum to Promote Peaceful Coexistence, Social Cohesion, Development and Security between Border Communities in Africa-African Union - Peace and Security Department": {
-      "checked_at": 1792324367,
+      "checked_at": 1792326219,
       "items": []
     },
     "Irã nomeia novo ministro da Defesa após oito meses de guerra": {
-      "checked_at": 1792324367,
+      "checked_at": 1792326219,
       "items": [
         {
           "title": "Mehrdad Akhlaghi nomeado ministro da Defesa, oito meses após início da guerra",
@@ -1423,7 +1423,7 @@
       ]
     },
     "Uzbekistan reaffirms One China policy at Tashkent talks": {
-      "checked_at": 1792324367,
+      "checked_at": 1792326219,
       "items": []
     },
     "Arábia Saudita diz que dois pilotos morreram em acidente perto da fronteira com o Iêmen": {
@@ -1431,7 +1431,7 @@
       "items": []
     },
     "Solving Papua New Guinea's education crisis": {
-      "checked_at": 1792324367,
+      "checked_at": 1792326219,
       "items": [
         {
           "title": "Solving Papua New Guinea's education crisis",
@@ -1452,7 +1452,7 @@
       "items": []
     },
     "BMW inicia produção em massa de baterias de 6ª geração na China": {
-      "checked_at": 1792324367,
+      "checked_at": 1792326219,
       "items": [
         {
           "title": "BMW inicia produção em massa de baterias de 6ª geração na China",
@@ -1471,6 +1471,52 @@
           "published": ""
         }
       ]
+    },
+    "“I examined his a**”: Donald Trump’s latest pitch for Republican candidates": {
+      "checked_at": 1792326219,
+      "items": []
+    },
+    "Ucrânia ataca São Petersburgo com dezenas de drones e deixa um morto": {
+      "checked_at": 1792326219,
+      "items": [
+        {
+          "title": "Ucrânia ataca São Petersburgo com dezenas de drones e deixa um morto",
+          "url": "https://www.correiodopovo.com.br/not%C3%ADcias/mundo/ucrania-ataca-sao-petersburgo-com-dezenas-de-drones-e-deixa-um-morto-1.1756995",
+          "source": "www.correiodopovo.com.br",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Latino voters helped put Trump back in the White House. What's their next move?": {
+      "checked_at": 1792326219,
+      "items": []
+    },
+    "Protestos na França deixam um morto e 1.800 detidos": {
+      "checked_at": 1792326219,
+      "items": [
+        {
+          "title": "Protestos na França levam mais de 500 mil às ruas e deixam 1 morto, 500 policiais feridos e 1.800 presos",
+          "url": "https://g1.globo.com/mundo/noticia/2026/10/18/protestos-na-franca-mortos-feridos-presos-outubro.ghtml",
+          "source": "g1.globo.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Número de detidos nos protestos em França ascende a 1.800, com 500 agentes feridos",
+          "url": "https://cnnportugal.iol.pt/franca/protestos/numero-de-detidos-nos-protestos-em-franca-ascende-a-1-800-com-500-agentes-feridos/20261018/6ad4a41dd34e53c759c76ec8",
+          "source": "cnnportugal.iol.pt",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Iran rejects coercion, remains open to talks based on mutual respect: FM - Region - World": {
+      "checked_at": 1792326219,
+      "items": []
     }
   },
   "Taiwan's US envoy says ties robust after Trump-Xi summit": "Enviado dos EUA de Taiwan diz que laços estão robustos após cimeira Trump-Xi",
