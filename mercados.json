@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-18T23:48:23+00:00",
+  "checked_at": "2026-10-19T00:28:08+00:00",
   "items": [
     {
       "symbol": "USD/BRL",
@@ -37,13 +37,13 @@
     {
       "symbol": "BRENT",
       "label": "Petróleo Brent (futuro)",
-      "value": "US$ 108,40",
-      "price": 108.4000015258789,
+      "value": "US$ 107,98",
+      "price": 107.9800033569336,
       "currency": "US$",
-      "change": -1.33,
+      "change": -1.71,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
-      "asof": "2026-10-18T23:38:16+00:00",
+      "asof": "2026-10-19T00:17:44+00:00",
       "status": "último ponto diário (pode ser parcial)",
       "stale": false
     },
@@ -76,13 +76,13 @@
     {
       "symbol": "BTC/USD",
       "label": "Bitcoin",
-      "value": "US$ 81.961,05",
-      "price": 81961.05,
+      "value": "US$ 82.072,45",
+      "price": 82072.45,
       "currency": "US$",
-      "change": 0.71,
+      "change": 0.79,
       "change_period": "24h",
       "source": "Coinbase Exchange",
-      "asof": "2026-10-18T23:48:23+00:00",
+      "asof": "2026-10-19T00:28:08+00:00",
       "status": "cotação 24h/7",
       "stale": false
     }
