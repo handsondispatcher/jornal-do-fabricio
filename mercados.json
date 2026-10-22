@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-22T12:01:49+00:00",
+  "checked_at": "2026-10-22T13:18:34+00:00",
   "items": [
     {
       "symbol": "USD/BRL",
@@ -24,23 +24,23 @@
     {
       "symbol": "IBOV",
       "label": "Ibovespa · B3",
-      "value": "206.495,00",
-      "price": 206495.0,
+      "value": "206.295,00",
+      "price": 206295.0,
       "currency": "",
-      "change": -0.86,
+      "change": -0.1,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
-      "asof": "2026-10-21T13:00:00+00:00",
-      "status": "último fechamento disponível",
+      "asof": "2026-10-22T13:00:00+00:00",
+      "status": "último ponto diário (pode ser parcial)",
       "stale": false
     },
     {
       "symbol": "BRENT",
       "label": "Petróleo Brent (futuro)",
-      "value": "US$ 112,07",
-      "price": 112.06999969482422,
+      "value": "US$ 111,95",
+      "price": 111.94999694824219,
       "currency": "US$",
-      "change": 2.99,
+      "change": 2.88,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-10-22T04:00:00+00:00",
@@ -76,13 +76,13 @@
     {
       "symbol": "BTC/USD",
       "label": "Bitcoin",
-      "value": "US$ 81.718,97",
-      "price": 81718.97,
+      "value": "US$ 81.659,23",
+      "price": 81659.23,
       "currency": "US$",
-      "change": -2.01,
+      "change": -2.47,
       "change_period": "24h",
       "source": "Coinbase Exchange",
-      "asof": "2026-10-22T12:01:49+00:00",
+      "asof": "2026-10-22T13:18:34+00:00",
       "status": "cotação 24h/7",
       "stale": false
     }
