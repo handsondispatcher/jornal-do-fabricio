@@ -264,19 +264,6 @@
         }
       ]
     },
-    "Resgate busca desaparecidos após prédio desabar no Quênia": {
-      "checked_at": 1792812702,
-      "items": [
-        {
-          "title": "Resgate busca desaparecidos após prédio desabar no Quênia",
-          "url": "https://www.correiodopovo.com.br/not%C3%ADcias/mundo/resgate-busca-desaparecidos-apos-predio-desabar-no-quenia-1.1758666",
-          "source": "www.correiodopovo.com.br",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
     "Trade diversification won’t fix Vietnam’s import dependence": {
       "checked_at": 1792815816,
       "items": []
@@ -301,19 +288,6 @@
     "A batalha política no berço do MST no Rio Grande do Sul": {
       "checked_at": 1792818110,
       "items": []
-    },
-    "Liberação de milhões de mosquitos com bactéria na Espanha e no Brasil atrai atenção; entenda o plano": {
-      "checked_at": 1792812702,
-      "items": [
-        {
-          "title": "Liberação de milhões de mosquitos com bactéria na Espanha e no Brasil atrai atenção; entenda o plano",
-          "url": "https://atarde.com.br/mundo/liberacao-de-milhoes-de-mosquitos-com-bacteria-na-espanha-e-no-brasil-atrai-atencao-entenda-o-plano-1406922",
-          "source": "atarde.com.br",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
     },
     "Bontempo entra na pré-lista da Seleção Brasileira para amistosos contra Japão e Singapura": {
       "checked_at": 1792815816,
@@ -864,7 +838,7 @@
       ]
     },
     "Anutin expects Thai GDP growth to exceed 2.1% in 2026": {
-      "checked_at": 1792855342,
+      "checked_at": 1792857387,
       "items": []
     },
     "R4, European powers confer on Gulf tensions at Istanbul talks": {
@@ -1756,7 +1730,7 @@
       "items": []
     },
     "Around 1,200 Palestinians are displaced in Hebron as Israel begins military operation": {
-      "checked_at": 1792855342,
+      "checked_at": 1792857387,
       "items": []
     },
     "Em meio às montanhas: elevador de vidro de 326 metros instalado em penhasco na China virou atração turística mundial": {
@@ -1870,7 +1844,7 @@
       ]
     },
     "Asian Para Games 2026 Final Medal Tally: India finishes with best-ever haul; China tops with 400+ medals": {
-      "checked_at": 1792855342,
+      "checked_at": 1792857387,
       "items": []
     },
     "AU hails Formula 1's return to Africa as significant milestone": {
@@ -1891,7 +1865,7 @@
       "items": []
     },
     "Arab Reading Challenge 2026: 40.2 million students compete for top honours and Dh11mn": {
-      "checked_at": 1792855342,
+      "checked_at": 1792857387,
       "items": []
     },
     "Líderes europeus enfrentam dilema com a China": {
@@ -1899,7 +1873,7 @@
       "items": []
     },
     "Trump incentiva eleitores a votarem antecipadamente em Michigan": {
-      "checked_at": 1792855342,
+      "checked_at": 1792857387,
       "items": []
     },
     "Motorista morre em acidente entre Franca e Ribeirão Corrente": {
@@ -1920,15 +1894,52 @@
       ]
     },
     "Incêndios na Indonésia causam poluição em Singapura e destroem casas": {
-      "checked_at": 1792855342,
+      "checked_at": 1792857387,
       "items": []
     },
     "Libya condemns terrorist bombing at church in Al-Karak, Jordan": {
-      "checked_at": 1792855342,
+      "checked_at": 1792857387,
       "items": []
     },
     "De Goiânia para o mundo: grupo leva 42 coreografias para final internacional na Argentina": {
       "checked_at": 1792855342,
+      "items": []
+    },
+    "Eleições de meio de mandato nos EUA: guerra com Irã, tarifas e custo de vida pressionam Trump e colocam controle do Congresso em disputa": {
+      "checked_at": 1792857387,
+      "items": [
+        {
+          "title": "Trump prevê fim da guerra com Irã após eleições de meio de mandato nos EUA",
+          "url": "https://www.msn.com/pt-br/noticias/other/trump-prev%C3%AA-fim-da-guerra-com-ir%C3%A3-ap%C3%B3s-elei%C3%A7%C3%B5es-de-meio-de-mandato-nos-eua/ar-AA2bUpd8",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Starlink na Ucrânia volta ao normal após semana de restrições": {
+      "checked_at": 1792857387,
+      "items": []
+    },
+    "EAM Jaishankar hosts African Heads of Mission, discusses rise of Africa in multipolar world": {
+      "checked_at": 1792857387,
+      "items": []
+    },
+    "They’ve been a gas act: The end of a remarkable partnership in Antarctica": {
+      "checked_at": 1792857387,
+      "items": []
+    },
+    "União Europeia estuda manter venda de motores a combustão após 2035": {
+      "checked_at": 1792857387,
+      "items": []
+    },
+    "Lula entra em live de Janones e brinca sobre ‘Exército’ em canal no WhatsApp: ‘Xi Jinping está com ciúmes, e Putin pediu emprestado'": {
+      "checked_at": 1792857387,
+      "items": []
+    },
+    "Tshisekedi needs to accept all-inclusive dialogue, says South African envoy| The New Times": {
+      "checked_at": 1792857387,
       "items": []
     }
   },
@@ -11592,5 +11603,17 @@
   "Football latest news & gossip": "Últimas notícias e fofocas sobre futebol",
   "Football latest news & gossip Sky Sports": "Últimas notícias e fofocas sobre futebol Sky Sports",
   "Ghana steps up Ebola surveillance after cases are reported in Kenya, DRC and Nigeria": "Gana intensifica vigilância do Ébola depois de casos terem sido notificados no Quénia, na RDC e na Nigéria",
-  "Ghana steps up Ebola surveillance after cases are reported in Kenya, DRC and Nigeria The Eastleigh Voice": "Gana intensifica vigilância do Ebola após relatos de casos no Quênia, RDC e Nigéria The Eastleigh Voice"
+  "Ghana steps up Ebola surveillance after cases are reported in Kenya, DRC and Nigeria The Eastleigh Voice": "Gana intensifica vigilância do Ebola após relatos de casos no Quênia, RDC e Nigéria The Eastleigh Voice",
+  "EAM Jaishankar hosts African Heads of Mission, discusses rise of Africa in multipolar world": "EAM Jaishankar recebe Chefes de Missão Africanos e discute a ascensão da África no mundo multipolar",
+  "EAM Jaishankar hosts African Heads of Mission, discusses rise of Africa in multipolar world IANS LIVE": "EAM Jaishankar recebe Chefes de Missão Africanos e discute a ascensão da África no mundo multipolar IANS LIVE",
+  "They’ve been a gas act: The end of a remarkable partnership in Antarctica": "Eles têm sido um ato de gás: o fim de uma parceria notável na Antártica",
+  "They’ve been a gas act: The end of a remarkable partnership in Antarctica Stuff.co.nz": "Eles têm sido um ato de gás: o fim de uma parceria notável na Antártica Stuff.co.nz",
+  "Tshisekedi needs to accept all-inclusive dialogue, says South African envoy| The New Times": "Tshisekedi precisa aceitar um diálogo inclusivo, diz enviado sul-africano | Os novos tempos",
+  "Tshisekedi needs to accept all-inclusive dialogue, says South African envoy| The New Times The New Times": "Tshisekedi precisa aceitar um diálogo inclusivo, diz enviado sul-africano | Os Novos Tempos Os Novos Tempos",
+  "R4, European ministers call for diplomacy to ease regional tensions": "R4, ministros europeus apelam à diplomacia para aliviar as tensões regionais",
+  "R4, European ministers call for diplomacy to ease regional tensions Abb Takk News": "R4, ministros europeus pedem diplomacia para aliviar tensões regionais Abb Takk News",
+  "Bipartisan US Lawmakers Push Back On Trump's Russia Policy, Vow Support For Ukraine": "Legisladores bipartidários dos EUA recuam na política de Trump para a Rússia e prometem apoio à Ucrânia",
+  "Bipartisan US Lawmakers Push Back On Trump's Russia Policy, Vow Support For Ukraine Radio Free Europe/Radio Liberty": "Legisladores bipartidários dos EUA recuam na política de Trump para a Rússia e prometem apoio à Ucrânia Rádio Free Europe/Radio Liberty",
+  "From Haines to One Nation, the only exceptionalism left is negative": "De Haines a One Nation, o único excepcionalismo que resta é negativo",
+  "From Haines to One Nation, the only exceptionalism left is negative The Centre for Independent Studies": "De Haines a One Nation, o único excepcionalismo que resta é o negativo The Center for Independent Studies"
 }
