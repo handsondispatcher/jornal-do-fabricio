@@ -279,22 +279,6 @@
         }
       ]
     },
-    "Andrea Vance: The trouble with telling voters to be thankful": {
-      "checked_at": 1792875264,
-      "items": []
-    },
-    "Hamilton lidera último treino livre para o GP dos EUA; Bortoleto termina em 13º": {
-      "checked_at": 1792875264,
-      "items": []
-    },
-    "França registra quase mil prisões após novo dia de protestos": {
-      "checked_at": 1792875264,
-      "items": []
-    },
-    "Americans evacuated across Middle East as US intelligence chief warns Iranian death plot is in 'advanced stages'": {
-      "checked_at": 1792875264,
-      "items": []
-    },
     "Obama describes Trump as an agent of ‘chaos and cruelty’ in midterm elections pitch": {
       "checked_at": 1792878884,
       "items": [
@@ -733,7 +717,7 @@
       ]
     },
     "Dar meets Erdogan, French FM in Istanbul": {
-      "checked_at": 1792916533,
+      "checked_at": 1792918720,
       "items": [
         {
           "title": "Dar meets Erdogan, French FM in Istanbul",
@@ -857,7 +841,7 @@
       ]
     },
     "Indonesia Delivers Clean Water to Nearly 7,000 People in Gaza": {
-      "checked_at": 1792916533,
+      "checked_at": 1792918720,
       "items": []
     },
     "US issues travel warning in 13 Middle Eastern countries": {
@@ -908,7 +892,7 @@
       "items": []
     },
     "Cancer Drugs’ Serious Side Effects Explained by Missed Discovery": {
-      "checked_at": 1792916533,
+      "checked_at": 1792918720,
       "items": [
         {
           "title": "Cancer Drugs’ Serious Side Effects Explained by Missed Discovery",
@@ -925,7 +909,7 @@
       "items": []
     },
     "Sport-packed Labour weekend brings business boost to Christchurch": {
-      "checked_at": 1792916533,
+      "checked_at": 1792918720,
       "items": []
     },
     "Trump says France 'burning down' because it opens borders to people 'who hate it'; claims protests not related to education | World News": {
@@ -1083,7 +1067,7 @@
       "items": []
     },
     "MotoGP: Chuva atrasa corrida principal no GP da Austrália, e Moto2 e Moto3 são canceladas": {
-      "checked_at": 1792913544,
+      "checked_at": 1792918720,
       "items": [
         {
           "title": "MotoGP: Chuva atrasa corrida principal no GP da Austrália, e Moto2 e Moto3 são canceladas",
@@ -1100,11 +1084,11 @@
       "items": []
     },
     "Kim Jong Un strengthens ties with China ahead of a possible meeting with Trump": {
-      "checked_at": 1792916533,
+      "checked_at": 1792918720,
       "items": []
     },
     "‘Not be a spectator to global crises’: Jaishankar tells UN to lead, calls for reformed multilateralism": {
-      "checked_at": 1792916533,
+      "checked_at": 1792918720,
       "items": [
         {
           "title": "Jaishankar calls for reformed multilateralism, multi-polar world",
@@ -1151,7 +1135,7 @@
       "items": []
     },
     "Eight countries, including Pakistan, call for diplomacy to resolve conflicts": {
-      "checked_at": 1792916533,
+      "checked_at": 1792918720,
       "items": [
         {
           "title": "Eight countries, including Pakistan, call for diplomacy to resolve conflicts",
@@ -1164,7 +1148,54 @@
       ]
     },
     "India Accuses Pakistan of Diverting Attention from Domestic Challenges at UN": {
-      "checked_at": 1792916533,
+      "checked_at": 1792918720,
+      "items": []
+    },
+    "Trump on Iran: Strike possible today, but ‘big, beautiful’ deal remains an option": {
+      "checked_at": 1792918720,
+      "items": [
+        {
+          "title": "Trump on Iran: Strike possible today, but ‘big, beautiful’ deal remains an option",
+          "url": "https://indianexpress.com/article/world/donald-trump-iran-strike-agreement-option-open-10936048/",
+          "source": "indianexpress.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Tata Sons listing latest news: How RBI Governor Sanjay Malhotra's first public comment dispels doubts on Sept 11 order": {
+      "checked_at": 1792918720,
+      "items": [
+        {
+          "title": "Tata Sons listing latest news: How RBI Governor Sanjay Malhotra's first public comment dispels doubts on Sept 11 order",
+          "url": "https://www.msn.com/en-in/money/other/tata-sons-listing-latest-news-how-rbi-governor-sanjay-malhotra-s-first-public-comment-dispels-doubts-on-sept-11-order/ar-AA2g1f25",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Beijing commemorates end of Japanese rule over Taiwan with call for unity": {
+      "checked_at": 1792918720,
+      "items": []
+    },
+    "'I cannot teach you integrity': How employee theft is hurting small businesses in Africa": {
+      "checked_at": 1792918720,
+      "items": [
+        {
+          "title": "'I cannot teach you integrity': How employee theft is hurting small businesses in Africa",
+          "url": "https://www.msn.com/en-us/news/world/i-cannot-teach-you-integrity-how-employee-theft-is-hurting-small-businesses-in-africa/ar-AA2g1rGm",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Morning update": {
+      "checked_at": 1792918720,
       "items": []
     }
   },
@@ -11131,5 +11162,22 @@
   "Chemicals and petrochemicals sector needs to reach $1 trillion by 2040: JP Nadda": "O setor químico e petroquímico precisa atingir US$ 1 trilhão até 2040: JP Nadda",
   "Chemicals and petrochemicals sector needs to reach $1 trillion by 2040: JP Nadda Social News XYZ": "O setor químico e petroquímico precisa atingir US$ 1 trilhão até 2040: JP Nadda Social News XYZ",
   "Fed expected to hold rates steady days ahead of US midterms": "Fed espera manter taxas estáveis ​​dias antes das eleições intercalares dos EUA",
-  "Fed expected to hold rates steady days ahead of US midterms France 24": "Fed espera manter taxas estáveis ​​dias antes das eleições intercalares dos EUA França 24"
+  "Fed expected to hold rates steady days ahead of US midterms France 24": "Fed espera manter taxas estáveis ​​dias antes das eleições intercalares dos EUA França 24",
+  "Trump on Iran: Strike possible today, but ‘big, beautiful’ deal remains an option": "Trump sobre o Irã: ataque é possível hoje, mas acordo ‘grande e bonito’ continua sendo uma opção",
+  "Tata Sons listing latest news: How RBI Governor Sanjay Malhotra's first public comment dispels doubts on Sept 11 order": "Tata Sons listando as últimas notícias: Como o primeiro comentário público do governador do RBI, Sanjay Malhotra, dissipa as dúvidas sobre a ordem de 11 de setembro",
+  "Beijing commemorates end of Japanese rule over Taiwan with call for unity": "Pequim comemora fim do domínio japonês sobre Taiwan com apelo à unidade",
+  "Beijing commemorates end of Japanese rule over Taiwan with call for unity South China Morning Post": "Pequim comemora fim do domínio japonês sobre Taiwan com apelo à unidade South China Morning Post",
+  "'I cannot teach you integrity': How employee theft is hurting small businesses in Africa": "‘Não posso ensinar-lhe integridade’: como o roubo de funcionários está prejudicando as pequenas empresas na África",
+  "That Girl Boina's post about why she had closed her beauty parlour struck a nerve with other small business owners.": "A postagem daquela garota Boina sobre por que ela fechou seu salão de beleza tocou outros proprietários de pequenas empresas.",
+  "\"Must show leadership, not be spectator to global crises\": EAM Jaishankar demands reformed multilateralism on occassion of UN Day ANI News": "“Deve mostrar liderança, não ser espectador de crises globais”: EAM Jaishankar exige multilateralismo reformado por ocasião do Dia da ONU ANI News",
+  "APOD: 2026 October 25 – Dark Matter in a Simulated Universe": "APOD: 2026, 25 de outubro – Matéria escura em um universo simulado",
+  "APOD Science APOD APOD: 2026 October 25 – Dark… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Dark Matter […]": "APOD Science APOD APOD: 2026 25 de outubro - Escuro… Arquivo APOD de hoje Índice de envios Pesquisar Calendário RSS Educação Sobre Discutir APOD Astronomia Imagem do dia Descubra o cosmos! Cada dia é apresentada uma imagem ou fotografia diferente do nosso fascinante universo, juntamente com uma breve explicação escrita por um astrônomo profissional. Matéria Escura […]",
+  "‘Saddam Hussein opened cheesecake factory’: Obama takes aim at Trump’s White House changes": "‘Saddam Hussein abriu fábrica de cheesecake’: Obama mira nas mudanças de Trump na Casa Branca",
+  "‘Saddam Hussein opened cheesecake factory’: Obama takes aim at Trump’s White House changes The Indian Express": "‘Saddam Hussein abriu fábrica de cheesecake’: Obama mira nas mudanças de Trump na Casa Branca The Indian Express",
+  "Tens of thousands of Israelis living abroad are expected to fly in for pivotal vote": "Espera-se que dezenas de milhares de israelenses que vivem no exterior compareçam para uma votação crucial",
+  "Andrea Vance: The trouble with telling voters to be thankful Stuff.co.nz": "Andrea Vance: O problema de dizer aos eleitores para serem gratos Stuff.co.nz",
+  "Expecting the Russia - US - China summit to help resolve global chaos": "Esperando que a cimeira Rússia-EUA-China ajude a resolver o caos global",
+  "Expecting the Russia - US - China summit to help resolve global chaos Laodong.vn": "Esperando que a cúpula Rússia-EUA-China ajude a resolver o caos global Laodong.vn",
+  "The good guys notch a victory in the AI cybersecurity age": "Os mocinhos conquistam uma vitória na era da segurança cibernética da IA",
+  "The good guys notch a victory in the AI cybersecurity age Taipei Times": "Os mocinhos conquistam uma vitória na era da segurança cibernética da IA ​​Taipei Times"
 }
