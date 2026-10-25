@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-25T21:53:47+00:00",
+  "checked_at": "2026-10-25T22:18:03+00:00",
   "items": [
     {
       "symbol": "USD/BRL",
@@ -40,11 +40,11 @@
       "value": "US$ 111,70",
       "price": 111.69999694824219,
       "currency": "US$",
-      "change": -1.3,
+      "change": -4.3,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
-      "asof": "2026-10-23T04:00:00+00:00",
-      "status": "último fechamento disponível",
+      "asof": "2026-10-25T22:07:49+00:00",
+      "status": "último ponto diário (pode ser parcial)",
       "stale": false
     },
     {
@@ -76,13 +76,13 @@
     {
       "symbol": "BTC/USD",
       "label": "Bitcoin",
-      "value": "US$ 80.254,68",
-      "price": 80254.68,
+      "value": "US$ 80.429,31",
+      "price": 80429.31,
       "currency": "US$",
-      "change": -0.07,
+      "change": -0.11,
       "change_period": "24h",
       "source": "Coinbase Exchange",
-      "asof": "2026-10-25T21:53:47+00:00",
+      "asof": "2026-10-25T22:18:03+00:00",
       "status": "cotação 24h/7",
       "stale": false
     }
