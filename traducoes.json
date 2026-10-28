@@ -222,10 +222,6 @@
         }
       ]
     },
-    "Meteorito caiu em uma cidade da Austrália: 51 anos depois, cientistas fizeram uma descoberta inesperada": {
-      "checked_at": 1793180452,
-      "items": []
-    },
     "Pakistan Denies Entry to Taiwan Airlines Citing One-China Policy": {
       "checked_at": 1793195485,
       "items": [
@@ -238,10 +234,6 @@
           "published": ""
         }
       ]
-    },
-    "Inflation spike pushes RBA on rates, Chalmers on spending cuts": {
-      "checked_at": 1793180452,
-      "items": []
     },
     "Petróleo sobe mais de 1% após ataque a refinaria na Arábia Saudita": {
       "checked_at": 1793183958,
@@ -260,132 +252,8 @@
         }
       ]
     },
-    "Trump diz que aprova ida de Flávio Bolsonaro aos EUA": {
-      "checked_at": 1793180452,
-      "items": [
-        {
-          "title": "Trump diz que aprova ida de Flávio Bolsonaro aos EUA",
-          "url": "https://g1.globo.com/mundo/noticia/2026/10/28/trump-diz-que-aprova-ida-de-flavio-bolsonaro-aos-eua.ghtml",
-          "source": "g1.globo.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Trump diz que aprova entrada de Flávio Bolsonaro nos EUA e afirma que senador estava na Argentina",
-          "url": "https://www.bnews.com.br/noticias/politica/trump-diz-que-aprova-entrada-de-flavio-bolsonaro-nos-eua-e-afirma-que-senador-estava-na-argentina.html",
-          "source": "www.bnews.com.br",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Trump diz que aprova ida de Flávio aos EUA, mas não sabe onde ele está",
-          "url": "https://www.metropoles.com/mundo/trump-diz-que-aprovou-ida-de-flavio-aos-eua-mas-nao-sabe-onde-ele-esta",
-          "source": "www.metropoles.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Trump aprova ida de Flávio aos EUA e diz que senador estava na Argentina",
-          "url": "https://www.cnnbrasil.com.br/internacional/trump-aprova-ida-de-flavio-aos-eua-e-diz-que-senador-estava-na-argentina/",
-          "source": "www.cnnbrasil.com.br",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Flávio Bolsonaro fugiu do Brasil pela Argentina e seguiu de jato para o Equador; Trump diz que aprova sua ida aos EUA",
-          "url": "https://www.msn.com/pt-br/noticias/noticias/fl%C3%A1vio-bolsonaro-fugiu-do-brasil-pela-argentina-e-seguiu-de-jato-para-o-equador-trump-diz-que-aprova-sua-ida-aos-eua/ar-AA2gexc2",
-          "source": "www.msn.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Acho que são pessoas boas: Trump aprova fuga de Flávio Bolsonaro para os EUA e critica eleições brasileiras",
-          "url": "https://www.msn.com/pt-pt/noticias/other/acho-que-s%C3%A3o-pessoas-boas-trump-aprova-fuga-de-fl%C3%A1vio-bolsonaro-para-os-eua-e-critica-elei%C3%A7%C3%B5es-brasileiras/ar-AA2gdvJ7",
-          "source": "www.msn.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
-    "Israeli siege forcibly displaces 4,969 Palestinians in al-Khalil": {
-      "checked_at": 1793180452,
-      "items": [
-        {
-          "title": "Israeli siege forcibly displaces 4,969 Palestinians in al-Khalil",
-          "url": "https://en.abna24.com/news/1883580/Israeli-siege-forcibly-displaces-4-969-Palestinians-in-al-Khalil",
-          "source": "en.abna24.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
-    "Spain and Slovenia undecided: Thirty-six countries confirmed for Eurovision Song Contest 2027 in Bulgaria": {
-      "checked_at": 1793180452,
-      "items": []
-    },
     "China denies Taiwan’s claim it orchestrated attack on comedian who mocked Xi Jinping": {
       "checked_at": 1793183958,
-      "items": []
-    },
-    "UN, AU officials urge science-led innovation to boost Africa’s farming": {
-      "checked_at": 1793180452,
-      "items": [
-        {
-          "title": "UN, AU officials urge science-led innovation to boost Africa's farming",
-          "url": "https://english.news.cn/africa/20261028/3e953e154a474c2f860d7116d2355c6f/c.html",
-          "source": "english.news.cn",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
-    "Israel Killed 22 Palestinians in Gaza Over Four Days, Including Three Children": {
-      "checked_at": 1793180452,
-      "items": []
-    },
-    "Por que a Flórida se tornou o reduto do bolsonarismo nos Estados Unidos": {
-      "checked_at": 1793180452,
-      "items": []
-    },
-    "Síria reabre fronteira com a Jordânia": {
-      "checked_at": 1793180452,
-      "items": [
-        {
-          "title": "Síria reabre fronteira com a Jordânia",
-          "url": "https://noticias.uol.com.br/ultimas-noticias/afp/2026/10/28/siria-reabre-fronteira-com-a-jordania.htm",
-          "source": "noticias.uol.com.br",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Fronteira entre a Jordânia e a Síria reabre ao fim de três anos",
-          "url": "https://www.jn.pt/volta-ao-mundo/artigo/fronteira-entre-a-jordania-e-a-siria-reabre-ao-fim-de-tres-anos/10002723",
-          "source": "www.jn.pt",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Fronteira entre a Síria e a Jordânia reabre após três anos",
-          "url": "https://www.dnoticias.pt/app/2018/10/15/140785-fronteira-entre-a-siria-e-a-jordania-reabre-apos-tres-anos/",
-          "source": "www.dnoticias.pt",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
-    "Confirmed: 36 countries will take part in Eurovision 2027": {
-      "checked_at": 1793180452,
       "items": []
     },
     "Do Brasil a Miami: Argentina confirma fuga de Flávio Bolsonaro; veja a rota": {
@@ -2056,7 +1924,7 @@
       ]
     },
     "Colisão entre trens de alta velocidade na Espanha deixa ao menos 68 mortos; circulação ferroviária foi interrompida": {
-      "checked_at": 1793216472,
+      "checked_at": 1793226708,
       "items": [
         {
           "title": "Colisão entre trens de alta velocidade na Espanha deixa ao menos 68 mortos; circulação ferroviária foi interrompida",
@@ -2135,7 +2003,7 @@
       "items": []
     },
     "Sudan accuses more than 20 countries of backing RSF in war": {
-      "checked_at": 1793223105,
+      "checked_at": 1793226708,
       "items": []
     },
     "Quds News Network - 75 UK MPs Urge Further Sanctions on Israel Over Gaza Aid Blockade": {
@@ -2147,7 +2015,7 @@
       "items": []
     },
     "Today’s Headlines: Netanyahu's Bloc Leads | Arab Turnout Surges | ‘Extermination, Torture, Rape'": {
-      "checked_at": 1793223105,
+      "checked_at": 1793226708,
       "items": []
     },
     "Flávio Bolsonaro faz pronunciamento após encontro com Donald Trump e reforça propostas para o Brasil": {
@@ -2211,11 +2079,11 @@
       ]
     },
     "Palantir’s Defense Chief Sees Chinese Threat to Taiwan Over AI": {
-      "checked_at": 1793223105,
+      "checked_at": 1793226708,
       "items": []
     },
     "Cabo Frio sedia capacitação sobre combate ao trabalho escravo na região": {
-      "checked_at": 1793223105,
+      "checked_at": 1793226708,
       "items": [
         {
           "title": "Cabo Frio sedia capacitação sobre combate ao trabalho escravo na região",
@@ -2228,7 +2096,7 @@
       ]
     },
     "Melting Arctic icebergs are dropping their rocks 2,500 meters down, and sponges and anemones are moving in": {
-      "checked_at": 1793223105,
+      "checked_at": 1793226708,
       "items": [
         {
           "title": "Melting Arctic icebergs are dropping their rocks 2,500 meters down, and sponges and anemones are moving in",
@@ -2269,6 +2137,98 @@
           "published": ""
         }
       ]
+    },
+    "Trump mantém afirmação sobre não envolvimento após Flávio se declarar presidente legítimo": {
+      "checked_at": 1793226708,
+      "items": [
+        {
+          "title": "Trump mantém afirmação sobre não envolvimento após Flávio se declarar presidente legítimo",
+          "url": "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2026/10/28/trump-mantem-afirmacao-sobre-nao-envolvimento-apos-flavio-se-declarar-presidente-legitimo.htm",
+          "source": "noticias.uol.com.br",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Israel reivindica eliminação de \"terroristas\" em Gaza": {
+      "checked_at": 1793226708,
+      "items": [
+        {
+          "title": "Israel reivindica eliminação de \"terroristas\" em Gaza",
+          "url": "https://www.noticiasaominuto.com/mundo/3074740/medio-oriente-israel-reivindica-eliminacao-em-gaza-deterroristas",
+          "source": "www.noticiasaominuto.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Israel reivindica eliminação de dirigente do Hamas em Gaza",
+          "url": "https://www.dnoticias.pt/app/2026/10/20/509785-israel-reivindica-eliminacao-de-dirigente-do-hamas-em-gaza/",
+          "source": "www.dnoticias.pt",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Israel reivindica eliminação de comandante do Hamas em Gaza",
+          "url": "https://www.msn.com/pt-pt/noticias/ultimas/israel-reivindica-elimina%C3%A7%C3%A3o-de-comandante-do-hamas-em-gaza/ar-AA270YI8",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Lessons from Africa’s Drone Wars": {
+      "checked_at": 1793226708,
+      "items": []
+    },
+    "O provérbio japonês “O prego que se destaca leva martelada” e o que ele revela sobre a cultura do Japão": {
+      "checked_at": 1793226708,
+      "items": [
+        {
+          "title": "O que significa o provérbio japonês: “O prego que se destaca leva a martelada”",
+          "url": "https://www.msn.com/pt-br/geral/geral/o-que-significa-o-prov%C3%A9rbio-japon%C3%AAs-o-prego-que-se-destaca-leva-a-martelada/ar-AA2a3lz9",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "ANZ to dump KPMG after 27 years": {
+      "checked_at": 1793226708,
+      "items": []
+    },
+    "Trump diz que não irá se envolver após carta em que Flávio Bolsonaro se autodeclara “líder do Brasil”": {
+      "checked_at": 1793226708,
+      "items": [
+        {
+          "title": "Trump diz que não vai se envolver após Flávio se autodeclarar presidente eleito em carta",
+          "url": "https://www.msn.com/pt-br/noticias/noticias/trump-diz-que-n%C3%A3o-vai-se-envolver-ap%C3%B3s-fl%C3%A1vio-se-autodeclarar-presidente-eleito-em-carta/ar-AA2ggXdA",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Trump diz que não vai se envolver após Flávio se autodeclarar 'presidente'",
+          "url": "https://noticias.uol.com.br/internacional/ultimas-noticias/2026/10/28/trump-diz-que-nao-vai-se-envolver-apos-flavio-se-autodeclarar-presidente.ghtm",
+          "source": "noticias.uol.com.br",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Is Brazil’s Vote a Turning Point for Climate Politics?": {
+      "checked_at": 1793226708,
+      "items": []
+    },
+    "GfK Confidence Eases Slightly in Germany; Major Setback for Confidence in France": {
+      "checked_at": 1793226708,
+      "items": []
     }
   },
   "Taiwan's US envoy says ties robust after Trump-Xi summit": "Enviado dos EUA de Taiwan diz que laços estão robustos após cimeira Trump-Xi",
@@ -15179,5 +15139,38 @@
   "Russia: 22 African heads of state expected at the 3rd Russia-Africa Summit in Moscow, 28 and 29 October 2026": "Rússia: 22 chefes de estado africanos esperados na 3ª Cimeira Rússia-África em Moscovo, 28 e 29 de Outubro de 2026",
   "Russia: 22 African heads of state expected at the 3rd Russia-Africa Summit in Moscow, 28 and 29 October 2026 Africa News Agency": "Rússia: 22 chefes de estado africanos esperados na 3ª Cimeira Rússia-África em Moscovo, 28 e 29 de Outubro de 2026 Africa News Agency",
   "Israelis await final election results as Netanyahu rivals weigh joining forces with Arab parties": "Israelenses aguardam os resultados finais das eleições enquanto rivais de Netanyahu ponderam unir forças com partidos árabes",
-  "Israelis await final election results as Netanyahu rivals weigh joining forces with Arab parties PBS": "Israelenses aguardam os resultados finais das eleições enquanto rivais de Netanyahu avaliam unir forças com partidos árabes PBS"
+  "Israelis await final election results as Netanyahu rivals weigh joining forces with Arab parties PBS": "Israelenses aguardam os resultados finais das eleições enquanto rivais de Netanyahu avaliam unir forças com partidos árabes PBS",
+  "Lessons from Africa’s Drone Wars Africa Center for Strategic Studies": "Lições do Centro Africano de Estudos Estratégicos Drone Wars Africa",
+  "The Socialist Republic of Vietnam became the 78th nation to sign the Artemis Accords, joining a growing coalition of like-minded nations committed to the": "A República Socialista do Vietname tornou-se a 78.ª nação a assinar os Acordos Artemis, juntando-se a uma coligação crescente de nações com ideias semelhantes e comprometidas com a",
+  "ANZ to dump KPMG after 27 years": "ANZ vai se desfazer da KPMG após 27 anos",
+  "ANZ to dump KPMG after 27 years BusinessDesk": "ANZ vai se desfazer da KPMG após 27 anos BusinessDesk",
+  "Is Brazil’s Vote a Turning Point for Climate Politics?": "A votação no Brasil é um ponto de viragem para a política climática?",
+  "Is Brazil’s Vote a Turning Point for Climate Politics? Atmos.earth": "A votação no Brasil é um ponto de viragem para a política climática? Atmos.earth",
+  "GfK Confidence Eases Slightly in Germany; Major Setback for Confidence in France": "Confiança da GfK diminui ligeiramente na Alemanha; Grande revés para a confiança na França",
+  "GfK Confidence Eases Slightly in Germany; Major Setback for Confidence in France Haver Analytics": "Confiança da GfK diminui ligeiramente na Alemanha; Grande revés para a confiança na França Haver Analytics",
+  "How Middle Powers Can Survive the AI Race": "Como as potências médias podem sobreviver à corrida da IA",
+  "How Middle Powers Can Survive the AI Race Carnegie Endowment for International Peace": "Como as potências médias podem sobreviver à corrida da IA ​​Carnegie Endowment for International Peace",
+  "Israel’s Election Had No Clear Winner. What Comes Next for the Region?": "A eleição de Israel não teve um vencedor claro. O que vem a seguir para a região?",
+  "Israel’s Election Had No Clear Winner. What Comes Next for the Region? Carnegie Endowment for International Peace": "A eleição de Israel não teve um vencedor claro. O que vem a seguir para a região? Carnegie Endowment para a Paz Internacional",
+  "High-speed train crash kills at least 68 people in Spain": "Acidente de trem de alta velocidade mata pelo menos 68 pessoas na Espanha",
+  "The crash, between a moving train and another that was stopped further up the track, was caused by an \"inexplicable\" error, the transport minister said.": "A colisão, entre um comboio em movimento e outro que estava parado mais acima na via, foi causada por um erro “inexplicável”, disse o ministro dos Transportes.",
+  "The West pushing Africa back into debt abyss – Putin": "O Ocidente empurra África de volta para o abismo da dívida – Putin",
+  "The West pushing Africa back into debt abyss – Putin MyJoyOnline": "O Ocidente empurra a África de volta ao abismo da dívida – Putin MyJoyOnline",
+  "The Perils of Russian Diplomacy": "Os perigos da diplomacia russa",
+  "The Perils of Russian Diplomacy The National Interest": "Os perigos da diplomacia russa O interesse nacional",
+  "American taxpayers' bill for Iran war grows to estimated $47.1 billion": "A conta dos contribuintes americanos pela guerra no Irão cresce para cerca de 47,1 mil milhões de dólares",
+  "American taxpayers' bill for Iran war grows to estimated $47.1 billion PBS": "A conta dos contribuintes americanos pela guerra no Irã cresce para cerca de US$ 47,1 bilhões PBS",
+  "Third Russia-Africa Summit Opens In Moscow": "Terceira Cimeira Rússia-África é inaugurada em Moscovo",
+  "Third Russia-Africa Summit Opens In Moscow Sada Elbalad English": "Terceira Cimeira Rússia-África é inaugurada em Moscovo Sada Elbalad English",
+  "Five years ago, Gavin Gardner was a Michigan State University engineering student researching next-generation drone technology as part of a NASA grant. Garder expected the research to be demanding – but he was surprised that navigating the financial side of the work presented an even greater challenge. Although Gardner was used to leading fellow students […]": "Cinco anos atrás, Gavin Gardner era um estudante de engenharia da Michigan State University que pesquisava tecnologia de drones de próxima geração como parte de uma bolsa da NASA. Garder esperava que a pesquisa fosse exigente – mas ficou surpreso ao ver que navegar pelo lado financeiro do trabalho representava um desafio ainda maior. Embora Gardner estivesse acostumado a liderar colegas estudantes [...]",
+  "EU dropping associate membership title for its closer alliance with Canada": "UE abandonando o título de membro associado devido à sua aliança mais estreita com o Canadá",
+  "EU dropping associate membership title for its closer alliance with Canada CBC": "UE abandonando o título de membro associado para sua aliança mais estreita com o Canadá CBC",
+  "Is Iran moving toward war or peace after Mecca alliance meeting in Tehran?": "Estará o Irão a caminhar em direcção à guerra ou à paz depois da reunião da aliança de Meca em Teerão?",
+  "Is Iran moving toward war or peace after Mecca alliance meeting in Tehran? DW.com": "Estará o Irão a caminhar em direcção à guerra ou à paz depois da reunião da aliança de Meca em Teerão? DW.com",
+  "Kuwait highlights UN partnership, calls for dialogue over conflict": "Kuwait destaca parceria com a ONU e apela ao diálogo sobre conflitos",
+  "Kuwait highlights UN partnership, calls for dialogue over conflict Kuwait Times": "Kuwait destaca parceria com a ONU e pede diálogo sobre conflito Kuwait Times",
+  "Russia-Africa Economic and Humanitarian Forum": "Fórum Económico e Humanitário Rússia-África",
+  "Russia-Africa Economic and Humanitarian Forum Президент России": "Fórum Económico e Humanitário Rússia-África Presidente da Rússia",
+  "Girl seriously injured in wolf attack at German wildlife park": "Menina gravemente ferida em ataque de lobo em parque de vida selvagem alemão",
+  "The eight-year-old was in an enclosure with other children and a staff member when she was attacked.": "A menina de oito anos estava em um recinto com outras crianças e um funcionário quando foi atacada."
 }
