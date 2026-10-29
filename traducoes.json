@@ -254,71 +254,9 @@
         }
       ]
     },
-    "Russia-Africa summit: ambitions and challenges": {
-      "checked_at": 1793252267,
-      "items": []
-    },
     "Holding Science to a Gold Standard Will Hold It Back": {
       "checked_at": 1793263609,
       "items": []
-    },
-    "Israel Election Results Live Updates: Exit Polls Show No Clear Winner": {
-      "checked_at": 1793252267,
-      "items": [
-        {
-          "title": "Partial results show no clear winner in Israel election",
-          "url": "https://www.aljazeera.com/news/2026/10/27/exit-polls-following-israeli-elections-indicate-no-clear-winner",
-          "source": "www.aljazeera.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Exit polls indicate no clear winner in Israeli election",
-          "url": "https://www.nbcnews.com/world/israel/live-blog/israel-election-live-updates-netanyahu-eisenkot-voters-war-iran-gaza-rcna604979",
-          "source": "www.nbcnews.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Live Updates: First Exit Polls Show No Clear Winner in Pivotal Israeli Election",
-          "url": "https://www.nytimes.com/live/2026/10/27/world/israel-elections",
-          "source": "www.nytimes.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Israel election 2026 results live: Exit polls show no clear winner as Benjamin Netanyahu's Likud and Gadi Eisenkot's bloc face coalition deadlock",
-          "url": "https://www.msn.com/en-in/news/other/israel-election-2026-results-live-exit-polls-show-no-clear-winner-as-benjamin-netanyahu-s-likud-and-gadi-eisenkot-s-bloc-face-coalition-deadlock/ar-AA2gdWSR",
-          "source": "www.msn.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Israel election: Exit polls give Eisenkot's bloc more seats than Netanyahu's with no clear winner; Arab parties could get up to 17 seats",
-          "url": "https://www.msn.com/en-in/news/other/israel-election-exit-polls-give-eisenkots-bloc-more-seats-than-netanyahus-with-no-clear-winner-arab-parties-could-get-up-to-17-seats/ar-AA2gcp1d",
-          "source": "www.msn.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
-    "Justiça dos EUA nega pedido de Trump para suspender a apuração de 20 mil votos": {
-      "checked_at": 1793252267,
-      "items": [
-        {
-          "title": "Justiça dos EUA nega pedido de Trump para suspender a apuração de 20 mil votos",
-          "url": "https://www.msn.com/pt-br/pol%C3%ADticas/governo/justi%C3%A7a-dos-eua-nega-pedido-de-trump-para-suspender-a-apura%C3%A7%C3%A3o-de-20-mil-votos/ar-AA2gjh0l",
-          "source": "www.msn.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
     },
     "Europe must prepare for the worst": {
       "checked_at": 1793260490,
@@ -337,33 +275,12 @@
       "checked_at": 1793256098,
       "items": []
     },
-    "Japan Urges EU to Adjust EV Preferential Policies While Facing Significant Resistance": {
-      "checked_at": 1793252267,
-      "items": []
-    },
     "Ceni diz que Nestor venceu 'batalha psicológica' contra Neymar em Santos x Bahia e solta até palavrões": {
       "checked_at": 1793260490,
       "items": []
     },
-    "Nationals deny coalition friction over EU trade deal": {
-      "checked_at": 1793252267,
-      "items": [
-        {
-          "title": "Nationals deny coalition friction over EU trade deal",
-          "url": "https://www.theadvocate.com.au/story/9382217/nationals-deny-coalition-friction-over-eu-trade-deal/",
-          "source": "www.theadvocate.com.au",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
     "Evening update": {
       "checked_at": 1793273762,
-      "items": []
-    },
-    "Erdogan tells Trump Turkey seeks diplomatic solutions on Hormuz and Yemen": {
-      "checked_at": 1793252267,
       "items": []
     },
     "Air New Zealand delays world-first sleep pods, Skynest, past summer peak": {
@@ -378,10 +295,6 @@
           "published": ""
         }
       ]
-    },
-    "JAI - Japan, Australia, India: Rajnath Singh reaffirms close ties with Japan, Australia at meeting with co": {
-      "checked_at": 1793252267,
-      "items": []
     },
     "Could Trump meet Kim Jong Un at APEC? Seoul’s spy agency sees diplomatic uncertainty": {
       "checked_at": 1793256098,
@@ -924,11 +837,20 @@
       "items": []
     },
     "Eleição em Israel tem impasse sobre maioria — 4 cenários possíveis para o futuro do país": {
-      "checked_at": 1793273762,
-      "items": []
+      "checked_at": 1793295866,
+      "items": [
+        {
+          "title": "Eleição em Israel tem impasse sobre maioria — 4 cenários possíveis para o futuro do país",
+          "url": "https://www.msn.com/pt-br/noticias/mundo/elei%C3%A7%C3%A3o-em-israel-tem-impasse-sobre-maioria-4-cen%C3%A1rios-poss%C3%ADveis-para-o-futuro-do-pa%C3%ADs/ar-AA2gke6h",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
     },
     "US sanctions Rwanda's defence ministry over DR Congo conflict": {
-      "checked_at": 1793273762,
+      "checked_at": 1793295866,
       "items": [
         {
           "title": "US sanctions Rwanda's defence ministry over DR Congo conflict",
@@ -942,6 +864,22 @@
           "title": "US imposes sanctions on Rwanda's defense ministry over Congo conflict",
           "url": "https://www.straitstimes.com/world/us-imposes-sanctions-on-rwandas-ministry-of-defense",
           "source": "www.straitstimes.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "US Imposes Sanctions On Rwanda’s Defence Ministry Over Alleged Support For M23 Rebels",
+          "url": "https://www.arise.tv/us-imposes-sanctions-on-rwandas-defence-ministry-over-alleged-support-for-m23-rebels/",
+          "source": "www.arise.tv",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "US government announces sanctions against Rwanda's defence ministry, gives reason",
+          "url": "https://www.msn.com/en-xl/africa/nigeria/us-government-announces-sanctions-against-rwandas-defence-ministry-gives-reason/ar-AA2gg90y",
+          "source": "www.msn.com",
           "summary": "",
           "image_url": "",
           "published": ""
@@ -1033,7 +971,7 @@
       ]
     },
     "Netanyahu's bloc leading Israel election but short of majority, partial results show": {
-      "checked_at": 1793282020,
+      "checked_at": 1793295866,
       "items": [
         {
           "title": "Netanyahu's bloc leading Israel election but short of majority, partial results show",
@@ -1433,7 +1371,7 @@
       "items": []
     },
     "Shock of rail tragedy gives way to sorrow and outrage in politically divided Spain": {
-      "checked_at": 1793285333,
+      "checked_at": 1793295866,
       "items": [
         {
           "title": "Shock of rail tragedy gives way to sorrow and outrage in politically divided Spain",
@@ -1467,7 +1405,7 @@
       "items": []
     },
     "Por que as eleições nos EUA e em Israel têm consequências globais": {
-      "checked_at": 1793288709,
+      "checked_at": 1793295866,
       "items": []
     },
     "Bruxelas espera usar empréstimos de defesa por utilizar para tapar buraco orçamental da Ucrânia": {
@@ -1738,6 +1676,194 @@
           "title": "Sudan accuses Ethiopia of launching 162 drone attacks from its territory",
           "url": "https://www.dabangasudan.org/en/all-news/article/sudan-accuses-ethiopia-of-launching-162-drone-attacks-from-its-territory",
           "source": "www.dabangasudan.org",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Careless dismissals give Australia route to series win": {
+      "checked_at": 1793295866,
+      "items": [
+        {
+          "title": "Careless dismissals give Australia route to series win",
+          "url": "https://www.msn.com/en-us/news/other/careless-dismissals-give-australia-route-to-series-win/ar-AA2glEZX",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "EU chief lays out vision for new Canada partnership at Montreal summit": {
+      "checked_at": 1793295866,
+      "items": []
+    },
+    "President Tinubu to 'pray for Nigeria' during Saudi Arabia trip": {
+      "checked_at": 1793295866,
+      "items": [
+        {
+          "title": "President Tinubu to pray for Nigeria during Saudi Arabia trip",
+          "url": "https://www.msn.com/en-us/news/world/president-tinubu-to-pray-for-nigeria-during-saudi-arabia-trip/ar-AA2gl37X",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "President Tinubu visit Saudi Arabia to 'pray for NIgeria'",
+          "url": "https://www.bbc.com/pidgin/watch/cwzrdezg5kzmo",
+          "source": "www.bbc.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Tinubu Departs Abuja For Saudi Arabia To Pray For Nigeria",
+          "url": "https://www.naijanews.com/2026/10/28/tinubu-departs-abuja-for-saudi-arabia-to/",
+          "source": "www.naijanews.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Record number of purges as Xi emphasises 'party discipline' at China political gathering": {
+      "checked_at": 1793295866,
+      "items": [
+        {
+          "title": "Record number of purges as Xi emphasises party discipline at China political gathering",
+          "url": "https://www.msn.com/en-xl/news/other/record-number-of-purges-as-xi-emphasises-party-discipline-at-china-political-gathering/ar-AA2gkbRo",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Russian drone attack on Ukrainian train station kills at least 14, officials say": {
+      "checked_at": 1793295866,
+      "items": [
+        {
+          "title": "Russian drone strike on Ukraine train station kills at least 14",
+          "url": "https://www.yahoo.com/news/world/articles/russian-drone-strike-ukraine-train-144836489.html",
+          "source": "www.yahoo.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
+          "url": "https://www.bbc.com/news/articles/c9p8gdlz1p2ko",
+          "source": "www.bbc.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Russian drone strike kills at least 14 on Ukrainian rail platform",
+          "url": "https://www.msn.com/en-us/news/other/russian-drone-strike-kills-at-least-14-on-ukrainian-rail-platform/ar-AA2glfND",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Russian Strike on Ukrainian Train Station Kills 14",
+          "url": "https://www.nytimes.com/2026/10/29/world/europe/ukraine-dnipro-train-russia.html",
+          "source": "www.nytimes.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Drone strike on Ukraine train station kills 14",
+          "url": "https://www.omanobserver.om/article/1198807/world/europe/drone-strike-on-ukraine-train-station-kills-14",
+          "source": "www.omanobserver.om",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Inside the Russia-Africa summit in Moscow": {
+      "checked_at": 1793295866,
+      "items": [
+        {
+          "title": "Inside Russia-Africa Summit in Moscow. #BBCNews",
+          "url": "https://www.modernghana.com/videonews/bbc/1/743682",
+          "source": "www.modernghana.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Inside the Russia-Africa summit in Moscow",
+          "url": "https://www.msn.com/en-us/news/other/inside-the-russia-africa-summit-in-moscow/vi-AA2gkews",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Russia Repeats Offer to Host Ethiopia-Eritrea Dialogue, PM Abiy Arrives in Moscow for Africa Summit",
+          "url": "https://www.msn.com/en-xl/africa/other/russia-repeats-offer-to-host-ethiopia-eritrea-dialogue-pm-abiy-arrives-in-moscow-for-africa-summit/ar-AA2gfhO0",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Audacious Indian jailbreak saga ends with 17 prisoners recaptured": {
+      "checked_at": 1793295866,
+      "items": [
+        {
+          "title": "Audacious Indian jailbreak saga ends with 17 prisoners recaptured",
+          "url": "https://www.msn.com/en-us/news/news/audacious-indian-jailbreak-saga-ends-with-17-prisoners-recaptured/ar-AA2gkwUn",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "How could Israel break election deadlock? Here are four scenarios": {
+      "checked_at": 1793295866,
+      "items": [
+        {
+          "title": "How could Israel break political deadlock? Here are four scenarios",
+          "url": "https://www.msn.com/en-us/news/other/how-could-israel-break-political-deadlock-here-are-four-scenarios/ar-AA2gfNMZ",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Explainer: How could Israel break the election deadlock?",
+          "url": "https://www.reuters.com/world/middle-east/how-could-israel-break-election-deadlock-2026-10-29/",
+          "source": "www.reuters.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Qual o futuro do bolsonarismo após Flávio Bolsonaro ir para os EUA?": {
+      "checked_at": 1793295866,
+      "items": [
+        {
+          "title": "Qual o futuro do bolsonarismo após Flávio Bolsonaro deixar o Brasil e se declarar 'o verdadeiro presidente do Brasil'?",
+          "url": "https://www.msn.com/pt-br/noticias/brasil/qual-o-futuro-do-bolsonarismo-ap%C3%B3s-fl%C3%A1vio-bolsonaro-deixar-o-brasil-e-se-declarar-o-verdadeiro-presidente-do-brasil/ar-AA2gjZxb",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        },
+        {
+          "title": "Qual será o futuro do bolsonarismo após Flávio Bolsonaro viajar aos EUA?",
+          "url": "https://www.msn.com/pt-br/noticias/noticias/qual-ser%C3%A1-o-futuro-do-bolsonarismo-ap%C3%B3s-fl%C3%A1vio-bolsonaro-viajar-aos-eua/ar-AA2gl9YQ",
+          "source": "www.msn.com",
           "summary": "",
           "image_url": "",
           "published": ""
@@ -15205,5 +15331,50 @@
   "UAE diplomat running for UN chief faces questions on her country's alleged support for Sudan rebels Idaho State Journal": "Diplomata dos Emirados Árabes Unidos concorrendo a chefe da ONU enfrenta questões sobre o suposto apoio de seu país aos rebeldes do Sudão Idaho State Journal",
   "Strong El Niño to influence rainfall, temperatures and cyclones into 2027 Post Courier": "Forte El Niño influenciará chuvas, temperaturas e ciclones em 2027 Post Courier",
   "Singapore takes over ASEAN defence meetings chairmanship from the Philippines": "Cingapura assume a presidência das reuniões de defesa da ASEAN das Filipinas",
-  "Singapore takes over ASEAN defence meetings chairmanship from the Philippines AsiaOne.com": "Cingapura assume a presidência das reuniões de defesa da ASEAN das Filipinas AsiaOne.com"
+  "Singapore takes over ASEAN defence meetings chairmanship from the Philippines AsiaOne.com": "Cingapura assume a presidência das reuniões de defesa da ASEAN das Filipinas AsiaOne.com",
+  "Australia take a step towards victory over South Africa in Cape Town, with the help of careless batting from Proteas' top order.": "A Austrália dá um passo em direção à vitória sobre a África do Sul na Cidade do Cabo, com a ajuda de rebatidas descuidadas da ordem superior do Proteas.",
+  "US interest rates held steady and economy grows - what it means for you": "As taxas de juro dos EUA mantêm-se estáveis ​​e a economia cresce – o que isso significa para si",
+  "The Federal Reserve's interest rate decisions affect everything from mortgages to car loans": "As decisões sobre taxas de juros do Federal Reserve afetam tudo, desde hipotecas a empréstimos para automóveis",
+  "The leaked tapes appear to show one high-speed train was given clearance to move at normal speed, even though another up ahead had stalled.": "As fitas vazadas parecem mostrar que um trem de alta velocidade recebeu autorização para se mover em velocidade normal, apesar de outro trem à frente ter parado.",
+  "Europe's youth is on the march - but does anything actually unite them?": "A juventude europeia está em marcha – mas será que alguma coisa os une realmente?",
+  "DoorDash to buy Instacart in $17bn deal it says will expand customer options": "DoorDash comprará Instacart em um negócio de US$ 17 bilhões que, segundo ele, expandirá as opções do cliente",
+  "Instacart shoppers will be able to buy from 150,000 stores, compared to the 100,000 currently available on the platform, the firms said.": "Os compradores da Instacart poderão comprar em 150 mil lojas, em comparação com as 100 mil atualmente disponíveis na plataforma, disseram as empresas.",
+  "Watch: VHS tapes and computers handed to police as Thomas Markle is investigated": "Assista: Fitas VHS e computadores entregues à polícia enquanto Thomas Markle é investigado",
+  "The BBC's Jonathan Head is in Cebu, reporting from outside the home where Markle resided.": "Jonathan Head, da BBC, está em Cebu, fazendo reportagens de fora da casa onde Markle morava.",
+  "Eric Nshimiye was accused of lying to a jury to protect himself and a fellow perpetrator of the genocide.": "Eric Nshimiye foi acusado de mentir a um júri para proteger a si mesmo e a um colega autor do genocídio.",
+  "One of the region's famous rock formations, known as \"fairy chimneys\", reportedly collapsed outside an open-air museum.": "Uma das famosas formações rochosas da região, conhecidas como “chaminés de fadas”, teria desabado em frente a um museu ao ar livre.",
+  "Images of child sexual abuse allegedly belonging to Meghan's father had reportedly been found in his former home in the Philippines.": "Imagens de abuso sexual infantil supostamente pertencentes ao pai de Meghan teriam sido encontradas em sua antiga casa nas Filipinas.",
+  "The water firm is performing \"significantly below target\" for pollution, the Environment Agency says.": "A empresa de água está tendo um desempenho “significativamente abaixo da meta” em termos de poluição, afirma a Agência Ambiental.",
+  "Mini-gardens for bees on bus stop roofs approved": "Aprovados minijardins para abelhas em telhados de pontos de ônibus",
+  "Living Roofs aimed at boosting biodiversity in urban areas will be installed under a new bus stop contract.": "Telhados Vivos destinados a aumentar a biodiversidade em áreas urbanas serão instalados no âmbito de um novo contrato de paragem de autocarro.",
+  "The massive blaze at Wang Fuk Court in November 2025 was the deadliest the city had seen in decades.": "O enorme incêndio no Tribunal de Wang Fuk, em novembro de 2025, foi o mais mortal que a cidade viu em décadas.",
+  "Brewers win first World Series in 57-year history": "Brewers vencem a primeira World Series em 57 anos de história",
+  "The Milwaukee Brewers win the World Series for the first time in the franchise's 57-year history after beating the Tampa Bay Rays in game five on Wednesday.": "Os Milwaukee Brewers venceram a World Series pela primeira vez nos 57 anos de história da franquia, depois de derrotar o Tampa Bay Rays no quinto jogo na quarta-feira.",
+  "A micro-drama will use AI-assisted technology to edit old episodes of the Australian TV soap to focus on Margot Robbie's character.": "Um microdrama usará tecnologia assistida por IA para editar episódios antigos da novela australiana para focar na personagem de Margot Robbie.",
+  "US Health Secretary RFK Jr to expand access to unapproved peptides": "Secretário de Saúde dos EUA, RFK Jr, expandirá o acesso a peptídeos não aprovados",
+  "Health experts have cautioned against use of the drugs, citing a lack of clinical trials for humans and the unknown long-term effects.": "Especialistas em saúde alertaram contra o uso dos medicamentos, citando a falta de ensaios clínicos em humanos e os efeitos desconhecidos a longo prazo.",
+  "King Charles shows off dance moves on second day of Caribbean tour": "King Charles mostra passos de dança no segundo dia de turnê pelo Caribe",
+  "Earlier in the day, the King paid his respects to the island's fallen servicemen and women.": "No início do dia, o rei prestou homenagem aos militares e mulheres caídos na ilha.",
+  "Details of thousands of US immigration agents leaked in major hack": "Detalhes de milhares de agentes de imigração dos EUA vazaram em grande hack",
+  "A group called the Department of Peace released information on more than 41,000 DHS staff.": "Um grupo chamado Departamento de Paz divulgou informações sobre mais de 41 mil funcionários do DHS.",
+  "Microsoft profits soar days after announcing thousands of layoffs": "Lucros da Microsoft disparam dias após anúncio de milhares de demissões",
+  "The week, the Windows developer said it would offer buyouts to 60,000 workers as it looks to curb costs.": "Na semana, o desenvolvedor do Windows disse que ofereceria aquisições a 60.000 trabalhadores, na tentativa de reduzir custos.",
+  "US conservative activists charged with unlawful voting in election stunt": "Ativistas conservadores dos EUA acusados ​​de voto ilegal em manobra eleitoral",
+  "Prosecutors alleged the pair misrepresented their identities by giving election judges the names of other people.": "Os promotores alegaram que a dupla deturpou suas identidades ao fornecer aos juízes eleitorais nomes de outras pessoas.",
+  "Demands for post-poll justice as Tanzania accused of weaponising counterterrorism laws": "Exigências de justiça pós-votação enquanto a Tanzânia é acusada de transformar em arma as leis antiterroristas",
+  "Families affected tell the BBC they want answers and financial help as Amnesty says a crackdown continues.": "As famílias afetadas dizem à BBC que querem respostas e ajuda financeira, enquanto a Amnistia afirma que a repressão continua.",
+  "The Heroes and Nashville star died in August from the toxic effects of fentanyl, Xanax and several other drugs.": "A estrela de Heroes e Nashville morreu em agosto devido aos efeitos tóxicos do fentanil, Xanax e várias outras drogas.",
+  "Watch: King dances in the streets of the Bahamas capital": "Assista: King dança nas ruas da capital das Bahamas",
+  "The monarch is in the Bahamas as part of a tour of the Caribbean during which he addressed the \"great suffering of the past\".": "O monarca está nas Bahamas no âmbito de uma viagem às Caraíbas durante a qual abordou o “grande sofrimento do passado”.",
+  "The BBC's Ione Wells looks at whether the defeated right-wing presidential candidate travelled to the US to avoid an ongoing criminal investigation.": "Ione Wells, da BBC, analisa se o candidato presidencial de direita derrotado viajou para os EUA para evitar uma investigação criminal em curso.",
+  "Huerta fought for farm workers' rights in the 1960s and 1970s and had continued to work addressing immigration and voting issues.": "Huerta lutou pelos direitos dos trabalhadores agrícolas nas décadas de 1960 e 1970 e continuou a trabalhar na resolução de questões de imigração e votação.",
+  "Myanmar diplomat breaks down as he urges world to 'end our suffering'": "Diplomata de Mianmar desmorona ao pedir ao mundo que “acabe com nosso sofrimento”",
+  "Kyaw Moe Tun - Myanmar's representative to the UN - makes an emotional appeal after saying the international community had failed the country's people.": "Kyaw Moe Tun – representante de Mianmar na ONU – faz um apelo emocionado depois de dizer que a comunidade internacional falhou com o povo do país.",
+  "Ireland captain Paul Stirling will miss the concluding two matches of his side's one-day international series in Namibia after fracturing his finger.": "O capitão irlandês, Paul Stirling, vai falhar os dois jogos finais da série internacional da sua equipa, na Namíbia, depois de fracturar o dedo.",
+  "The defeated Brazilian presidential candidate arrived in the US by private jet on Tuesday morning with his wife and two daughters.": "O derrotado candidato presidencial brasileiro chegou aos EUA em jato particular na manhã de terça-feira com sua esposa e duas filhas.",
+  "Judoka determined to prove refugees belong at Dakar 2026": "Judoca determinado a provar que os refugiados pertencem ao Dakar 2026",
+  "Arno Yafunga Botay fled DR Congo with his family in 2017 and will compete at the Dakar 2026 Youth Olympics as a member of the Refugee Olympic Team.": "Arno Yafunga Botay fugiu da República Democrática do Congo com a sua família em 2017 e competirá nos Jogos Olímpicos da Juventude de Dakar 2026 como membro da Equipa Olímpica de Refugiados.",
+  "Four investigations Democrats could launch if they win control of Congress": "Quatro investigações que os democratas poderiam lançar se ganhassem o controle do Congresso",
+  "Why Jalen Hurts played with blood clot and what it means for NFL": "Por que Jalen Hurts jogou com coágulo sanguíneo e o que isso significa para a NFL",
+  "Philadelphia Eagles quarterback Jalen Hurts is recovering from a life-threatening condition which developed after he was cleared to play with a blood clot and board a long-haul flight.": "O quarterback do Philadelphia Eagles, Jalen Hurts, está se recuperando de uma condição de risco de vida que se desenvolveu depois que ele foi liberado para jogar com um coágulo sanguíneo e embarcar em um voo de longa distância."
 }
