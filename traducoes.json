@@ -230,20 +230,12 @@
         }
       ]
     },
-    "BC da Austrália eleva juros para 4,85% ao ano, nível mais alto em 18 anos": {
-      "checked_at": 1793693247,
-      "items": []
-    },
     "NZ sharemarket up slightly by 0.16%": {
       "checked_at": 1793708136,
       "items": []
     },
     "The Ningen: The Faceless Giant Beneath Antarctica's Frozen Seas": {
       "checked_at": 1793731331,
-      "items": []
-    },
-    "Ministério do Comércio do Catar e Qatar Post assinam acordo para oferecer licenciamento de empresas pela Janela Única - Notícias e Estatísticas": {
-      "checked_at": 1793693247,
       "items": []
     },
     "'You are not to blame': Top MEP says Europe knows Brexit wasn't Scotland's fault": {
@@ -319,104 +311,8 @@
         }
       ]
     },
-    "Comércio Exterior: Panamá": {
-      "checked_at": 1793693247,
-      "items": []
-    },
-    "How can the EU support 50 million Europeans who can’t heat their homes?": {
-      "checked_at": 1793693247,
-      "items": [
-        {
-          "title": "50 million Europeans risk not heating their homes this winter, energy prices reach record levels",
-          "url": "https://www.gazetaexpress.com/en/50-million-Europeans-risk-not-having-heat-in-their-homes-this-winter-as-energy-prices-reach-record-levels/",
-          "source": "www.gazetaexpress.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
-    "Australia's social media ban 'ill thought out', High Court told in legal challenge": {
-      "checked_at": 1793693247,
-      "items": []
-    },
-    "India leads US, Germany in viewing sports sponsorship as audience test": {
-      "checked_at": 1793693247,
-      "items": []
-    },
-    "Iran's foreign minister says talks with Saudi Arabia are ongoing; Yemen fighting intensifies": {
-      "checked_at": 1793693247,
-      "items": [
-        {
-          "title": "Iran's foreign minister says talks with Saudi Arabia are ongoing; Yemen fighting intensifies",
-          "url": "https://www.miamiherald.com/news/nation-world/world/article317896356.html",
-          "source": "www.miamiherald.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Iran-Saudi talks on Yemen’s Houthis: What’s in it for Tehran?",
-          "url": "https://www.msn.com/en-us/news/other/iran-saudi-talks-on-yemen-s-houthis-what-s-in-it-for-tehran/ar-AA2e4neP",
-          "source": "www.msn.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Iran-Saudi talks on Yemen’s Houthis: What’s in it for Tehran?",
-          "url": "https://www.yahoo.com/news/world/articles/iran-saudi-talks-yemen-houthis-142749166.html",
-          "source": "www.yahoo.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        },
-        {
-          "title": "Fighting intensifies in Yemen as Houthis fire on Saudi Arabia",
-          "url": "https://www.msn.com/en-ae/news/world/fighting-intensifies-in-yemen-as-houthis-fire-on-saudi-arabia/ar-AA2e4VtY",
-          "source": "www.msn.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
-    "AU, UN Security Council Press for Ceasefires in Congo, Sudan and South Sudan": {
-      "checked_at": 1793693247,
-      "items": []
-    },
     "The zeptoverse: what is it and how will it transform physics?": {
       "checked_at": 1793727821,
-      "items": []
-    },
-    "Saiba quem são as vítimas do acidente com avião nos EUA": {
-      "checked_at": 1793693247,
-      "items": [
-        {
-          "title": "Saiba quem são as vítimas do acidente de avião que matou nove pessoas na Flórida",
-          "url": "https://www.itatiaia.com.br/mundo/saiba-quem-sao-as-vitimas-do-acidente-de-aviao-que-matou-nove-pessoas-na-florida/",
-          "source": "www.itatiaia.com.br",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
-    "Why a US-Russia showdown left Morocco celebrating": {
-      "checked_at": 1793693247,
-      "items": [
-        {
-          "title": "Why a US-Russia showdown left Morocco celebrating",
-          "url": "https://www.msn.com/en-us/news/other/why-a-us-russia-showdown-left-morocco-celebrating/ar-AA2gDGIB",
-          "source": "www.msn.com",
-          "summary": "",
-          "image_url": "",
-          "published": ""
-        }
-      ]
-    },
-    "UN envoy meets Cyprus leaders ahead of critical November 9 trilateral summit": {
-      "checked_at": 1793693247,
       "items": []
     },
     "Shashi Tharoor on UNGA: India Has an Opportunity to Challenge UNSC Dominance and Push for Global Leadership": {
@@ -1289,7 +1185,7 @@
       "items": []
     },
     "Groenlândia aprova acordo militar com EUA após pressão de Trump": {
-      "checked_at": 1793727821,
+      "checked_at": 1793738425,
       "items": [
         {
           "title": "Groenlândia aprova acordo militar com EUA após pressão de Trump",
@@ -1517,7 +1413,7 @@
       "items": []
     },
     "Pakistan’s new UN envoy presents credentials to secretary general in New York": {
-      "checked_at": 1793735142,
+      "checked_at": 1793738425,
       "items": []
     },
     "African Union Somalia Bases Plan Follows Uganda Exit": {
@@ -1529,7 +1425,7 @@
       "items": []
     },
     "The strongest El Niño on record: what could it mean for Antarctica?": {
-      "checked_at": 1793735142,
+      "checked_at": 1793738425,
       "items": [
         {
           "title": "Scientists say this El Niño could be the strongest on record. Here's where early-season skiing could be best.",
@@ -1648,6 +1544,104 @@
           "published": ""
         }
       ]
+    },
+    "Uma dúzia de países europeus atingidos por ciberataques a supermercados": {
+      "checked_at": 1793738425,
+      "items": [
+        {
+          "title": "Uma dúzia de países europeus atingidos por ciberataques a supermercados",
+          "url": "https://www.msn.com/pt-br/noticias/other/uma-d%C3%BAzia-de-pa%C3%ADses-europeus-atingidos-por-ciberataques-a-supermercados/ar-AA2gGyHE",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Seleção Brasileira Feminina Sub-17 vence China, chega à semifinal do Mundial e destaca trajetória de superação de Kaillany Ranifah": {
+      "checked_at": 1793738425,
+      "items": [
+        {
+          "title": "Seleção feminina sub-17 vence a China de virada e chega à semifinal da Copa do Mundo",
+          "url": "https://www.msn.com/pt-br/noticias/noticias/sele%C3%A7%C3%A3o-feminina-sub-17-vence-a-china-de-virada-e-chega-%C3%A0-semifinal-da-copa-do-mundo/ar-AA2gABMS",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Israel faces a new push to shut it out of the EU’s flagship research program": {
+      "checked_at": 1793738425,
+      "items": [
+        {
+          "title": "Israel faces a new push to shut it out of the EU’s flagship research program",
+          "url": "https://www.calcalistech.com/ctechnews/article/bjoq116w6zg",
+          "source": "www.calcalistech.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Head of UN relief praises Canada, calls for accountability in Gaza, Ukraine, Sudan": {
+      "checked_at": 1793738425,
+      "items": [
+        {
+          "title": "Head of UN relief praises Canada, calls for accountability in Gaza, Ukraine, Sudan",
+          "url": "https://www.msn.com/en-ca/news/canada/head-of-un-relief-praises-canada-calls-for-accountability-in-gaza-ukraine-sudan/ar-AA2gGg1S",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Análise: Guerra no Irã pesa no bolso e na disputa pelo Congresso": {
+      "checked_at": 1793738425,
+      "items": []
+    },
+    "Interim Financial Result to be Announced 24 November 2026": {
+      "checked_at": 1793738425,
+      "items": [
+        {
+          "title": "Interim Financial Result to be Announced 24 November 2026",
+          "url": "https://www.nzx.com/announcements/482968",
+          "source": "www.nzx.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Al-Sisi, Slovenian president discuss bilateral ties, regional developments": {
+      "checked_at": 1793738425,
+      "items": []
+    },
+    "Quando sairão os resultados das eleições de meio de mandato nos EUA?": {
+      "checked_at": 1793738425,
+      "items": [
+        {
+          "title": "Quando sairão os resultados das eleições de meio de mandato nos EUA?",
+          "url": "https://www.msn.com/pt-br/noticias/other/quando-sair%C3%A3o-os-resultados-das-elei%C3%A7%C3%B5es-de-meio-de-mandato-nos-eua/ar-AA2gGKjz",
+          "source": "www.msn.com",
+          "summary": "",
+          "image_url": "",
+          "published": ""
+        }
+      ]
+    },
+    "Chocolates artesanais de MT cruzam fronteiras e chegam a feiras internacionais em Londres": {
+      "checked_at": 1793738425,
+      "items": []
+    },
+    "Por que Japão e outros países estão recomendando estocar mantimentos": {
+      "checked_at": 1793738425,
+      "items": []
+    },
+    "Partners For Patients, Pan-African Parliament Host Cancer Fundraiser": {
+      "checked_at": 1793738425,
+      "items": []
     }
   },
   "Taiwan's US envoy says ties robust after Trump-Xi summit": "Enviado dos EUA de Taiwan diz que laços estão robustos após cimeira Trump-Xi",
