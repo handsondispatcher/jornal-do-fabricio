@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-03T04:46:18+00:00",
+  "checked_at": "2026-11-03T05:46:43+00:00",
   "items": [
     {
       "symbol": "USD/BRL",
@@ -37,13 +37,13 @@
     {
       "symbol": "BRENT",
       "label": "Petróleo Brent (futuro)",
-      "value": "US$ 105,17",
-      "price": 105.16999816894531,
+      "value": "US$ 105,43",
+      "price": 105.43000030517578,
       "currency": "US$",
-      "change": 0.38,
+      "change": 0.63,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
-      "asof": "2026-11-03T04:35:15+00:00",
+      "asof": "2026-11-03T05:00:00+00:00",
       "status": "último ponto diário (pode ser parcial)",
       "stale": false
     },
@@ -57,32 +57,32 @@
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-11-02T14:30:00+00:00",
-      "status": "último ponto diário (pode ser parcial)",
+      "status": "último fechamento disponível",
       "stale": false
     },
     {
       "symbol": "NASDAQ",
       "label": "Nasdaq Composite",
-      "value": "25.164,36",
-      "price": 25164.36328125,
+      "value": "25.164,31",
+      "price": 25164.310546875,
       "currency": "",
       "change": -1.07,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-11-02T14:30:00+00:00",
-      "status": "último ponto diário (pode ser parcial)",
+      "status": "último fechamento disponível",
       "stale": false
     },
     {
       "symbol": "BTC/USD",
       "label": "Bitcoin",
-      "value": "US$ 76.868,27",
-      "price": 76868.27,
+      "value": "US$ 76.589,02",
+      "price": 76589.02,
       "currency": "US$",
-      "change": -1.81,
+      "change": -2.12,
       "change_period": "24h",
       "source": "Coinbase Exchange",
-      "asof": "2026-11-03T04:46:18+00:00",
+      "asof": "2026-11-03T05:46:43+00:00",
       "status": "cotação 24h/7",
       "stale": false
     }
