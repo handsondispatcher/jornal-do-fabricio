@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T15:25:33+00:00",
+  "checked_at": "2026-11-05T16:31:39+00:00",
   "items": [
     {
       "symbol": "USD/BRL",
@@ -24,10 +24,10 @@
     {
       "symbol": "IBOV",
       "label": "Ibovespa · B3",
-      "value": "167.559,47",
-      "price": 167559.46875,
+      "value": "166.853,25",
+      "price": 166853.25,
       "currency": "",
-      "change": -0.0,
+      "change": -0.42,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-11-05T13:00:00+00:00",
@@ -37,10 +37,10 @@
     {
       "symbol": "BRENT",
       "label": "Petróleo Brent (futuro)",
-      "value": "US$ 96,86",
-      "price": 96.86000061035156,
+      "value": "US$ 96,87",
+      "price": 96.87000274658203,
       "currency": "US$",
-      "change": 2.37,
+      "change": 2.38,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-11-05T05:00:00+00:00",
@@ -50,10 +50,10 @@
     {
       "symbol": "S&P 500",
       "label": "S&P 500",
-      "value": "7.490,90",
-      "price": 7490.89990234375,
+      "value": "7.471,72",
+      "price": 7471.72021484375,
       "currency": "",
-      "change": -2.57,
+      "change": -2.82,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-11-05T14:30:00+00:00",
@@ -63,10 +63,10 @@
     {
       "symbol": "NASDAQ",
       "label": "Nasdaq Composite",
-      "value": "24.660,01",
-      "price": 24660.009765625,
+      "value": "24.709,39",
+      "price": 24709.392578125,
       "currency": "",
-      "change": -4.18,
+      "change": -3.99,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-11-05T14:30:00+00:00",
@@ -76,13 +76,13 @@
     {
       "symbol": "BTC/USD",
       "label": "Bitcoin",
-      "value": "US$ 76.663,79",
-      "price": 76663.79,
+      "value": "US$ 76.670,14",
+      "price": 76670.14,
       "currency": "US$",
-      "change": -4.42,
+      "change": -4.71,
       "change_period": "24h",
       "source": "Coinbase Exchange",
-      "asof": "2026-11-05T15:25:33+00:00",
+      "asof": "2026-11-05T16:31:39+00:00",
       "status": "cotação 24h/7",
       "stale": false
     }
