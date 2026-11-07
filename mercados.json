@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-07T02:42:04+00:00",
+  "checked_at": "2026-11-07T09:43:12+00:00",
   "items": [
     {
       "symbol": "USD/BRL",
@@ -24,27 +24,27 @@
     {
       "symbol": "IBOV",
       "label": "Ibovespa · B3",
-      "value": "168.498,45",
-      "price": 168498.453125,
+      "value": "168.499,00",
+      "price": 168499.0,
       "currency": "",
       "change": 1.39,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-11-06T13:00:00+00:00",
-      "status": "último ponto diário (pode ser parcial)",
+      "status": "último fechamento disponível",
       "stale": false
     },
     {
       "symbol": "BRENT",
       "label": "Petróleo Brent (futuro)",
-      "value": "US$ 97,76",
-      "price": 97.76000213623047,
+      "value": "US$ 98,32",
+      "price": 98.31999969482422,
       "currency": "US$",
-      "change": -0.54,
+      "change": 0.03,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-11-06T05:00:00+00:00",
-      "status": "último ponto diário (pode ser parcial)",
+      "status": "último fechamento disponível",
       "stale": false
     },
     {
@@ -57,32 +57,32 @@
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-11-06T14:30:00+00:00",
-      "status": "último ponto diário (pode ser parcial)",
+      "status": "último fechamento disponível",
       "stale": false
     },
     {
       "symbol": "NASDAQ",
       "label": "Nasdaq Composite",
-      "value": "24.579,42",
-      "price": 24579.423828125,
+      "value": "24.579,43",
+      "price": 24579.4296875,
       "currency": "",
       "change": 1.09,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-11-06T14:30:00+00:00",
-      "status": "último ponto diário (pode ser parcial)",
+      "status": "último fechamento disponível",
       "stale": false
     },
     {
       "symbol": "BTC/USD",
       "label": "Bitcoin",
-      "value": "US$ 75.939,94",
-      "price": 75939.94,
+      "value": "US$ 76.000,06",
+      "price": 76000.06,
       "currency": "US$",
-      "change": -0.17,
+      "change": -0.09,
       "change_period": "24h",
       "source": "Coinbase Exchange",
-      "asof": "2026-11-07T02:42:04+00:00",
+      "asof": "2026-11-07T09:43:12+00:00",
       "status": "cotação 24h/7",
       "stale": false
     }
