@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-09T19:58:15+00:00",
+  "checked_at": "2026-11-10T02:38:57+00:00",
   "items": [
     {
       "symbol": "USD/BRL",
@@ -24,10 +24,10 @@
     {
       "symbol": "IBOV",
       "label": "Ibovespa · B3",
-      "value": "171.973,44",
-      "price": 171973.4375,
+      "value": "172.236,05",
+      "price": 172236.046875,
       "currency": "",
-      "change": 2.06,
+      "change": 2.22,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-11-09T13:00:00+00:00",
@@ -37,23 +37,23 @@
     {
       "symbol": "BRENT",
       "label": "Petróleo Brent (futuro)",
-      "value": "US$ 91,41",
-      "price": 91.41000366210938,
+      "value": "US$ 91,90",
+      "price": 91.9000015258789,
       "currency": "US$",
-      "change": -7.03,
+      "change": -0.72,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
-      "asof": "2026-11-09T05:00:00+00:00",
+      "asof": "2026-11-10T02:27:34+00:00",
       "status": "último ponto diário (pode ser parcial)",
       "stale": false
     },
     {
       "symbol": "S&P 500",
       "label": "S&P 500",
-      "value": "7.560,77",
-      "price": 7560.77001953125,
+      "value": "7.549,94",
+      "price": 7549.93994140625,
       "currency": "",
-      "change": 2.49,
+      "change": 2.35,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-11-09T14:30:00+00:00",
@@ -63,10 +63,10 @@
     {
       "symbol": "NASDAQ",
       "label": "Nasdaq Composite",
-      "value": "25.275,02",
-      "price": 25275.021484375,
+      "value": "25.253,14",
+      "price": 25253.138671875,
       "currency": "",
-      "change": 2.83,
+      "change": 2.74,
       "change_period": "comparação entre pontos diários",
       "source": "Yahoo Finance (indicativo)",
       "asof": "2026-11-09T14:30:00+00:00",
@@ -76,13 +76,13 @@
     {
       "symbol": "BTC/USD",
       "label": "Bitcoin",
-      "value": "US$ 74.785,00",
-      "price": 74785.0,
+      "value": "US$ 74.735,16",
+      "price": 74735.16,
       "currency": "US$",
-      "change": -1.38,
+      "change": -0.58,
       "change_period": "24h",
       "source": "Coinbase Exchange",
-      "asof": "2026-11-09T19:58:15+00:00",
+      "asof": "2026-11-10T02:38:57+00:00",
       "status": "cotação 24h/7",
       "stale": false
     }
