@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-21T06:05:53+00:00",
+  "checked_at": "2026-11-21T14:51:35+00:00",
   "items": [
     {
       "symbol": "USD/BRL",
@@ -76,13 +76,13 @@
     {
       "symbol": "BTC/USD",
       "label": "Bitcoin",
-      "value": "US$ 55.690,03",
-      "price": 55690.03,
+      "value": "US$ 60.223,98",
+      "price": 60223.98,
       "currency": "US$",
-      "change": -10.17,
+      "change": -2.4,
       "change_period": "24h",
       "source": "Coinbase Exchange",
-      "asof": "2026-11-21T06:05:53+00:00",
+      "asof": "2026-11-21T14:51:35+00:00",
       "status": "cotação 24h/7",
       "stale": false
     }
